@@ -1,0 +1,671 @@
+[
+  {
+      "group": "Roosevelt",
+      "displayName": "nash roosevelt",
+      "fullName": "𝐈𝐆𝐍𝐀𝐓𝐈𝐔𝐒 \"𝐍𝐀𝐒𝐇\" 𝐅𝐄𝐋𝐈𝐗 𝐑𝐎𝐎𝐒𝐄𝐕𝐄𝐋𝐓",
+      "type": "playable",
+      "age": "forty-seven",
+      "gender": "cis man",
+      "pronouns": "he/him",
+      "occupation": "civilian",
+      "orientation": "bisexual",
+      "faceClaim": "christian kane",
+      "pictures": ["images/nash.png", "images/nash2.png", "images/nash3.png"],
+      "fullBodyPictures": ["images/nash/nash_full_body1.png", "images/nash/nash_full_body2.png", "images/nash/nash_full_body3.png", "images/nash/nash_full_body4.png", "images/nash/nash_full_body5.png", "images/nash/nash_full_body6.png"],
+      "extraPictures": ["images/nash/extras/extra3.png", "images/nash/extras/extra1.png", "images/nash/extras/extra2.png", "images/nash/extras/extra4.png", "images/nash/extras/extra5.png", "images/nash/extras/extra7.png", "images/nash/extras/extra8.png", "images/nash/extras/extra9.png", "images/nash/extras/extra10.png", "images/nash/extras/extra12.png", "images/nash/extras/extra13.png", "images/nash/extras/extra14.png", "images/nash/extras/extra15.png", "images/nash/extras/extra16.png", "images/nash/extras/extra18.png", "images/nash/extras/extra19.png", "images/nash/extras/extra17.png" ],
+      "details": [
+    "has the fashion sense of a color blind toddler",
+    "no one know his name is ignatius and if they do they don't share that information. his name is nash, that's it.",
+    "wears his heart on his sleeve.",
+    "profoundly ashamed of his wealth. feels like he is stealing something from someone every time he uses any of it.",
+    "has an iq of 186 but its not like it matters or something. (except it does secretly, he cares a lot about it. too much of his self worth is attached to the idea of being smart. every time he does something dumb, he thinks it takes away from it somehow.)",
+    "loves animals and children, because of course he does.",
+    "so convinced love is sacrifice that if he didn’t have to give away something to be with the person he loves, he would think that there is something wrong with the relationship",
+    "he doesn’t even know he is insecure and wrong about the way he thinks of relationships. isn’t that adorable? (it’s not, it’s ruining his life.)",
+    "loves chocolate and deserts of all kinds. if he is mad at you and you get him a donut, he is no longer mad at you. he is that easy. it’s always time for cake.",
+    "loves poetry so much. just so much. he wants to quote it halfway through a conversation. every conversation actually. all the conversations.",
+    "okay hear him out— music is poetry you sing.",
+    "he just loves words and languages, he is a word loving little guy.",
+    "has never met someone he won’t immediately start caring for.",
+    "has never met a troubled person he won’t immediately want to save.",
+    "prefers riding horses to riding a motorcycle, but prefers riding his motorcycle to driving.",
+    "wears his cowboy hat mostly all the time.",
+    "calls people ma’am and sir or kid. those are the only pet names he uses. maybe when really in love he can say sweetheart.",
+    "would rather ignore his own emotions and just focus on helping everyone else.",
+    "unironically recites poetry mid conversation.",
+    "tries to be understanding and patient but honestly thinks his way is usually the best way and things would be a lot easier in life if everyone just started listening to him.",
+    "thinks it’s his job to clean up people’s messes.",
+    "lowkey judging people for doing wrong shit. given the chance will call them out. also given the chance will make them correct the “wrong” behavior.",
+    "the type of person to spend lots of hours trying the same thing over and over again, because he wants to get it right and he is sure he can do it if he just tries a little harder for just a little longer. no he can’t stop right now.",
+    "taps and touches and nudges and points and pulls closer.",
+    "can speak about seven different languages. read in fourteen.",
+    "rarely ever lets people in on how smart he can actually be. because if they don’t know, what they say doesn’t matter. but if they do know and somehow they say he isn’t that smart, he will fall apart and never find a way to be put back together again.",
+    "rebels in tiny small ways that aren’t obvious even to himself, like refusing to tie his uniform tie when he was in school. or refusing to drive when his family owns a car company. or never having learned to tie a tie even though in a family of businessman he probably should have at some point.",
+    "thinks he is a cowboy, he is nothing else. not someone who likes art, or someone who is smart. just a cowboy. so attached to the sense of self he created over the years that he wouldn’t know how to function if he was forced to give up his accent, horse and cowboy hat, even if there is a lot more to him.",
+    "can sing and play guitar and actually likes music because music is poetry, but way underplays how much because that’s his brother theo’s thing and two people in the same family couldn’t possibly have the same interest, right?",
+    "adhd and autistic highkey.",
+    "‘this book seems like something you would like’ is the instant way to his heart."],
+      "weaknesses": ["self-sacrificing, ", "dogmatic, ", "judgmental, ", "stubborn, ", "self-indulgent, ", "prideful, ", "restless."],
+      "strengths": ["honest, ", "charming, ", "enthusiastic, ", "caring, ", "loyal, ", "generous, ", "resilient."],
+      "highlightColor": "#9ab38c",
+      "connections": [
+          { "type": "npc", "name": "William Roosevelt", "relationship": "grandfather" },
+          { "type": "npc", "name": "Anna Roosevelt", "relationship": "mother" },
+          { "type": "bestFriend", "name": "Xander Nightingale", "relationship": "best friend" },
+          { "type": "family", "name": "Richard Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Theo Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Nate Roosevelt", "relationship": "brother" }
+      ],
+    "searchResults": [
+        {
+            "title": "Nash Roosevelt - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nash_Roosevelt",
+            "description": "Ignatius \"Nash\" Felix Roosevelt (born July 15, 1977) is an American former businessman, professor, and current ranch owner. He is known for his..."
+        },
+        {
+            "title": "The Unconventional Path of Nash Roosevelt",
+            "url": "https://www.biography.com/nash-roosevelt",
+            "description": "An in-depth look at the life of Nash Roosevelt, who turned away from his family's multimillion-dollar sports car business to pursue a simpler life..."
+        },        
+        {
+            "title": "Theo Roosevelt: The Man Behind Roosevelt Records",
+            "url": "https://www.musicindustryinsider.com/theo-roosevelt-record-label",
+            "description": "Theo Roosevelt, founder of Roosevelt Records, has taken the music industry by storm. His success has been supported by his family, including his brother Nash Roosevelt..."
+        },
+        {
+            "title": "Roosevelt Motors: A Legacy and Its Heir",
+            "url": "https://www.businessinsider.com/roosevelt-motors-nash-roosevelt-legacy",
+            "description": "An article discussing the history of Roosevelt Motors and the surprising career choices of its would-be heir, Nash Roosevelt. Born into a legacy of luxury automobiles..."
+        },
+        {
+            "title": "From Boardrooms to Classrooms: Nash Roosevelt's Journey",
+            "url": "https://www.academicinsights.com/nash-roosevelt-journey",
+            "description": "Nash Roosevelt, once destined to lead Roosevelt Motors, chose a path in academia before settling into life as a ranch owner. His journey is a testament to..."
+        },
+        {
+            "title": "An Evening at Mike's Bar",
+            "url": "https://www.smalltownstories.com/mikes-bar-concert",
+            "description": "Last night (February 21, 1997) Nash Roosevelt performed a surprise concert at a local bar, showcasing his hidden musical talent. The event was a hit among the small crowd..."
+        },
+        {
+            "title": "Echoes of the Past",
+            "url": "https://www.poetrycorner.com/echoes-of-the-past",
+            "description": "The poem 'Echoes of the Past' published by Nash Roosevelt captures the essence of fleeting memories and lost time. In the first stanza, he writes..."
+        }
+    ],
+    "searchSidebar": {
+        "title": "Nash Roosevelt",
+        "subtitle": "Businessman",
+        "images": ["images/nash/sidebar1.png", "images/nash/sidebar2.png", "images/nash/sidebar3.png"],
+        "about": "Nash Roosevelt (born July 24, 1976) is an American former businessman, professor, and current ranch owner. Born into the wealthy and influential Roosevelt fami..",
+        "birth": "January 1, 1997",
+        "parents": "William Roosevelt, Anna Roosevelt"
+    },
+    "history": {
+        "images": ["images/nash/extras/extra18.png", "images/nash/extras/extra19.png", "images/nash/extras/extra20.png", "images/nash/extras/extra21.png", "images/nash/extras/extra22.png", "images/nash/extras/extra23.png", "images/nash/extras/extra24.png", "images/nash/extras/extra25.png", "images/nash/extras/extra26.png", "images/nash/extras/extra27.png"],
+        "details": ["History detail 1", "History detail 2", "History detail 3"]
+    },
+    "phoneBackgrounds": ["images/nash/phone/nash_phone_background1.png", "images/nash/phone/nash_phone_background2.png"],
+  "lockScreens": ["images/nash/phone/nash_lock_screen1.png", "images/nash/phone/nash_lock_screen2.png"],
+"photos": ["images/nash/phone/camera roll/photo1.png", "images/nash/phone/camera roll/photo2.png", "images/nash/phone/camera roll/photo3.png", "images/nash/phone/camera roll/photo4.png", "images/nash/phone/camera roll/photo5.png", "images/nash/phone/camera roll/photo6.png", "images/nash/phone/camera roll/photo7.png", "images/nash/phone/camera roll/photo8.png", "images/nash/phone/camera roll/photo9.png", "images/nash/phone/camera roll/photo10.png", "images/nash/phone/camera roll/photo11.png", "images/nash/phone/camera roll/photo12.png", "images/nash/phone/camera roll/photo13.png", "images/nash/phone/camera roll/photo14.png", "images/nash/phone/camera roll/photo15.png", "images/nash/phone/camera roll/photo20.png", "images/nash/phone/camera roll/photo21.png", "images/nash/phone/camera roll/photo22.png", "images/nash/phone/camera roll/photo24.png", "images/nash/phone/camera roll/photo16.png", "images/nash/phone/camera roll/photo17.png", "images/nash/phone/camera roll/photo18.png", "images/nash/phone/camera roll/photo19.png", "images/nash/phone/camera roll/photo25.png", "images/nash/phone/camera roll/photo26.png", "images/nash/phone/camera roll/photo27.png", "images/nash/phone/camera roll/photo28.png", "images/nash/phone/camera roll/photo29.png", "images/nash/phone/camera roll/photo30.png", "images/nash/phone/camera roll/photo31.png", "images/nash/phone/camera roll/photo32.png", "images/nash/phone/camera roll/photo33.png", "images/nash/phone/camera roll/photo34.png", "images/nash/phone/camera roll/photo35.png", "images/nash/phone/camera roll/photo36.png", "images/nash/phone/camera roll/photo37.png", "images/nash/phone/camera roll/photo38.png", "images/nash/phone/camera roll/photo39.png", "images/nash/phone/camera roll/photo40.png", "images/nash/phone/camera roll/photo41.png", "images/nash/phone/camera roll/photo42.png", "images/nash/phone/camera roll/photo43.png", "images/nash/phone/camera roll/photo44.png", "images/nash/phone/camera roll/photo45.png", "images/nash/phone/camera roll/photo46.png", "images/nash/phone/camera roll/photo47.png", "images/nash/phone/camera roll/photo48.png", "images/nash/phone/camera roll/photo49.png", "images/nash/phone/camera roll/photo50.png", "images/nash/phone/camera roll/photo51.png", "images/nash/phone/camera roll/photo52.png", "images/nash/phone/camera roll/photo53.png", "images/nash/phone/camera roll/photo54.png", "images/nash/phone/camera roll/photo55.png", "images/nash/phone/camera roll/photo56.png", "images/nash/phone/camera roll/photo57.png", "images/nash/phone/camera roll/photo58.png", "images/nash/phone/camera roll/photo59.png", "images/nash/phone/camera roll/photo60.png", "images/nash/phone/camera roll/photo61.png", "images/nash/phone/camera roll/photo62.png"],
+  "albums": [
+    { "name": "Vacation", "cover": "images/frank/albums/vacation.png" },
+    { "name": "Family", "cover": "images/frank/albums/family.png" }
+  ],
+  "forYou": ["images/frank/photos/photo3.png", "images/frank/photos/photo4.png"],
+  "search": [
+    { "name": "John", "picture": "images/frank/photos/john.png" },
+    { "name": "Anna", "picture": "images/frank/photos/anna.png" }
+  ],
+  "dockApps": ["Instagram", "Messages", "Camera", "Settings"]
+  },
+  {
+      "group": "Roosevelt",
+      "displayName": "Richard Roosevelt",
+      "type": "playable",
+      "age": 47,
+      "wealthStatus": "rich",
+      "fameStatus": "not-famous",
+      "occupation": "civilian",
+      "isCowboy": false,
+      "gender": "male",
+      "pictures": ["images/richard.png"],
+      "fullBodyPictures": ["images/nash/nash_full_body1.png", "images/nash/nash_full_body2.png", "images/nash/nash_full_body3.png", "images/nash/nash_full_body4.png", "images/nash/nash_full_body5.png", "images/nash/nash_full_body6.png"],
+      "connections": [
+          { "type": "npc", "displayName": "William Roosevelt", "relationship": "grandfather" },
+          { "type": "family", "displayName": "Nash Roosevelt", "relationship": "brother" },
+          { "type": "family", "displayName": "Theo Roosevelt", "relationship": "brother" },
+          { "type": "family", "displayName": "Nate Roosevelt", "relationship": "brother" }
+      ]
+  },
+  {
+      "group": "Roosevelt",
+      "displayName": "Theo Roosevelt",
+      "type": "playable",
+      "age": 45,
+      "wealthStatus": "rich",
+      "fameStatus": "not-famous",
+      "occupation": "civilian",
+      "isCowboy": false,
+      "gender": "male",
+      "pictures": ["images/theo.png"],
+      "connections": [
+          { "type": "npc", "displayName": "William Roosevelt", "relationship": "grandfather" },
+          { "type": "family", "displayName": "Noah Roosevelt", "relationship": "son" },
+          { "type": "family", "displayName": "Richard Roosevelt", "relationship": "brother" },
+          { "type": "family", "displayName": "Nash Roosevelt", "relationship": "brother" },
+          { "type": "family", "displayName": "Nate Roosevelt", "relationship": "brother" }
+      ]
+  },
+  {
+      "group": "Roosevelt",
+      "displayName": "Nate Roosevelt",
+      "type": "playable",
+      "age": 43,
+      "wealthStatus": "rich",
+      "fameStatus": "not-famous",
+      "occupation": "civilian",
+      "isCowboy": false,
+      "gender": "male",
+      "pictures": ["images/nate.png"],
+      "connections": [
+          { "type": "npc", "displayName": "William Roosevelt", "relationship": "grandfather" },
+          { "type": "family", "displayName": "Nash Roosevelt", "relationship": "brother" },
+          { "type": "family", "displayName": "Theo Roosevelt", "relationship": "brother" },
+          { "type": "family", "displayName": "Richard Roosevelt", "relationship": "brother" }
+      ]
+  },
+  {
+      "group": "Roosevelt",
+      "displayName": "Noah Roosevelt",
+      "type": "playable",
+      "age": 20,
+      "wealthStatus": "rich",
+      "fameStatus": "not-famous",
+      "occupation": "student",
+      "isCowboy": false,
+      "gender": "male",
+      "pictures": ["images/noah.png"],
+      "connections": [
+          { "type": "family", "displayName": "Theo Roosevelt", "relationship": "father" }
+      ]
+  },
+  {
+        "group": "Nightingale",
+        "displayName": "xander nightingale",
+        "fullName": "𝐗𝐀𝐍𝐃𝐄𝐑 𝐍𝐈𝐆𝐇𝐓𝐈𝐍𝐆𝐀𝐋𝐄",
+        "type": "playable",
+        "age": "thirty",
+        "gender": "cis man",
+        "pronouns": "he/him",
+        "occupation": "musician",
+        "orientation": "gay",
+        "faceClaim": "alexander ludwig",
+        "pictures": ["images/xander.png", "images/xander2.png", "images/xander3.png"],
+        "fullBodyPictures": ["images/xander/xander_full_body1.png", "images/xander/xander_full_body2.png", "images/xander/xander_full_body3.png", "images/xander/xander_full_body4.png", "images/xander/xander_full_body5.png", "images/xander/xander_full_body6.png"],
+        "extraPictures": ["images/xander/extras/extra1.png", "images/xander/extras/extra2.png", "images/xander/extras/extra3.png", "images/xander/extras/extra4.png", "images/xander/extras/extra5.png", "images/xander/extras/extra6.png", "images/xander/extras/extra7.png", "images/xander/extras/extra8.png", "images/xander/extras/extra9.png", "images/xander/extras/extra10.png"],
+        "details": ["Loves to perform on stage", "Has a large collection of guitars", "Detail 3 about Xander"],
+        "weaknesses": ["impulsive, ", "stubborn, ", "perfectionist"],
+        "strengths": ["creative, ", "charismatic, ", "loyal"],
+        "highlightColor": "#8c9ab3",
+        "connections": [
+            { "type": "npc", "name": "Lucas Nightingale", "relationship": "father" },
+            { "type": "npc", "name": "Louise Nightingale", "relationship": "mother" },
+            { "type": "bestFriend", "name": "Nash Roosevelt", "relationship": "best friend" },
+            { "type": "family", "name": "Liam Nightingale", "relationship": "brother" },
+            { "type": "family", "name": "Alice Nightingale", "relationship": "sister" }
+        ],
+        "searchResults": [
+            {
+                "title": "Xander Nightingale - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Xander_Nightingale",
+                "description": "Xander Nightingale (born August 20, 1992) is an American musician and performer known for his dynamic stage presence and powerful vocals..."
+            },
+            {
+                "title": "The Rise of Xander Nightingale",
+                "url": "https://www.musicjourney.com/xander-nightingale",
+                "description": "An in-depth look at the journey of Xander Nightingale, from his humble beginnings to his rise as a prominent figure in the music industry..."
+            }
+        ],
+        "searchSidebar": {
+            "title": "Xander Nightingale",
+            "subtitle": "Musician",
+            "images": ["images/xander/sidebar1.png", "images/xander/sidebar2.png", "images/xander/sidebar3.png"],
+            "about": "Xander Nightingale (born August 20, 1992) is an American musician and performer. Known for his dynamic stage presence and powerful vocals...",
+            "birth": "August 20, 1992",
+            "parents": "Lucas Nightingale, Louise Nightingale"
+        },
+        "history": {
+            "images": ["images/xander/extras/extra11.png", "images/xander/extras/extra12.png", "images/xander/extras/extra13.png", "images/xander/extras/extra14.png", "images/xander/extras/extra15.png"],
+            "details": ["History detail 1", "History detail 2", "History detail 3"]
+        },
+        "phoneBackgrounds": ["images/xander/phone/xander_phone_background1.png", "images/xander/phone/xander_phone_background2.png"],
+        "lockScreens": ["images/xander/phone/xander_lock_screen1.png", "images/xander/phone/xander_lock_screen2.png"],
+        "instagram": "Instagram content",
+         "messages": "Messages content",
+         "photos": ["images/frank_photo1.png", "images/frank_photo2.png"],
+         "youtube": "YouTube content",
+        "apps": ["Instagram", "Grindr", "Tinder"],
+        "dockApps": ["Instagram", "Messages", "Camera", "Settings"]
+        
+    },
+
+  {
+      "group": "Nightingale",
+      "displayName": "Alice Nightingale",
+      "type": "playable",
+      "age": 28,
+      "wealthStatus": "rich",
+      "fameStatus": "not-famous",
+      "occupation": "civilian",
+      "isCowboy": false,
+      "gender": "female",
+      "pictures": ["images/alice.png"],
+      "connections": [
+          { "type": "npc", "displayName": "Lucas Nightingale", "relationship": "father" },
+          { "type": "npc", "displayName": "Louise Nightingale", "relationship": "mother" }
+      ]
+  },
+  {
+      "group": "Nightingale",
+      "displayName": "Liam Nightingale",
+      "type": "playable",
+      "age": 25,
+      "wealthStatus": "rich",
+      "fameStatus": "not-famous",
+      "occupation": "civilian",
+      "isCowboy": false,
+      "gender": "male",
+      "pictures": ["images/liam.png"],
+      "connections": [
+          { "type": "npc", "displayName": "Lucas Nightingale", "relationship": "father" },
+          { "type": "npc", "displayName": "Louise Nightingale", "relationship": "mother" }
+      ]
+  },
+  {
+    "group": "Hamilton",
+    "displayName": "frank hamilton",
+    "fullName": "𝐅𝐑𝐀𝐍𝐊 𝐇𝐀𝐌𝐈𝐋𝐓𝐎𝐍",
+    "type": "playable",
+    "age": "fifty",
+    "gender": "cis man",
+    "pronouns": "he/him",
+    "occupation": "businessman",
+    "orientation": "gay",
+    "faceClaim": "brad pitt",
+    "pictures": ["images/frank.png", "images/frank2.png", "images/frank3.png"],
+    "fullBodyPictures": ["images/frank/frank_full_body1.png", "images/frank/frank_full_body2.png", "images/frank/frank_full_body3.png", "images/frank/frank_full_body4.png", "images/frank/frank_full_body5.png", "images/frank/frank_full_body6.png"],
+    "extraPictures": ["images/frank/extras/extra1.png", "images/frank/extras/extra2.png", "images/frank/extras/extra3.png", "images/frank/extras/extra4.png", "images/frank/extras/extra5.png", "images/frank/extras/extra6.png", "images/frank/extras/extra7.png", "images/frank/extras/extra8.png", "images/frank/extras/extra9.png", "images/frank/extras/extra10.png"],
+    "details": ["Runs a successful business empire", "Enjoys fine dining and luxury travel", "Detail 3 about Frank"],
+    "weaknesses": ["arrogant, ", "workaholic, ", "impatient"],
+    "strengths": ["intelligent, ", "charismatic, ", "determined"],
+    "highlightColor": "#b38c9a",
+    "connections": [
+        { "type": "npc", "name": "Stephen Hamilton", "relationship": "father" },
+        { "type": "npc", "name": "Margarete Hamilton", "relationship": "mother" },
+        { "type": "love", "name": "Elizabeth Thompson", "relationship": "ex-wife" },
+        { "type": "family", "name": "Arizona Hamilton", "relationship": "daughter" }
+    ],
+    "searchResults": [
+        {
+            "title": "Frank Hamilton - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Frank_Hamilton",
+            "description": "Frank Hamilton (born June 12, 1972) is an American businessman and philanthropist known for his influential role in the corporate world..."
+        },
+        {
+            "title": "The Empire of Frank Hamilton",
+            "url": "https://www.forbes.com/frank-hamilton",
+            "description": "An in-depth look at the business empire built by Frank Hamilton, and his impact on the global market..."
+        }
+    ],
+    "searchSidebar": {
+        "title": "Frank Hamilton",
+        "subtitle": "Businessman",
+        "images": ["images/frank/sidebar1.png", "images/frank/sidebar2.png", "images/frank/sidebar3.png"],
+        "about": "Frank Hamilton (born June 12, 1972) is an American businessman and philanthropist. Known for his influential role in the corporate world...",
+        "birth": "June 12, 1972",
+        "parents": "Stephen Hamilton, Margarete Hamilton"
+    },
+    "history": {
+        "images": ["images/frank/extras/extra11.png", "images/frank/extras/extra12.png", "images/frank/extras/extra13.png", "images/frank/extras/extra14.png", "images/frank/extras/extra15.png"],
+        "details": ["History detail 1", "History detail 2", "History detail 3"]
+    },
+    "phoneBackgrounds": ["images/frank/phone/frank_phone_background1.png", "images/frank/phone/frank_phone_background2.png"],
+    "lockScreens": ["images/frank/phone/frank_lock_screen1.png", "images/frank/phone/frank_lock_screen2.png"],
+    "instagram": {
+        "username": "frankhamilton",
+        "profilePicture": "images/frank/phone/instagram/profile.png",
+        "followers": 1234,
+        "following": 567,
+        "stories": ["images/frank/phone/instagram/story1.png", "images/frank/phone/instagram/story2.png"],
+        "memories": [
+            {
+                "title": "Vacation 2022",
+                "thumbnail": "images/frank/instagram/memory1_thumbnail.png",
+                "images": ["images/frank/phone/instagram/memories1_1.png", "images/frank/phone/instagram/memories1_2.png"]
+            },
+            {
+                "title": "Family Gathering",
+                "thumbnail": "images/frank/instagram/memory2_thumbnail.png",
+                "images": ["images/frank/instagram/memory2_1.png", "images/frank/instagram/memory2_2.png"]
+            }
+        ],
+        "posts": [
+            { "image": "images/frank/phone/instagram/post1.png", "date": "2023-06-01", "likes": 100, "comments": 10 },
+            { "image": "images/frank/phone/instagram/post2.png", "date": "2023-06-05", "likes": 200, "comments": 20 }
+        ]
+    },
+    "messages": "Messages content",
+    "youtube": "YouTube content",
+    "apps": ["Instagram", "Grindr", "Tinder", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "dockApps": ["Instagram", "Messages", "Camera", "Settings"],
+    "photos": ["images/frank/phone/camera roll/photo1.png", "images/frank/phone/camera roll/photo2.png", "images/frank/phone/camera roll/photo3.png", "images/frank/phone/camera roll/photo4.png", "images/frank/phone/camera roll/photo5.png", "images/frank/phone/camera roll/photo6.png", "images/frank/phone/camera roll/photo7.png", "images/frank/phone/camera roll/photo8.png", "images/frank/phone/camera roll/photo9.png", "images/frank/phone/camera roll/photo10.png", "images/frank/phone/camera roll/photo11.png", "images/frank/phone/camera roll/photo12.png", "images/frank/phone/camera roll/photo13.png", "images/frank/phone/camera roll/photo14.png", "images/frank/phone/camera roll/photo15.png", "images/frank/phone/camera roll/photo20.png", "images/frank/phone/camera roll/photo21.png", "images/frank/phone/camera roll/photo22.png", "images/frank/phone/camera roll/photo24.png", "images/frank/phone/camera roll/photo16.png", "images/frank/phone/camera roll/photo17.png", "images/frank/phone/camera roll/photo18.png", "images/frank/phone/camera roll/photo19.png", "images/frank/phone/camera roll/photo25.png", "images/frank/phone/camera roll/photo26.png", "images/frank/phone/camera roll/photo27.png", "images/frank/phone/camera roll/photo28.png", "images/frank/phone/camera roll/photo29.png", "images/frank/phone/camera roll/photo30.png", "images/frank/phone/camera roll/photo31.png", "images/frank/phone/camera roll/photo32.png", "images/frank/phone/camera roll/photo33.png", "images/frank/phone/camera roll/photo34.png", "images/frank/phone/camera roll/photo35.png", "images/frank/phone/camera roll/photo36.png", "images/frank/phone/camera roll/photo37.png", "images/frank/phone/camera roll/photo38.png", "images/frank/phone/camera roll/photo39.png", "images/frank/phone/camera roll/photo40.png", "images/frank/phone/camera roll/photo41.png", "images/frank/phone/camera roll/photo42.png", "images/frank/phone/camera roll/photo43.png", "images/frank/phone/camera roll/photo44.png", "images/frank/phone/camera roll/photo45.png", "images/frank/phone/camera roll/photo46.png", "images/frank/phone/camera roll/photo47.png", "images/frank/phone/camera roll/photo48.png", "images/frank/phone/camera roll/photo49.png", "images/frank/phone/camera roll/photo50.png", "images/frank/phone/camera roll/photo51.png", "images/frank/phone/camera roll/photo52.png", "images/frank/phone/camera roll/photo53.png", "images/frank/phone/camera roll/photo54.png", "images/frank/phone/camera roll/photo55.png", "images/frank/phone/camera roll/photo56.png", "images/frank/phone/camera roll/photo57.png", "images/frank/phone/camera roll/photo58.png", "images/frank/phone/camera roll/photo59.png", "images/frank/phone/camera roll/photo60.png", "images/frank/phone/camera roll/photo61.png", "images/frank/phone/camera roll/photo62.png"],
+   "albums": {
+    "My Albums": [
+      { "name": "Ari took my phone", "cover": "images/frank/phone/cover/cover2.png", "number": "11" },
+      { "name": "Family Vacation", "cover": "images/frank/phone/cover/cover1.png", "number": "11" },
+      { "name": "Ethan", "cover": "images/frank/phone/cover/cover1.png", "number": "11" }
+    ],
+    "": [
+      { "name": "Ari took my phone", "cover": "images/frank/phone/cover/cover2.png", "number": "11" },
+      { "name": "Family Vacation", "cover": "images/frank/phone/cover/cover1.png", "number": "11" },
+      { "name": "Ethan", "cover": "images/frank/phone/cover/cover1.png", "number": "11" }
+    ],
+    "Family Albums": [
+      { "name": "Woman I cry myself to...", "cover": "images/frank/phone/cover/cover3.png", "number": "11" }
+    ],
+    "Shared Albums": [
+      { "name": "Woman I cry myself to...", "cover": "images/frank/phone/cover/cover3.png", "number": "12" }
+    ]
+    },
+  "forYou": {
+    "place":"Hamilton, TX", "date": "February, 29",
+    "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
+    "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
+    "middle": [ "images/frank/phone/camera roll/photo74.png"],
+    "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
+    },
+  "search": [
+    { "name": "John", "picture": "/images/frank/phone/camera roll/photo78.png" },
+    { "name": "Anna", "picture": "images/frank/photos/anna.png" }
+  ]
+  },
+
+  {
+    "group": "Hamilton",
+    "displayName": "elizabeth thompson",
+    "fullName": "𝐄𝐋𝐈𝐙𝐀𝐁𝐄𝐓𝐇 𝐓𝐇𝐎𝐌𝐏𝐒𝐎𝐍",
+    "type": "playable",
+    "age": "forty-five",
+    "gender": "cis woman",
+    "pronouns": "she/her",
+    "occupation": "lawyer",
+    "orientation": "bisexual",
+    "faceClaim": "angelina jolie",
+    "pictures": ["images/elizabeth.png", "images/elizabeth2.png", "images/elizabeth3.png"],
+    "fullBodyPictures": ["images/elizabeth/elizabeth_full_body1.png", "images/elizabeth/elizabeth_full_body2.png", "images/elizabeth/elizabeth_full_body3.png", "images/elizabeth/elizabeth_full_body4.png", "images/elizabeth/elizabeth_full_body5.png", "images/elizabeth/elizabeth_full_body6.png"],
+    "extraPictures": ["images/elizabeth/extras/extra1.png", "images/elizabeth/extras/extra2.png", "images/elizabeth/extras/extra3.png", "images/elizabeth/extras/extra4.png", "images/elizabeth/extras/extra5.png", "images/elizabeth/extras/extra6.png", "images/elizabeth/extras/extra7.png", "images/elizabeth/extras/extra8.png", "images/elizabeth/extras/extra9.png", "images/elizabeth/extras/extra10.png"],
+    "details": ["Top lawyer in her field", "Loves traveling and outdoor adventures", "Detail 3 about Elizabeth"],
+    "weaknesses": ["stubborn, ", "overcritical, ", "workaholic"],
+    "strengths": ["intelligent, ", "assertive, ", "charismatic"],
+    "highlightColor": "#9ac3b3",
+    "connections": [
+        { "type": "npc", "name": "Howard Thompson", "relationship": "father" },
+        { "type": "npc", "name": "Evangeline Thompson", "relationship": "mother" },
+        { "type": "love", "name": "Frank Hamilton", "relationship": "ex-husband" },
+        { "type": "family", "name": "Arizona Hamilton", "relationship": "daughter" },
+        { "type": "bestFriend", "name": "Nash Roosevelt", "relationship": "best friend" }
+    ],
+    "searchResults": [
+        {
+            "title": "Elizabeth Thompson - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Elizabeth_Thompson",
+            "description": "Elizabeth Thompson (born September 10, 1978) is an American lawyer known for her work in high-profile cases..."
+        },
+        {
+            "title": "The Legal Career of Elizabeth Thompson",
+            "url": "https://www.forbes.com/elizabeth-thompson",
+            "description": "An in-depth look at the legal career of Elizabeth Thompson, and her impact on the justice system..."
+        }
+    ],
+    "searchSidebar": {
+        "title": "Elizabeth Thompson",
+        "subtitle": "Lawyer",
+        "images": ["images/elizabeth/sidebar1.png", "images/elizabeth/sidebar2.png", "images/elizabeth/sidebar3.png"],
+        "about": "Elizabeth Thompson (born September 10, 1978) is an American lawyer known for her work in high-profile cases...",
+        "birth": "September 10, 1978",
+        "parents": "Howard Thompson, Evangeline Thompson"
+    },
+    "history": {
+        "images": ["images/elizabeth/extras/extra11.png", "images/elizabeth/extras/extra12.png", "images/elizabeth/extras/extra13.png", "images/elizabeth/extras/extra14.png", "images/elizabeth/extras/extra15.png"],
+        "details": ["History detail 1", "History detail 2", "History detail 3"]
+    },
+    "phoneBackgrounds": ["images/elizabeth/phone/elizabeth_phone_background1.png", "images/elizabeth/phone/elizabeth_phone_background2.png"],
+    "lockScreens": ["images/elizabeth/phone/elizabeth_lock_screen1.png", "images/elizabeth/phone/elizabeth_lock_screen2.png"],
+    "instagram": {
+        "username": "arizonahamilton",
+        "profilePicture": "images/arizona/phone/instagram/profile.png",
+        "followers": 1234,
+        "following": 567,
+        "stories": ["images/arizona/phone/instagram/story1.png", "images/arizona/phone/instagram/story2.png"],
+        "memories": [
+            {
+                "title": "Vacation 2022",
+                "thumbnail": "images/arizona/instagram/memory1_thumbnail.png",
+                "images": ["images/arizona/phone/instagram/memories1_1.png", "images/arizona/phone/instagram/memories1_2.png"]
+            },
+            {
+                "title": "Family Gathering",
+                "thumbnail": "images/arizona/instagram/memory2_thumbnail.png",
+                "images": ["images/arizona/instagram/memory2_1.png", "images/arizona/instagram/memory2_2.png"]
+            }
+        ],
+        "posts": [
+            { "image": "images/arizona/phone/instagram/post1.png", "date": "2023-06-01", "likes": 100, "comments": 10 },
+            { "image": "images/arizona/phone/instagram/post2.png", "date": "2023-06-05", "likes": 200, "comments": 20 }
+        ]
+    },
+    "messages": "Messages content",
+    "youtube": "YouTube content",
+    "apps": ["Instagram", "Grindr", "Tinder", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "photos": ["images/elizabeth/phone/camera roll/photo1.png", "images/elizabeth/phone/camera roll/photo2.png", "images/elizabeth/phone/camera roll/photo3.png"],
+    "albums": {
+        "My Albums": [
+            { "name": "Ari took my phone", "cover": "images/elizabeth/phone/cover/cover2.png", "number": "11" },
+            { "name": "Family Vacation", "cover": "images/elizabeth/phone/cover/cover1.png", "number": "11" },
+            { "name": "Ethan", "cover": "images/elizabeth/phone/cover/cover1.png", "number": "11" }
+        ],
+        "": [
+            { "name": "Ari took my phone", "cover": "images/elizabeth/phone/cover/cover2.png", "number": "11" },
+            { "name": "Family Vacation", "cover": "images/elizabeth/phone/cover/cover1.png", "number": "11" },
+            { "name": "Ethan", "cover": "images/elizabeth/phone/cover/cover1.png", "number": "11" }
+        ],
+        "Family Albums": [
+            { "name": "Woman I cry myself to...", "cover": "images/elizabeth/phone/cover/cover3.png", "number": "11" }
+        ],
+        "Shared Albums": [
+            { "name": "Woman I cry myself to...", "cover": "images/elizabeth/phone/cover/cover3.png", "number": "12" }
+        ]
+    },
+    "forYou": {
+        "place": "Thompson, TX", "date": "March, 10",
+        "upper": ["images/elizabeth/phone/camera roll/photo70.png", "images/elizabeth/phone/camera roll/photo71.png", "images/elizabeth/phone/camera roll/photo72.png"],
+        "uppermiddle": ["images/elizabeth/phone/camera roll/photo73.png"],
+        "middle": ["images/elizabeth/phone/camera roll/photo74.png"],
+        "down": ["images/elizabeth/phone/camera roll/photo75.png", "images/elizabeth/phone/camera roll/photo76.png", "images/elizabeth/phone/camera roll/photo78.png", "images/elizabeth/phone/camera roll/photo69.png", "images/elizabeth/phone/camera roll/photo68.png"]
+    },
+    "search": [
+        { "name": "John", "picture": "/images/elizabeth/phone/camera roll/photo78.png" },
+        { "name": "Anna", "picture": "images/elizabeth/photos/anna.png" }
+    ]
+},
+{
+    "group": "Hamilton",
+    "displayName": "arizona hamilton",
+    "fullName": "𝐀𝐑𝐈𝐙𝐎𝐍𝐀 𝐇𝐀𝐌𝐈𝐋𝐓𝐎𝐍",
+    "type": "playable",
+    "age": "twenty-five",
+    "gender": "cis woman",
+    "pronouns": "she/her",
+    "occupation": "artist",
+    "orientation": "lesbian",
+    "faceClaim": "zendaya",
+    "pictures": ["images/arizona.png", "images/arizona2.png", "images/arizona3.png"],
+    "fullBodyPictures": ["images/arizona/arizona_full_body1.png", "images/arizona/arizona_full_body2.png", "images/arizona/arizona_full_body3.png", "images/arizona/arizona_full_body4.png", "images/arizona/arizona_full_body5.png", "images/arizona/arizona_full_body6.png"],
+    "extraPictures": ["images/arizona/extras/extra1.png", "images/arizona/extras/extra2.png", "images/arizona/extras/extra3.png", "images/arizona/extras/extra4.png", "images/arizona/extras/extra5.png", "images/arizona/extras/extra6.png", "images/arizona/extras/extra7.png", "images/arizona/extras/extra8.png", "images/arizona/extras/extra9.png", "images/arizona/extras/extra10.png"],
+    "details": ["Renowned artist with exhibitions worldwide", "Enjoys painting and sculpting", "Detail 3 about Arizona"],
+    "weaknesses": ["perfectionist, ", "sensitive, ", "impulsive"],
+    "strengths": ["creative, ", "passionate, ", "dedicated"],
+    "highlightColor": "#c39c9b",
+    "connections": [
+        { "type": "npc", "name": "Frank Hamilton", "relationship": "father" },
+        { "type": "npc", "name": "Elizabeth Thompson", "relationship": "mother" }
+    ],
+    "searchResults": [
+        {
+            "title": "Arizona Hamilton - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Arizona_Hamilton",
+            "description": "Arizona Hamilton (born May 15, 1999) is an American artist known for her innovative and thought-provoking works..."
+        },
+        {
+            "title": "The Art of Arizona Hamilton",
+            "url": "https://www.forbes.com/arizona-hamilton",
+            "description": "An in-depth look at the artistic journey of Arizona Hamilton, and her impact on the art world..."
+        }
+    ],
+    "searchSidebar": {
+        "title": "Arizona Hamilton",
+        "subtitle": "Artist",
+        "images": ["images/arizona/sidebar1.png", "images/arizona/sidebar2.png", "images/arizona/sidebar3.png"],
+        "about": "Arizona Hamilton (born May 15, 1999) is an American artist known for her innovative and thought-provoking works...",
+        "birth": "May 15, 1999",
+        "parents": "Frank Hamilton, Elizabeth Thompson"
+    },
+    "history": {
+        "images": ["images/arizona/extras/extra11.png", "images/arizona/extras/extra12.png", "images/arizona/extras/extra13.png", "images/arizona/extras/extra14.png", "images/arizona/extras/extra15.png"],
+        "details": ["History detail 1", "History detail 2", "History detail 3"]
+    },
+    "phoneBackgrounds": ["images/arizona/phone/arizona_phone_background1.png", "images/arizona/phone/arizona_phone_background2.png"],
+    "lockScreens": ["images/arizona/phone/arizona_lock_screen1.png", "images/arizona/phone/arizona_lock_screen2.png"],
+    "instagram": {
+        "username": "arizonahamilton",
+        "profilePicture": "images/arizona/phone/instagram/profile.png",
+        "followers": 3456,
+        "following": 789,
+        "relatedCharacters": [
+            { "name": "Nash Roosevelt", "picture": "images/nash/instagram/profile.png" },
+            { "name": "Elizabeth Thompson", "picture": "images/elizabeth/instagram/profile.png" }
+        ],
+        "posts": [
+            { "image": "images/arizona/instagram/post1.png", "date": "2023-02-05", "likes": 346, "comments": 30 },
+            { "image": "images/arizona/instagram/post2.png", "date": "2023-02-03", "likes": 460, "comments": 40 }
+        ],
+        "memories": [
+            { "image": "images/arizona/phone/instagram/memory1.png", "title": "Art Exhibition 2022" },
+            { "image": "images/arizona/phone/instagram/memory2.png", "title": "Family Gathering" }
+        ],
+        "stories": [
+            "images/arizona/phone/instagram/story1.png",
+            "images/arizona/phone/instagram/story2.png",
+            "images/arizona/phone/instagram/story3.png"
+        ]
+    },
+    "messages": "Messages content",
+    "youtube": "YouTube content",
+    "apps": ["Instagram", "Grindr", "Tinder", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "photos": ["images/arizona/phone/camera roll/photo1.png", "images/arizona/phone/camera roll/photo2.png", "images/arizona/phone/camera roll/photo3.png"],
+    "albums": {
+        "My Albums": [
+            { "name": "Art Projects", "cover": "images/arizona/phone/cover/cover1.png", "number": "15" },
+            { "name": "Travel", "cover": "images/arizona/phone/cover/cover2.png", "number": "10" },
+            { "name": "Family", "cover": "images/arizona/phone/cover/cover3.png", "number": "20" }
+        ],
+        "": [
+            { "name": "Art Projects", "cover": "images/arizona/phone/cover/cover1.png", "number": "15" },
+            { "name": "Travel", "cover": "images/arizona/phone/cover/cover2.png", "number": "10" },
+            { "name": "Family", "cover": "images/arizona/phone/cover/cover3.png", "number": "20" }
+        ],
+        "Family Albums": [
+            { "name": "Special Moments", "cover": "images/arizona/phone/cover/cover4.png", "number": "12" }
+        ],
+        "Shared Albums": [
+            { "name": "Special Moments", "cover": "images/arizona/phone/cover/cover4.png", "number": "12" }
+        ]
+    },
+    "forYou": {
+        "place": "Hamilton, TX", "date": "April, 20",
+        "upper": ["images/arizona/phone/camera roll/photo70.png", "images/arizona/phone/camera roll/photo71.png", "images/arizona/phone/camera roll/photo72.png"],
+        "uppermiddle": ["images/arizona/phone/camera roll/photo73.png"],
+        "middle": ["images/arizona/phone/camera roll/photo74.png"],
+        "down": ["images/arizona/phone/camera roll/photo75.png", "images/arizona/phone/camera roll/photo76.png", "images/arizona/phone/camera roll/photo78.png", "images/arizona/phone/camera roll/photo69.png", "images/arizona/phone/camera roll/photo68.png"]
+    },
+    "search": [
+        { "name": "John", "picture": "/images/arizona/phone/camera roll/photo78.png" },
+        { "name": "Anna", "picture": "images/arizona/photos/anna.png" }
+    ]
+}
+,
+  {
+      "group": "Roosevelt",
+      "displayName": "William Roosevelt",
+      "type": "npc",
+      "isDead": true,
+      "pictures": ["images/william.png"]
+  },
+  {
+      "group": "Roosevelt",
+      "displayName": "Anna Roosevelt",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/anna.png"]
+  },
+  {
+      "group": "Nightingale",
+      "displayName": "Lucas Nightingale",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/lucas.png"]
+  },
+  {
+      "group": "Nightingale",
+      "displayName": "Louise Nightingale",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/louise.png"]
+  },
+  {
+      "group": "Hamilton",
+      "displayName": "Stephen Hamilton",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/stephen.png"]
+  },
+  {
+      "group": "Hamilton",
+      "displayName": "Margarete Hamilton",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/margarete.png"]
+  },
+  {
+      "group": "Hamilton",
+      "displayName": "Ethan Hamilton",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/ethan.png"]
+  },
+  {
+      "group": "Hamilton",
+      "displayName": "Howard Thompson",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/howard.png"]
+  },
+  {
+      "group": "Hamilton",
+      "displayName": "Evangeline Thompson",
+      "type": "npc",
+      "isDead": false,
+      "pictures": ["images/evangeline.png"]
+  }
+]
