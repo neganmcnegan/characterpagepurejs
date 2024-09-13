@@ -14,7 +14,7 @@ body {
     padding: 20px;
     border-right: 2px solid #444;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    height: 100%;
+    height: 125%;
     display: inline-block;
 }
 
@@ -227,10 +227,27 @@ body {
     flex-wrap: wrap;
 }
 
+.warning{
+    background: #fffec2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 2000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 13px;
+    text-transform: lowercase;
+    text-align: center;
+}
+
 .bio-left{
     display: flex;
     flex-direction: column;
-    max-height: 600px;
 }
 
 .bio-container {
@@ -848,10 +865,10 @@ body {
 .home-screen {
     display: none;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 97%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -869,8 +886,6 @@ body {
     align-items: center;
     width: 100%;
     background: rgba(41, 41, 41, 0.5); /* Semi-transparent background */
-    position: absolute;
-    bottom: 0px;
     z-index: 3;
     border-radius: 20px 20px 0 0;
     padding-top: 3px;
@@ -918,7 +933,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -935,10 +950,11 @@ body {
 }
 
 .app-name {
-    font-size: 10px;
+    font-size: 11px;
     color: white;
     text-align: center;
     margin-top: 2px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .app-icon:hover {
@@ -961,7 +977,7 @@ body {
     top: 0;
     left: 0;
     z-index: 2; /* Ensure it's above the background */
-    padding: 20px 5px 10px 5px;
+    padding: 20px 0px 10px 0px;
     box-sizing: border-box;
     flex-direction: row;
     align-items: flex-start;
@@ -992,7 +1008,7 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
     position: absolute;
     bottom: 10px;
@@ -1001,7 +1017,7 @@ body {
     padding: 5px 0px 5px 5px;
     box-sizing: border-box;
     left: 0;
-    overflow: scroll;
+    overflow: hidden;
     
 }
 
@@ -1039,13 +1055,16 @@ body {
 }
 
 .tab img{
-    width: 20px;
+    width: 17.5px;   
+}
+
+.tab .profile-picture{
+    border-radius: 15px;
 }
 
 .tab.active {
     font-weight: bold;
     color: black;
-    filter: brightness(50%);
     
 }
 
@@ -1229,32 +1248,53 @@ body {
     font-size: 13px; 
 }
 
-.topbar-forYou{
+.sticky-info-box{
     position: absolute;
-    height: 27px;
-    width: 100%;
+    padding: 10px 0px 0px 15px;
+    height: 50px;   
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
     font-size: 15px;
     align-items: flex-start;
-    top: 14px;
     gap: 3px;
-
-}
-
-.topbar-inside-forYou-place{
-    padding: 10px 10px 0px 20px;
-    color:white;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 24%, rgba(255, 255, 255, 0.5) 100%);
+    justify-content: flex-start;
+    margin-bottom: 2px;
+    color: #333333;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.topbar-inside-forYou-date{
-    padding: 0px 10px 0px 20px;
-    color:white;
+.forYou-event{
+    margin: 5px 0;
+    box-shadow: -2px 2px 3px 1px rgb(223 223 223 / 35%);
+
+}
+
+.topbar-forYou{
+    position: relative;
+    height: 50px;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 15px;
+    align-items: flex-start;
+    gap: 3px;
+    background-color: rgb(255 255 255 / 80%);
+    /* border-radius: 15px; */
+    justify-content: flex-start;
+    margin: 5px 0 0 0;
+    padding: 10px 10px 0px 15px;
+    color: #414141;
+}
+
+
+.topbar-inside-forYou-date, .info-date{
+
     font-size: 12px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 .search{
@@ -1299,10 +1339,13 @@ body {
     position: absolute;
     width: 100%;
     bottom: 0;
+    background-color: #fff;
+    height: 60px;
+    border-top: solid 1px #C9C9C9;
 }
 
 .instagram-tabs .tab {
-    padding: 10px;
+    padding: 10px 0 20px;
     cursor: pointer;
 }
 
@@ -1319,14 +1362,44 @@ body {
     display: block;
 }
 
-.stories-section, .posts-section {
-    padding: 10px;
+.stories-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 5px;
+} 
+
+.related-profile .profile-name{
+    font-size: 10px;
+}
+
+.instagram-top-nav{
+    width: 96%;
+    padding: 5px;
+    position: relative;
+}
+
+.instagram-top-nav img{
+    width:100%;
+}
+
+.posts-section {
+    padding: 10px 0px;
+    border-top: solid 1px #C9C9C9;
 }
 
 .related-profile {
-    display: inline-block;
+    display: flex;
     text-align: center;
     margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    width: 65px;
+    justify-content: space-evenly;
+    height: 80px;
 }
 
 .related-profile .profile-picture {
@@ -1337,28 +1410,104 @@ body {
 
 .post {
     border-bottom: 1px solid #ccc;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .post-header {
-    display: flex;
     align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .post-header .profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 5px;
 }
+
+.three-dots-more-info-instagram{
+    padding-right: 5px;
+}
+
+.post-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    width: 216px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 3px;
+}
+
 
 .post-image {
     width: 100%;
     margin-top: 10px;
 }
 
+.instagram-bottom-post-bar{
+    width: 97%;
+    padding: 10px 5px;
+}
+
+.post-likes {
+    font-size: 13px;
+}
+
+.post-description {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+.special-comment {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+.view-more-comments {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+}
+
+
 .post-footer {
-    margin-top: 10px;
+    padding: 0 0 0 4px;
+}
+
+.post-author{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profile-tob-bar{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-end;
+}
+
+.profile-tob-bar img{
+    height: 15px;
+}
+
+.profile-tob-bar-left-inst{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-tob-bar-left-inst .profile-username{
+    padding: 0 0 0 35px;
 }
 
 .instagram-story-container {
@@ -1387,23 +1536,57 @@ body {
     left: 10px;
     right: 10px;
     height: 4px;
-    background: rgba(255, 255, 255, 0.5);
     display: flex;
-    justify-content: space-between;
+    gap: 2px; 
+    z-index: 10; 
 }
 
 .progress-segment {
     flex: 1;
-    margin: 0 2px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(194, 194, 194, 0.3); 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.progress-filler {
     height: 100%;
-    transition: width 3s linear;
+    width: 0; 
+    background-color: rgb(255, 255, 255);
 }
 
 .progress-segment.active {
-    background: rgba(255, 255, 255, 0.9);
-    width: 100%;
+    background: rgba(255, 255, 255, 0.9); 
+    width: 100%; 
 }
+
+
+.disabled-tab {
+    pointer-events: none; 
+    cursor: default; 
+}
+
+.tab-content.activity{
+    justify-content: flex-start;
+}
+
+.tab-content.profile{
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 294px;
+}
+
+.little-info-instagram-profile{
+    font-size: 12px;
+}
+
+.profile-info-top-stats{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 8px;
+    flex-direction: column;
+}
+
 
 .close-story {
     position: absolute;
@@ -1422,13 +1605,15 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
+    width: 95%;
+    justify-content: space-between;
 }
 
 .profile-header .profile-picture {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-right: 20px;
+    padding: 0 4px 0 0;
 }
 
 .profile-info .profile-stats {
@@ -1441,13 +1626,17 @@ body {
 
 .profile-memories {
     padding: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .memory {
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    padding: 5px 5px;
     cursor: pointer;
+    flex-direction: column;
+    font-size: 10px;
 }
 
 .memory-thumbnail {
@@ -1459,15 +1648,1390 @@ body {
 .profile-posts {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    gap: 2px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .profile-posts img {
-    width: 75px;
-    height: 75px;
-    margin: 5px;
+    width: 95px;
+    height: 95px;
 }
 
 .instagram-tabs.profile-picture{
     border-radius: 50%;
+}
+
+/* Grindr App Specific Styles */
+/* Grindr Tab Navigation */
+.grindr-tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 20px;
+    background-color: #2c2c2c;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 40px;
+}
+
+.grindr-tab {
+    padding: 0px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    background-color: #000000;
+    border-bottom: 3px solid transparent;
+}
+
+.grindr-tab img{
+    width: 30px;
+}
+
+.grindr-tab.active {
+    color: #f8ba04; /* Active tab color */
+}
+
+.grindr-tab.active img{
+    filter: brightness(500%) saturate(100%) invert(63%) sepia(91%) saturate(1109%) hue-rotate(3deg) brightness(107%) contrast(97%);
+    width: 32px;
+}
+
+/* Browse Section */
+
+.grindr .tab-content.browse {
+    background-color: #1f1f1f;
+    width: 102%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.grindr-top-bar{
+    display: flex;
+    background-color: #000;
+    width: 96%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    left: 0;
+    position: relative;
+    align-items: center;
+}
+
+.grindr-top-bar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.grindr-profile-picture {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.grindr-profile-picture img{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.grindr-explore-bar {
+    font-size: 13px;
+    background-color: #1f1f1f;
+    padding: 2px 5px 2px 15px;
+    border-radius: 5px;
+    color: #fff;
+    width: 165px;
+    border-radius: 25px;
+    margin-left: 5px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.grindr-views-bar{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    padding: 2px 10px 2px 5px;
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    height: 22px;
+}
+
+.grindr-views-bar img{
+    width: 20px;
+    padding: 5px;
+}
+
+.grindr-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #000;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 3px;
+    margin: 0;
+}
+
+.grindr-filters img{
+    width: 20px;
+    filter: brightness(1000%);
+}
+
+.grindr-message-info-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.grindr-filter-button-message{
+    width: 25px;
+    height: 25px;
+}
+
+.grindr-filter-button-message img{
+    width: 25px!important;
+    height: 30px!important;
+}
+
+.grindr-filter-button {
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    /* font-weight: bold; */
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    height: 26px;
+}
+
+/* Profile Grid */
+.grindr-profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.grindr-profile-card {
+    transition: transform 0.3s ease;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 12px;
+    /* padding: 0 0 0; */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grindr-profile-card p{
+    font-size: 10px;
+    padding: 0 0px 2px 3px;
+    margin: 0;
+}
+
+.grindr-profile-card img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.grindr-profile-card:hover img {
+    cursor: pointer;
+}
+
+
+.grindr-profile-card-name{
+    position: relative;
+}
+
+/* Messages Section */
+
+.grindr .tab-content.messages {
+    background-color: #1f1f1f;
+    width: 102%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+
+.grindr-top-bar-messages{
+    display: flex;
+    background-color: #000;
+    width: 93%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    left: 0;
+    position: relative;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.grindr-top-bar-messages img{
+    width: 28px;
+    filter: brightness(1000%);
+}
+
+
+.grindr-message-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 0;
+    background-color: #000;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.grindr-message-tab {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+    color: #fff;
+    font-size: 11px;
+    
+}
+
+.grindr-message-tab.active {
+    border-bottom: 3px solid #fff;
+    /* color: #f8ba04;  sving the stupid grindr color tab color */
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.grindr-message-list {
+    margin-top: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.grindr-message-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #3b3b3b;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.grindr-message-item:hover {
+    background-color: #979797;
+}
+
+.grindr-message-item img {
+    width: 75px;
+    height: 65px;
+    /* border-radius: 50%; */
+    margin-right: 10px;
+}
+
+.grindr-texts-thingamajig{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    height: 45px;
+}
+
+.grindr-message-name {
+    flex-grow: 1;
+    font-size: 12px;
+    color: #FFF;
+    padding: 0 35px 0 0;
+}
+
+.grindr-message-time{
+    color: #FFF;
+    font-size: 12px;
+}
+
+
+.grindr-latest-message {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.grindr-new-message-count {
+    background-color: #f8ba04; /* Grindr primary color */
+    color: #000;
+    padding: 3px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.close-message-arrow-grindr {
+    cursor: pointer;
+    font-size: 18px; /* Adjust the size as needed */
+    margin-right: 10px; /* Space between the arrow and the profile picture */
+    color: #fff; /* Arrow color */
+    display: inline-block;
+}
+
+
+
+.grindr-message-box {
+    position: absolute; /* Position relative to the app container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for the overlay */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    z-index: 2; /* Higher than other content but still within the app */
+    overflow-y: auto;
+}
+
+/* Header inside the message box */
+.grindr-message-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #000;
+    position: relative;
+    justify-content: space-between;
+}
+
+.message-grindr-info-name{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.message-grindr-info-distance{
+    color: #fff;
+    font-size: 12px;
+}
+
+.message-grindr-info{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+}
+
+.grindr-message-header-filter{
+    width: 25px !important;
+    height: 30px !important;
+    filter: brightness(1000%);
+}
+
+/* Back button for the message box */
+.grindr-message-conversation {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #1f1f1f;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.grindr-message-header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+.grindr-message-sent {
+    background-color: #f8ba04; /* Grindr primary color */
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 5px 0;
+    align-self: flex-end;
+    font-size: 14px;
+    max-width: 70%;
+    position: relative; /* Required for the pseudo-element */
+}
+
+.grindr-message-sent span{
+    font-size: 10px;
+    color: #5e5e5e;
+    bottom: -15px;
+    position: absolute;
+    right: 0;
+}
+
+.grindr-message-sent::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    border-width: 8px; 
+    border-style: solid;
+    border-color: transparent transparent #f8ba04 #f8ba04; /* Match message background color */
+}
+
+.grindr-message-received {
+    background-color: #51d1ff;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 10px 0;
+    align-self: flex-start;
+    font-size: 14px;
+    max-width: 70%;
+    position: relative; /* Required for the pseudo-element */
+}
+
+.grindr-message-received span{
+    font-size: 10px;
+    color: #5e5e5e;
+    bottom: -15px;
+    position: absolute;
+    left: 0;
+}
+
+.grindr-message-received::before {
+    content: '';
+    position: absolute;
+    /* top: 10px; */
+    left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent #51d1ff #51d1ff transparent;
+    bottom: 0;
+}
+
+/* tinder stuff starts here */
+/* Tinder Tabs */
+.tinder .tab-content.browse {
+    background-color: #ffffff; /* Example color for Tinder */
+    width: 100%; /* Ensure it takes full width */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; /* Adjust to fit content */
+    flex-wrap: nowrap;
+    overflow: hidden; /* Prevent overflow unless scrollable is added */
+}
+
+.tab-content.browse.scrollable {
+    overflow-y: auto;
+    max-height: 100vh;
+    height: 520px;
+}
+
+.tinder .tab-content.messages {
+    background-color: #ffffff; /* Example color for Tinder */
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tinder-tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: white;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.tinder-tab {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tinder-tab.active {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(71%) saturate(5833%) hue-rotate(330deg) brightness(105%) contrast(101%);
+}
+
+/* Tinder Top Bar */
+.tinder-top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.tinder-logo {
+    width: 30px;
+}
+
+.tinder-notification,
+.tinder-filter {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Tinder Image Container */
+.tinder-image-container {
+    position: relative;
+    width: 100%;
+    height: 475px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 0 0 2px;
+}
+
+.tinder-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.tinder-picture-indicators {
+    position: absolute;
+    top: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2px; 
+    width: 95%; 
+}
+
+.tinder-picture-indicator {
+    flex: 1;
+    height: 5px;
+    border-radius: 4px;
+    background-color: rgb(255 255 255 / 34%);
+    transition: background-color 0.3s;
+}
+
+.tinder-picture-indicator.active {
+    background-color: rgb(255 255 255 / 85%);
+}
+
+
+
+/* Tinder Bio */
+.tinder-bio-container {
+    position: relative;
+    padding: 10px;
+    background: linear-gradient(to top, rgb(0 0 0) 30%, rgba(0, 0, 0, 0));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: -90px;
+    z-index: 1;
+    height: 100px;
+    border-radius: 0 0 10px 10px;
+    flex-direction: column;
+}
+
+
+.tinder-bio-container-expanded {
+    position: relative;
+    background-color: white; /* Changed to white for expanded content */
+    color: black;
+    display: block;
+    height: auto; /* Allow dynamic height */
+    border-radius: 0; /* Adjust border-radius for expanded view */
+}
+
+
+/* Expanded Tinder Bio Styling */
+.tinder-expanded-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e4e6e7;
+}
+
+.tinder-name-age-expanded {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2px;
+}
+
+.tinder-collapse-button img{
+    width: 20px;
+}
+
+.tinder-name-age-expanded img{
+    filter: invert(100%);
+}
+
+.tinder-section {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+.tinder-section span{
+    font-size: 11px;
+}
+
+.tinder-collapse-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    height: 25px;
+}
+
+
+.tinder-section-interests{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.tinder-section-label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tinder-section-label-interests{
+    width: 250px;
+}
+
+/* Key-value pair styling */
+.tinder-basics-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.tinder-basics-key {
+    font-weight: bold;
+    flex-basis: 30%; /* Adjust width of the label */
+    text-align: left;
+    font-size: 12px!important;
+    color: #555;
+}
+
+.tinder-basics-value {
+    flex-basis: 70%; /* Adjust width of the value */
+    text-align: right;
+    font-size: 12px!important;
+    color: #555;
+}
+
+/* Style for lifestyle section */
+.tinder-section-lifestyle {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.tinder-lifestyle-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.tinder-lifestyle-key {
+    font-weight: bold;
+    font-size: 12px!important;
+    color: #555;
+}
+
+.tinder-lifestyle-value {
+    font-size: 12px!important;
+    color: #555;
+}
+
+
+
+.tinder-interest-tag{
+    font-size: 12px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 7px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.tinder-name-age {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.tinder-name-age-wrapper{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.tinder-name-age-wrapper .tinder-name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tinder-bio-expand {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tinder-bio{
+    font-size: 13px;
+}
+
+.tinder-tags{
+    display: flex;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.tinder-tag{
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px;
+    background:rgba(255,255,255, 0.2);
+}
+
+/* Tinder Messages */
+.tinder-message-info-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.tinder-message-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+    width: 93%;
+    height: 55px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    position: relative;
+}
+
+.search-icon {
+    width: 20px; 
+    margin-right: 8px; 
+}
+
+.search-input {
+    flex: 1;
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 1px solid #b1b1b9;
+    outline: none;
+    font-size: 15px;
+}
+
+
+
+
+.tinder-message-list {
+    padding: 10px;
+}
+
+.tinder-message-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.tinder-message-item img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.tinder-message-name {
+    flex-grow: 1;
+}
+
+.tinder-message-time,
+.tinder-latest-message {
+    color: #888;
+    font-size: 12px;
+}
+
+.tinder-new-message-count {
+    background-color: red;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.tinder-message-box {
+    position: absolute; /* Position relative to the app container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for the overlay */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    z-index: 2; /* Higher than other content but still within the app */
+    overflow-y: auto;
+}
+
+/* Header inside the message box */
+.tinder-message-header {
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 10px 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.message-tinder-info-name{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.message-tinder-info-distance{
+    color: #fff;
+    font-size: 12px;
+}
+
+.message-tinder-info{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+}
+
+.tinder-message-header-filter{
+    width: 25px !important;
+    height: 30px !important;
+    filter: brightness(1000%);
+}
+
+/* Back button for the message box */
+.tinder-message-conversation {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #ffffff;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.tinder-message-header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.close-message-arrow-tinder{
+    cursor: pointer;
+}
+
+
+.tinder-message-sent {
+    background-color: #5ea0eb;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px 20px 4px 20px;
+    margin: 5px 0;
+    align-self: flex-end;
+    font-size: 14px;
+    max-width: 70%;
+    position: relative; 
+}
+
+.tinder-message-sent span{
+    font-size: 10px;
+    color: #5e5e5e;
+    bottom: -15px;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.tinder-message-received {
+    background-color: #E9EBEE;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px 20px 20px 4px;
+    margin: 10px 0;
+    align-self: flex-start;
+    font-size: 14px;
+    max-width: 70%;
+    position: relative; /* Required for the pseudo-element */
+}
+
+.tinder-message-received span{
+    font-size: 10px;
+    color: #5e5e5e;
+    bottom: -15px;
+    position: absolute;
+    left: 0;
+}
+
+.profile-picture-in-top-bar-i-hate-everything{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+.messages-favorite-grid {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.messages-favorite-person {
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messages-favorite-person img{
+    border-radius: 50%;
+    width: 87px;
+}
+
+.messages-favorite-person span{
+    margin-top: 10px;
+    font-size: 10px;
+    color: #666;
+}
+
+.messages-message-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.messages-group-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.messages-participants {
+    font-size: 14px;
+    color: #666;
+}
+
+.messages-new-message-count {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.messages-message-box{
+    position: absolute; /* Position relative to the app container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for the overlay */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    z-index: 2; /* Higher than other content but still within the app */
+    overflow-y: auto;
+}
+
+.messages-message-conversation {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #ffffff;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.messages-message-header img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.close-message-arrow-messages{
+    cursor: pointer;
+}
+
+
+.messages-message-sent {
+    background-color: #5ea0eb;
+    color: white;
+    padding: 10px;
+    border-radius: 20px 20px 10px 20px;
+    margin: 2px 0;
+    align-self: flex-end;
+    font-size: 12px;
+    max-width: 75%;
+    position: relative;
+}
+
+.messages-message-sent-group span{
+    font-size: 10px;
+    color: #5e5e5e;
+    top: -15px;
+    position: absolute;
+    right: 0;
+}
+
+.messages-message-sent img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.message-profile-picture-sent {
+    position: absolute;
+    right: -33px;
+    border-radius: 50%;
+    width: 30px;
+    bottom: 0;
+}
+
+
+.message-profile-picture-received {
+    position: absolute;
+    left: -33px;
+    border-radius: 50%;
+    width: 30px;
+    bottom: 0;
+}
+
+
+
+.messages-message-received {
+    background-color: #E9EBEE;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px 20px 20px 10px;
+    margin: 2px 0;
+    align-self: flex-start;
+    font-size: 13px;
+    max-width: 70%;
+    position: relative; /* Required for the pseudo-element */
+}
+
+.messages-message-sent::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    right: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #5ea0eb transparent;
+}
+
+.messages-message-sent-group{
+    background-color: #5ea0eb;
+    color: white;
+    padding: 10px;
+    border-radius: 20px 20px 10px 20px;
+    margin: 20px 30px 0 0;
+    align-self: flex-end;
+    font-size: 12px;
+    max-width: 75%;
+    position: relative;
+}
+
+.messages-message-sent-group::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    right: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #5ea0eb transparent;
+}
+.messages-message-received-group {
+    background-color: #E9EBEE;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px 20px 20px 10px;
+    margin: 20px 0 0 30px;
+    align-self: flex-start;
+    font-size: 13px;
+    max-width: 70%;
+    position: relative; /* Required for the pseudo-element */
+}
+.messages-message-received-group::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #E9EBEE transparent;
+}
+
+.messages-message-received::before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #E9EBEE transparent;
+}
+
+.messages-message-received-group span{
+    font-size: 10px;
+    color: #5e5e5e;
+    top: -15px;
+    position: absolute;
+    left: 0;
+}
+
+.slight-edit{
+    margin: 2px 25px;
+}
+
+.messages-info {
+    text-align: center;
+    color: #888; /* Lighter color for info */
+    font-size: 10px;
+    margin: 10px 0; /* Spacing around info messages */
+    padding-top: 5px; /* Space above the info text */
+}
+
+.messages-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 15px;
+}
+
+.messages-top-bar-item {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.messages-top-bar-smaller{
+    color: #5ea0eb;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+
+
+.messages-search-box {
+    margin: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 10px;
+    color: #aaa;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.fake-search-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    color: #aaa;
+    border: none;
+}
+
+.messages-message-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.messages-profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.messages-message-left {
+    flex-shrink: 0; /* Ensures the profile picture doesn't shrink */
+    margin-right: 10px;
+}
+
+.messages-message-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.messages-message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messages-participant-name{
+    font-size: 14px;
+}
+
+.messages-time {
+    color: #555;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.messages-latest-message {
+    color: #555;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.inside-messages-message-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F1F2;
+    padding: 10px 20px 0;
+}
+
+.messages-message-info-wrapper{
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages-message-info{
+    font-size: 10px;
+    color: #555;
+}
+
+.messages-message-info-wrapper img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.group-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-participant-icon {
+    width: 50%!important;
+    height: 50%!important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nsfw-container{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    position: relative;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.nsfw-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.nsfw-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nsfw-details div {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nsfw-bullet-points {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.nsfw-bullet-points ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }

@@ -1,7 +1,7 @@
 [
   {
       "group": "Roosevelt",
-      "displayName": "nash roosevelt",
+      "displayName": "Nash Roosevelt",
       "fullName": "𝐈𝐆𝐍𝐀𝐓𝐈𝐔𝐒 \"𝐍𝐀𝐒𝐇\" 𝐅𝐄𝐋𝐈𝐗 𝐑𝐎𝐎𝐒𝐄𝐕𝐄𝐋𝐓",
       "type": "playable",
       "age": "forty-seven",
@@ -117,7 +117,22 @@
     { "name": "John", "picture": "images/frank/photos/john.png" },
     { "name": "Anna", "picture": "images/frank/photos/anna.png" }
   ],
-  "dockApps": ["Instagram", "Messages", "Camera", "Settings"]
+  "apps": ["Messages"],
+  "dockApps": ["Instagram", "Messages", "Camera", "Settings"],
+  "messages": [
+    {
+      "type": "individual",
+      "participants": ["Nash Roosevelt", "Theo Roosevelt"],
+      "conversations": [
+        { "from": "Nash Roosevelt", "text": "can you please stop being a little bitch about it for five seconds?", "time": "10:00 AM" },
+        { "from": "Theo Roosevelt", "text": "5 4 3 2 1. boom.", "time": "10:05 AM" }
+      ],
+      "latestMessage": "I might be, why?",
+      "newMessageCount": 1,
+      "lastUpdated": "2023-09-12T10:05:00",
+      "isFavorite": true
+    }
+  ]
   },
   {
       "group": "Roosevelt",
@@ -192,7 +207,7 @@
   },
   {
         "group": "Nightingale",
-        "displayName": "xander nightingale",
+        "displayName": "Xander Nightingale",
         "fullName": "𝐗𝐀𝐍𝐃𝐄𝐑 𝐍𝐈𝐆𝐇𝐓𝐈𝐍𝐆𝐀𝐋𝐄",
         "type": "playable",
         "age": "thirty",
@@ -249,7 +264,6 @@
         "dockApps": ["Instagram", "Messages", "Camera", "Settings"]
         
     },
-
   {
       "group": "Nightingale",
       "displayName": "Alice Nightingale",
@@ -284,7 +298,7 @@
   },
   {
     "group": "Hamilton",
-    "displayName": "frank hamilton",
+    "displayName": "Frank Hamilton",
     "fullName": "𝐅𝐑𝐀𝐍𝐊 𝐇𝐀𝐌𝐈𝐋𝐓𝐎𝐍",
     "type": "playable",
     "age": "fifty",
@@ -303,8 +317,8 @@
     "connections": [
         { "type": "npc", "name": "Stephen Hamilton", "relationship": "father" },
         { "type": "npc", "name": "Margarete Hamilton", "relationship": "mother" },
-        { "type": "love", "name": "Elizabeth Thompson", "relationship": "ex-wife" },
-        { "type": "family", "name": "Arizona Hamilton", "relationship": "daughter" }
+        { "type": "love", "name": "Elizabeth Thompson", "relationship": "ex-husband" },
+        { "type": "family", "name": "Arizona Hamilton", "relationship": "father" }
     ],
     "searchResults": [
         {
@@ -351,13 +365,46 @@
             }
         ],
         "posts": [
-            { "image": "images/frank/phone/instagram/post1.png", "date": "2023-06-01", "likes": 100, "comments": 10 },
-            { "image": "images/frank/phone/instagram/post2.png", "date": "2023-06-05", "likes": 200, "comments": 20 }
+    {
+        "image": "images/frank/phone/instagram/post1.png",
+        "date": "2023-06-01",
+        "speciallike": "Arizona",
+        "likes": 100,
+        "description": "this is a normal cigarette stop asking.",
+        "comments": 20,
+        "specialComments": [
+            { "specialCommenter": "Arizona", "specialComment": "u okay bro?" },
+            { "specialCommenter": "Luiza", "specialComment": "ahahha ur so funny" }
         ]
     },
-    "messages": "Messages content",
+    {
+        "image": "images/frank/phone/instagram/post2.png",
+        "date": "2023-06-05",
+        "speciallike": "Ethan",
+        "likes": 200,
+        "description": ": o",
+        "comments": 30,
+        "specialComments": [
+            { "specialCommenter": "Ethan", "specialComment": "Looking good!" },
+            { "specialCommenter": "John", "specialComment": "Awesome pic!" }
+        ]
+    },
+    {
+        "image": "images/frank/phone/instagram/post3.png",
+        "date": "2023-06-02",
+        "speciallike": "Ethan",
+        "likes": 200,
+        "description": "he simply had to be just like his sister",
+        "comments": 30,
+        "specialComments": [
+            { "specialCommenter": "Ethan", "specialComment": "Looking good!" },
+            { "specialCommenter": "John", "specialComment": "Awesome pic!" }
+        ]
+    }
+]
+    },
     "youtube": "YouTube content",
-    "apps": ["Instagram", "Grindr", "Tinder", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "apps": ["Instagram", "Grindr", "Tinder", "Messages", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
     "dockApps": ["Instagram", "Messages", "Camera", "Settings"],
     "photos": ["images/frank/phone/camera roll/photo1.png", "images/frank/phone/camera roll/photo2.png", "images/frank/phone/camera roll/photo3.png", "images/frank/phone/camera roll/photo4.png", "images/frank/phone/camera roll/photo5.png", "images/frank/phone/camera roll/photo6.png", "images/frank/phone/camera roll/photo7.png", "images/frank/phone/camera roll/photo8.png", "images/frank/phone/camera roll/photo9.png", "images/frank/phone/camera roll/photo10.png", "images/frank/phone/camera roll/photo11.png", "images/frank/phone/camera roll/photo12.png", "images/frank/phone/camera roll/photo13.png", "images/frank/phone/camera roll/photo14.png", "images/frank/phone/camera roll/photo15.png", "images/frank/phone/camera roll/photo20.png", "images/frank/phone/camera roll/photo21.png", "images/frank/phone/camera roll/photo22.png", "images/frank/phone/camera roll/photo24.png", "images/frank/phone/camera roll/photo16.png", "images/frank/phone/camera roll/photo17.png", "images/frank/phone/camera roll/photo18.png", "images/frank/phone/camera roll/photo19.png", "images/frank/phone/camera roll/photo25.png", "images/frank/phone/camera roll/photo26.png", "images/frank/phone/camera roll/photo27.png", "images/frank/phone/camera roll/photo28.png", "images/frank/phone/camera roll/photo29.png", "images/frank/phone/camera roll/photo30.png", "images/frank/phone/camera roll/photo31.png", "images/frank/phone/camera roll/photo32.png", "images/frank/phone/camera roll/photo33.png", "images/frank/phone/camera roll/photo34.png", "images/frank/phone/camera roll/photo35.png", "images/frank/phone/camera roll/photo36.png", "images/frank/phone/camera roll/photo37.png", "images/frank/phone/camera roll/photo38.png", "images/frank/phone/camera roll/photo39.png", "images/frank/phone/camera roll/photo40.png", "images/frank/phone/camera roll/photo41.png", "images/frank/phone/camera roll/photo42.png", "images/frank/phone/camera roll/photo43.png", "images/frank/phone/camera roll/photo44.png", "images/frank/phone/camera roll/photo45.png", "images/frank/phone/camera roll/photo46.png", "images/frank/phone/camera roll/photo47.png", "images/frank/phone/camera roll/photo48.png", "images/frank/phone/camera roll/photo49.png", "images/frank/phone/camera roll/photo50.png", "images/frank/phone/camera roll/photo51.png", "images/frank/phone/camera roll/photo52.png", "images/frank/phone/camera roll/photo53.png", "images/frank/phone/camera roll/photo54.png", "images/frank/phone/camera roll/photo55.png", "images/frank/phone/camera roll/photo56.png", "images/frank/phone/camera roll/photo57.png", "images/frank/phone/camera roll/photo58.png", "images/frank/phone/camera roll/photo59.png", "images/frank/phone/camera roll/photo60.png", "images/frank/phone/camera roll/photo61.png", "images/frank/phone/camera roll/photo62.png"],
    "albums": {
@@ -378,22 +425,298 @@
       { "name": "Woman I cry myself to...", "cover": "images/frank/phone/cover/cover3.png", "number": "12" }
     ]
     },
-  "forYou": {
+  "forYou": [{
     "place":"Hamilton, TX", "date": "February, 29",
     "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
     "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
     "middle": [ "images/frank/phone/camera roll/photo74.png"],
     "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
     },
+    {
+        "place":"Sucker Funny, TX", "date": "December, 21",
+        "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
+        "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
+        "middle": [ "images/frank/phone/camera roll/photo74.png"],
+        "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
+        }
+        ,
+        {
+            "place":"Very Funny, TX", "date": "December, 21",
+            "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
+            "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
+            "middle": [ "images/frank/phone/camera roll/photo74.png"],
+            "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
+            }],
   "search": [
     { "name": "John", "picture": "/images/frank/phone/camera roll/photo78.png" },
     { "name": "Anna", "picture": "images/frank/photos/anna.png" }
-  ]
+  ],
+  "grindr": {
+    "profile":{
+        "profilePicture": "./images/app_icons/grindr-profile-basic.png",
+        "views": "20"
+    },
+    "profiles": [
+      {
+        "name": "John Doe",
+        "age": 28,
+        "position": "Top",
+        "status": "Online",
+        "picture": "./images/app_icons/grindr-profile-basic.png"
+      },
+      {
+        "name": "Chris Lee",
+        "age": 24,
+        "position": "Versatile",
+        "status": "Offline",
+        "picture": "./images/app_icons/grindr-profile-basic.png"
+      },
+      {
+        "name": "Alex Kim",
+        "age": 30,
+        "position": "Bottom",
+        "status": "Online",
+        "picture": "./images/app_icons/grindr-profile-basic.png"
+      }
+    ],
+    "messages": [
+      {
+        "name": "John Doe",
+        "time": "10:30 AM",
+        "latestMessage": "Hey, how are you?",
+        "newMessageCount": 2,
+        "distance": "2 ft",
+        "profilePicture": "./images/app_icons/grindr-profile-basic.png",
+        "conversation": [
+          { "from": "John Doe", "text": "hey", "time": "10:30 AM" },
+          { "from": "John Doe", "text": "how are you tonight handosme?", "time": "10:30 AM" },
+          { "from": "character", "text": "damn, you are right near me", "time": "10:20 AM" },
+          { "from": "John Doe", "text": "wanna meet up?", "time": "10:30 AM" }
+        ]
+      },
+      {
+        "name": "Chris Lee",
+        "time": "9:45 AM",
+        "latestMessage": "Let's grab coffee",
+        "newMessageCount": 1,
+        "distance": "100 ft",
+        "profilePicture": "./images/app_icons/grindr-profile-basic.png",
+        "conversation": [
+          { "from": "Chris Lee", "text": "Let's grab coffee", "time": "9:45 AM" }
+
+        ]
+      }
+    ]
+  },
+    "tinder": {
+      "profile": {
+        "profilePicture": "./images/frank/phone/tinder/tinder_profile_1.png"
+      },
+      "pictures": [
+        "images/frank/phone/tinder/tinder_profile_1.png",
+        "images/frank/phone/tinder/tinder_profile_2.png",
+        "images/frank/phone/tinder/tinder_profile_4.png"
+      ],
+      "name": "Frank Hamilton",
+      "age": 42,
+      "bio": "I swear I am a lot nicer than what you might have heard.",
+      "tags": ["Aquarius", "Cat Person", "Foodie"],
+      "lookingFor": "Long-term partner",
+      "pronouns": "he/him",
+      "height": "6ft 3in",
+      "relationshipType": "Monogamy",
+      "languagesIKnow": "English",
+      "aboutMe": "I swear I am a lot nicer than what you might have heard.",
+      "basics": {
+        "zodiac": "Taurus",
+        "education": "High School",
+        "familyPlans": "I have children and want more",
+        "communication": "Phone caller",
+        "loveStyle": "Time together"
+      },
+      "lifestyle": {
+        "pets": "Don't have any but love",
+        "drinking": "Socially on weekends",
+        "smoking": "Smoker",
+        "workout": "Sometimes",
+        "socialMedia": "Passive scroller",
+        "sleepingHabits": "Night owl"
+    },
+      "interests": ["Football", "Coffee", "Binge watching Tv", "Rock", "LGBTQ+ Rights"],
+      "myAnthem": "Ode to Billy Joe by Bobbie Gentry",
+      "messages": [
+        {
+          "name": "John Doe",
+          "time": "10:30 AM",
+          "latestMessage": "Hey, how's it going?",
+          "newMessageCount": 1,
+          "profilePicture": "images/frank/phone/tinder/john-doe.jpg",
+          "conversation": [
+            { "from": "character", "text": "Hi John!", "time": "10:20 AM" },
+            { "from": "John Doe", "text": "Hey, how's it going?", "time": "10:30 AM" }
+          ]
+        }
+      ]
+    },
+    "messages":{"messages": [
+        
+    {
+      "type": "individual",
+      "name": "Arizona Hamilton",
+      "participants": ["Frank Hamilton", "Arizona Hamilton"],
+      "conversations": [
+        { "from": "Frank Hamilton", "text": "Hey, where are you?" },
+        { "from": "Frank Hamilton", "text": "Are you coming to my place?" },
+        { "info": "Sunday at 11:48pm"},
+        { "from": "Frank Hamilton", "text": "Kid, are you good? I heard you aren't at your mom's" },
+        { "from": "Frank Hamilton", "text": "She said you guys had a fight or something" },
+        { "from": "Frank Hamilton", "text": "I'm here if you wanna talk" },
+        { "info": "Monday at 4:33pm"},
+        { "from": "Frank Hamilton", "text": "Hello, kidnapper, excuse me, I would like proof of life from my daughter, if that's not too much to ask" },
+        { "info": "Monday at 11:53pm"},
+        { "from": "Frank Hamilton", "text": "Okay so I'm not trying to be an ass, but I would love a text back. I know you are probably busy but I'll settle for a hey." },
+        { "from": "Frank Hamilton", "text": "I'm giving you another twelve hours to wind yourself up for a hey, alright? And if I don't get anything then I'll start looking for you" },
+        { "from": "Frank Hamilton", "text": "So if you wanna be left alone, I will need an answer" },
+        { "info": "Tuesday at 2:12am"},
+        { "from": "Arizona Hamilton", "text": "sup?" },
+        { "from": "Frank Hamilton", "text": "You okay, kid?"},
+        { "from": "Arizona Hamilton", "text": "yea"},
+        { "from": "Frank Hamilton", "text": "Do you wanna a ride from or to somewhere?"},
+        { "from": "Frank Hamilton", "text": "I heard you got in a fight with your mom"},
+        { "from": "Arizona Hamilton", "text": "I'm good" },
+        { "from": "Frank Hamilton", "text": "Are you sure?"},
+        { "from": "Arizona Hamilton", "text": "yeppers" },
+        { "from": "Frank Hamilton", "text": "I'm not going to sleep anytime soon, okay? I'm watching tv. If you need something I'm here"},
+        { "from": "Arizona Hamilton", "text": "don't need anything"},
+        { "info": "Tuesday at 4:32am"},
+        { "from": "Arizona Hamilton", "text": "sorry, dad, i was wrong, can you come pick me up?"},
+        { "from": "Frank Hamilton", "text": "Send me your location, I'll leave right now"}
+      ],
+      "latestMessage": "Send me your location, I'll leave right now",
+      "newMessageCount": 1,
+      "lastUpdated": "2023-09-12T10:05:00",
+      "isFavorite": true
+    },
+    {
+        "type": "individual",
+        "name": "Elizabeth Thompson",
+        "participants": ["Frank Hamilton", "Elizabeth Thompson"],
+        "conversations": [
+          { "from": "Elizabeth Thompson", "text": "Arizona and I got into an argument, I assume she will be going to your place." },
+          { "from": "Frank Hamilton", "text": "What happened?" },
+          { "from": "Elizabeth Thompson", "text": "What always happens, Frank" },
+          { "from": "Elizabeth Thompson", "text": "My concern for her wellbeing gets read as malicious." },
+          { "from": "Frank Hamilton", "text": "Have you considered that maybe that's because you talk like a robot when you get mad" },
+          { "from": "Elizabeth Thompson", "text": "I'll not dignify that with an answer" },
+          { "from": "Frank Hamilton", "text": "Yes, see, like that, she thinks you are lawyering her" },
+          { "from": "Elizabeth Thompson", "text": "Let me know when she arives there safe" },
+          { "info": "Sunday at 8:23pm"},
+          { "from": "Frank Hamilton", "text": "Did she tell she was comnig over?" },
+          { "from": "Frank Hamilton", "text": "Or did she just leave your place?" },
+          { "from": "Frank Hamilton", "text": "Because there is a chance she is doing a two hour drive on that stupid skateboard, but usually she takes the bus" },
+          { "from": "Elizabeth Thompson", "text": "Did she not get there yet?" },
+          { "from": "Elizabeth Thompson", "text": "I'll call her" },
+          { "from": "Frank Hamilton", "text": "No, don't, she is not gonna answer." },
+          { "from": "Frank Hamilton", "text": "I got it" },
+          { "from": "Elizabeth Thompson", "text": "What do you mean you got it?" },
+          { "from": "Elizabeth Thompson", "text": "She might be hurt somewhere" },
+          { "from": "Frank Hamilton", "text": "Ellie, come on" },
+          { "from": "Frank Hamilton", "text": "Give it a rest" },
+          { "info": "Sunday at 9:48pm"},
+          { "from": "Elizabeth Thompson", "text": "Did she answer?" },
+          { "from": "Frank Hamilton", "text": "Go to sleep I said I got it" },
+          { "from": "Elizabeth Thompson", "text": "So she didn't" },
+          { "info": "Monday at 10:11pm"},
+          { "from": "Elizabeth Thompson", "text": "Frank" },
+          { "from": "Frank Hamilton", "text": "She is fine, she is here, sorry, forget to let you know" },
+          { "from": "Elizabeth Thompson", "text": "Wow, thank you." },
+          { "info": "Monday at 6:53pm"},
+          { "from": "Elizabeth Thompson", "text": "Can you ask her when she is coming back?" },
+          { "from": "Elizabeth Thompson", "text": "She is not answering my calls" },
+          { "info": "Monday at 7:73pm"},
+          { "from": "Elizabeth Thompson", "text": "Frank?" },
+          { "from": "Frank Hamilton", "text": "Yeah, I'll ask, sorry, slammed with work" },
+          { "info": "Tuesday at 8:52am"},
+          { "from": "Frank Hamilton", "text": "<img src=\"./images/frank/phone/messages/arizona_text.png\">" },
+          { "from": "Frank Hamilton", "text": "She means she is sorry and will talk to you later." }
+        ],
+        "latestMessage": "She means she is sorry and will talk to you later.",
+        "newMessageCount": 1,
+        "lastUpdated": "2023-09-12T10:03:00",
+        "isFavorite": true
+    },
+    {
+        "type": "individual",
+        "name": "Ethan",
+        "participants": ["Ethan", "Frank Hamilton"],
+        "conversations": [
+          { "from": "Ethan", "text": "dad dad dad"},
+          { "from": "Frank Hamilton", "text": "i know kid i miss you too" }
+        ],
+        "latestMessage": "i know kid i miss you too",
+        "newMessageCount": 1,
+        "lastUpdated": "2023-09-12T10:15:00",
+        "isFavorite": true
+    },
+    {
+      "type": "group",
+      "participants": ["Frank Hamilton", "Arizona Hamilton", "Elizabeth Thompson"],
+      "groupName": "Waiting for the 0.5 kid.",
+      "conversations": [
+        { "from": "Frank Hamilton", "text": "How's everyone?" },
+        { "from": "Arizona Hamilton", "text": "Doing great!" },
+        { "from": "Elizabeth Thompson", "text": "Busy as always!" },
+        { "from": "Elizabeth Thompson", "text": "Though if anyone needs something, I'm right here" },
+        { "from": "Arizona Hamilton", "text": "It's not therapy mom" },
+        { "from": "Elizabeth Thompson", "text": "It could be" },
+        { "from": "Frank Hamilton", "text": "wow the weather sure is nice huh" },
+        { "from": "Frank Hamilton", "text": "I say changing the subject to avoid a fight." }
+      ],
+      "latestMessage": "AAAAAAAAAAAAAAAAAAA",
+      "newMessageCount": 2,
+      "lastUpdated": "2023-09-12T11:15:00",
+      "isFavorite": false
+    }],
+
+        "savedImages": [
+      {
+        "name": "Frank Hamilton",
+        "profilePicture": "./images/frank/phone/messages/frank-hamilton.png"
+      },
+      {
+        "name": "Arizona Hamilton",
+        "saved as": "Ariri",
+        "profilePicture": "./images/frank/phone/messages/arizona-hamilton.png"
+      },
+      {
+        "name": "Elizabeth Thompson",
+        "profilePicture": "./images/frank/phone/messages/elizabeth-thompson.png"
+      },
+      {
+        "name": "Ethan",
+        "profilePicture": "./images/arizona/phone/messages/ethan.png"
+      }
+    ]
+    },
+    "nsfw": {
+        "images": [
+            "path/to/nsfw_image1.jpg",
+            "path/to/nsfw_image2.jpg"
+        ],
+        "details": [
+            "Explicit detail 1",
+            "Explicit detail 2"
+        ],
+        "bulletPoints": [
+            "NSFW bullet point 1",
+            "NSFW bullet point 2"
+        ]
+    }
   },
 
   {
     "group": "Hamilton",
-    "displayName": "elizabeth thompson",
+    "displayName": "Elizabeth Thompson",
     "fullName": "𝐄𝐋𝐈𝐙𝐀𝐁𝐄𝐓𝐇 𝐓𝐇𝐎𝐌𝐏𝐒𝐎𝐍",
     "type": "playable",
     "age": "forty-five",
@@ -412,8 +735,8 @@
     "connections": [
         { "type": "npc", "name": "Howard Thompson", "relationship": "father" },
         { "type": "npc", "name": "Evangeline Thompson", "relationship": "mother" },
-        { "type": "love", "name": "Frank Hamilton", "relationship": "ex-husband" },
-        { "type": "family", "name": "Arizona Hamilton", "relationship": "daughter" },
+        { "type": "love", "name": "Frank Hamilton", "relationship": "ex-wife" },
+        { "type": "family", "name": "Arizona Hamilton", "relationship": "mother" },
         { "type": "bestFriend", "name": "Nash Roosevelt", "relationship": "best friend" }
     ],
     "searchResults": [
@@ -461,13 +784,13 @@
             }
         ],
         "posts": [
-            { "image": "images/arizona/phone/instagram/post1.png", "date": "2023-06-01", "likes": 100, "comments": 10 },
-            { "image": "images/arizona/phone/instagram/post2.png", "date": "2023-06-05", "likes": 200, "comments": 20 }
+            { "image": "images/arizona/phone/instagram/post1.png", "date": "2023-06-01", "speciallike":"Arizona.", "likes": 100, "comments": 10 },
+            { "image": "images/arizona/phone/instagram/post2.png", "date": "2023-06-05", "speciallike":"Arizona.", "likes": 200, "comments": 20 }
         ]
     },
-    "messages": "Messages content",
     "youtube": "YouTube content",
-    "apps": ["Instagram", "Grindr", "Tinder", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "apps": ["Instagram", "Grindr", "Tinder", "Messages", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "dockApps": ["Instagram", "Messages", "Camera", "Settings"],
     "photos": ["images/elizabeth/phone/camera roll/photo1.png", "images/elizabeth/phone/camera roll/photo2.png", "images/elizabeth/phone/camera roll/photo3.png"],
     "albums": {
         "My Albums": [
@@ -497,11 +820,66 @@
     "search": [
         { "name": "John", "picture": "/images/elizabeth/phone/camera roll/photo78.png" },
         { "name": "Anna", "picture": "images/elizabeth/photos/anna.png" }
-    ]
+    ],
+    "messages": {"messages":[{
+        "type": "individual",
+        "name": "Ethan",
+        "participants": ["Ethan", "Elizabeth Thompson"],
+        "conversations": [
+          { "from": "Ethan", "text": "mom why can't you come to show and tell"},
+          { "from": "Elizabeth Thompson", "text": "ethan i told you i'm sorry, i'm very busy" }
+        ],
+        "latestMessage": "ethan i told you i'm sorry, i'm very busy",
+        "newMessageCount": 1,
+        "lastUpdated": "2023-09-12T10:15:00",
+        "isFavorite": true
+    },
+    {
+        "type": "individual",
+        "name": "Guy Down",
+        "participants": ["Guy Down", "Elizabeth Thompson"],
+        "conversations": [
+          { "from": "Guy Down", "text": "mom why can't you come to show and tell"},
+          { "from": "Elizabeth Thompson", "text": "ethan i told you i'm sorry, i'm very busy" }
+        ],
+        "latestMessage": "you misunderstood me, i wasnt flirting",
+        "newMessageCount": 1,
+        "lastUpdated": "2023-10-12T10:15:00",
+        "isFavorite": true
+    }
+    ],
+    "savedImages": [
+      {
+        "name": "Frank Hamilton",
+        "profilePicture": "./images/elizabeth/phone/messages/frank-hamilton.png"
+      },
+      {
+        "name": "Arizona Hamilton",
+        "profilePicture": "./images/elizabeth/phone/messages/arizona-hamilton.png"
+      },
+      {
+        "name": "Elizabeth Thompson",
+        "profilePicture": "./images/elizabeth/phone/messages/elizabeth-thompson.png"
+      }
+    ]},
+    "nsfw": {
+        "images": [
+            "path/to/nsfw_image1.jpg",
+            "path/to/nsfw_image2.jpg"
+        ],
+        "details": [
+            "Explicit detail 1",
+            "Explicit detail 2"
+        ],
+        "bulletPoints": [
+            "NSFW bullet point 1",
+            "NSFW bullet point 2"
+        ]
+    }
 },
 {
     "group": "Hamilton",
-    "displayName": "arizona hamilton",
+    "displayName": "Arizona Hamilton",
     "fullName": "𝐀𝐑𝐈𝐙𝐎𝐍𝐀 𝐇𝐀𝐌𝐈𝐋𝐓𝐎𝐍",
     "type": "playable",
     "age": "twenty-five",
@@ -518,8 +896,8 @@
     "strengths": ["creative, ", "passionate, ", "dedicated"],
     "highlightColor": "#c39c9b",
     "connections": [
-        { "type": "npc", "name": "Frank Hamilton", "relationship": "father" },
-        { "type": "npc", "name": "Elizabeth Thompson", "relationship": "mother" }
+        { "type": "family", "name": "Frank Hamilton", "relationship": "daughter" },
+        { "type": "family", "name": "Elizabeth Thompson", "relationship": "daughter" }
     ],
     "searchResults": [
         {
@@ -544,6 +922,160 @@
     "history": {
         "images": ["images/arizona/extras/extra11.png", "images/arizona/extras/extra12.png", "images/arizona/extras/extra13.png", "images/arizona/extras/extra14.png", "images/arizona/extras/extra15.png"],
         "details": ["History detail 1", "History detail 2", "History detail 3"]
+    },
+    "phoneBackgrounds": ["images/frank/phone/frank_phone_background1.png", "images/frank/phone/frank_phone_background2.png"],
+    "lockScreens": ["images/frank/phone/frank_lock_screen1.png", "images/frank/phone/frank_lock_screen2.png"],
+    "instagram": {
+        "username": "arizonahamilton",
+        "profilePicture": "images/arizona/phone/instagram/profile.png",
+        "followers": 3456,
+        "following": 789,
+        "relatedCharacters": [
+            { "name": "Nash Roosevelt", "picture": "images/nash/instagram/profile.png" },
+            { "name": "Elizabeth Thompson", "picture": "images/elizabeth/instagram/profile.png" }
+        ],
+        "posts": [
+            { "image": "images/arizona/instagram/post1.png", "date": "2023-02-05", "likes": 346, "comments": 30 },
+            { "image": "images/arizona/instagram/post2.png", "date": "2023-02-03", "likes": 460, "comments": 40 }
+        ],
+        "memories": [
+            { "image": "images/arizona/phone/instagram/memory1.png", "title": "Art Exhibition 2022" },
+            { "image": "images/arizona/phone/instagram/memory2.png", "title": "Family Gathering" }
+        ],
+        "stories": [
+            "images/arizona/phone/instagram/story1.png",
+            "images/arizona/phone/instagram/story2.png",
+            "images/arizona/phone/instagram/story3.png"
+        ]
+    },
+    "messages": {
+        "messages": [
+    {
+        "type": "individual",
+        "name": "Ethan",
+        "participants": ["Ethan", "Arizona Hamilton"],
+        "conversations": [
+          { "from": "Ethan", "text": "when are u coming over?"},
+          { "from": "Arizona Hamilton", "text": "sorry buddy i dont know" }
+        ],
+        "latestMessage": "I might be, why?",
+        "newMessageCount": 1,
+        "lastUpdated": "2023-09-12T10:15:00",
+        "isFavorite": true
+      },
+      {
+        "type": "individual",
+        "name": "Elizabeth Thompson",
+        "participants": ["Elizabeth Thompson", "Arizona Hamilton"],
+        "conversations": [
+          { "from": "Elizabeth Thompson", "text": "arizona why do we have to have this fight everytime?"},
+          { "from": "Arizona Hamilton", "text": "would love to know"},
+          { "from": "Arizona Hamilton", "text": "consider instead leaving me alone"}
+        ],
+        "latestMessage": "consider instead leaving me alone",
+        "newMessageCount": 1,
+        "lastUpdated": "2023-09-12T09:05:00",
+        "isFavorite": true
+      }
+    ],
+        "savedImages": [
+      {
+        "name": "Frank Hamilton",
+        "saved as": "Frankly",
+        "profilePicture": "./images/arizona/phone/messages/frank-hamilton.png"
+      },
+      {
+        "name": "Arizona Hamilton",
+        "profilePicture": "./images/arizona/phone/messages/arizona-hamilton.png"
+      },
+      {
+        "name": "Elizabeth Thompson",
+        "profilePicture": "./images/arizona/phone/messages/elizabeth-thompson.png"
+      },
+      {
+        "name": "Ethan",
+        "profilePicture": "./images/arizona/phone/messages/ethan.png"
+      }
+    ]
+    },
+    "youtube": "YouTube content",
+    "apps": ["Instagram", "Grindr", "Tinder", "Messages", "Uber", "Pinterest", "Spotify", "Netflix", "TikTok", "Reddit", "WhatsApp", "Discord", "Snapchat", "YouTube", "Twitch", "LinkedIn", "Tumblr", "Wattpad"],
+    "dockApps": ["Instagram", "Messages", "Camera", "Settings"],
+    "photos": ["images/arizona/phone/camera roll/photo1.png", "images/arizona/phone/camera roll/photo2.png", "images/arizona/phone/camera roll/photo3.png"],
+    "albums": {
+        "My Albums": [
+            { "name": "Art Projects", "cover": "images/arizona/phone/cover/cover1.png", "number": "15" },
+            { "name": "Travel", "cover": "images/arizona/phone/cover/cover2.png", "number": "10" },
+            { "name": "Family", "cover": "images/arizona/phone/cover/cover3.png", "number": "20" }
+        ],
+        "": [
+            { "name": "Art Projects", "cover": "images/arizona/phone/cover/cover1.png", "number": "15" },
+            { "name": "Travel", "cover": "images/arizona/phone/cover/cover2.png", "number": "10" },
+            { "name": "Family", "cover": "images/arizona/phone/cover/cover3.png", "number": "20" }
+        ],
+        "Family Albums": [
+            { "name": "Special Moments", "cover": "images/arizona/phone/cover/cover4.png", "number": "12" }
+        ],
+        "Shared Albums": [
+            { "name": "Special Moments", "cover": "images/arizona/phone/cover/cover4.png", "number": "12" }
+        ]
+    },
+    "forYou": {
+        "place": "Hamilton, TX", "date": "April, 20",
+        "upper": ["images/arizona/phone/camera roll/photo70.png", "images/arizona/phone/camera roll/photo71.png", "images/arizona/phone/camera roll/photo72.png"],
+        "uppermiddle": ["images/arizona/phone/camera roll/photo73.png"],
+        "middle": ["images/arizona/phone/camera roll/photo74.png"],
+        "down": ["images/arizona/phone/camera roll/photo75.png", "images/arizona/phone/camera roll/photo76.png", "images/arizona/phone/camera roll/photo78.png", "images/arizona/phone/camera roll/photo69.png", "images/arizona/phone/camera roll/photo68.png"]
+    },
+    "search": [
+        { "name": "John", "picture": "/images/arizona/phone/camera roll/photo78.png" },
+        { "name": "Anna", "picture": "images/arizona/photos/anna.png" }
+    ]
+},{
+    "group": "Holloway",
+    "displayName": "Jack Holloway",
+    "fullName": "𝐀𝐑𝐈𝐙𝐎𝐍𝐀 𝐇𝐀𝐌𝐈𝐋𝐓𝐎𝐍",
+    "type": "playable",
+    "age": "twenty-five",
+    "gender": "cis woman",
+    "pronouns": "she/her",
+    "occupation": "artist",
+    "orientation": "lesbian",
+    "faceClaim": "zendaya",
+    "pictures": ["images/arizona.png", "images/arizona2.png", "images/arizona3.png"],
+    "fullBodyPictures": ["images/arizona/arizona_full_body1.png", "images/arizona/arizona_full_body2.png", "images/arizona/arizona_full_body3.png", "images/arizona/arizona_full_body4.png", "images/arizona/arizona_full_body5.png", "images/arizona/arizona_full_body6.png"],
+    "extraPictures": ["images/arizona/extras/extra1.png", "images/arizona/extras/extra2.png", "images/arizona/extras/extra3.png", "images/arizona/extras/extra4.png", "images/arizona/extras/extra5.png", "images/arizona/extras/extra6.png", "images/arizona/extras/extra7.png", "images/arizona/extras/extra8.png", "images/arizona/extras/extra9.png", "images/arizona/extras/extra10.png"],
+    "details": ["Renowned artist with exhibitions worldwide", "Enjoys painting and sculpting", "Detail 3 about Arizona"],
+    "weaknesses": ["perfectionist, ", "sensitive, ", "impulsive"],
+    "strengths": ["creative, ", "passionate, ", "dedicated"],
+    "highlightColor": "#c39c9b",
+    "connections": [
+        { "type": "family", "name": "James Holloway", "relationship": "brother" },
+        { "type": "family", "name": "Jack Holloway", "relationship": "brother" }
+    ],
+    "searchResults": [
+        {
+            "title": "Arizona Hamilton - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Arizona_Hamilton",
+            "description": "Arizona Hamilton (born May 15, 1999) is an American artist known for her innovative and thought-provoking works..."
+        },
+        {
+            "title": "The Art of Arizona Hamilton",
+            "url": "https://www.forbes.com/arizona-hamilton",
+            "description": "An in-depth look at the artistic journey of Arizona Hamilton, and her impact on the art world..."
+        }
+    ],
+    "searchSidebar": {
+        "title": "Arizona Hamilton",
+        "subtitle": "Artist",
+        "images": ["images/arizona/sidebar1.png", "images/arizona/sidebar2.png", "images/arizona/sidebar3.png"],
+        "about": "Arizona Hamilton (born May 15, 1999) is an American artist known for her innovative and thought-provoking works...",
+        "birth": "May 15, 1999",
+        "parents": "Frank Hamilton, Elizabeth Thompson"
+    },
+    "history": {
+        "images": ["images/arizona/extras/extra11.png", "images/arizona/extras/extra12.png", "images/arizona/extras/extra13.png", "images/arizona/extras/extra14.png", "images/arizona/extras/extra15.png"],
+        "details": ["he hated it, hated the way people looked at him, hated the way it felt to know if someone was his friend was real or not", "and it didn't matter, shouldn't, because he had a wife at home. hell, he had the american dream on lockdown. a house big backyard, the love of his life, a golden retriever and 2.5 kids. so he quit", "he quit music and he decided to stay home with his family and maybe he could write songs or produce something or go back to the ranch and work with jason and it wouldn't matter, it wouldn't matter because he got happiness on lockdown", "until one truck decided to come down the street on the wrong direction."]
     },
     "phoneBackgrounds": ["images/arizona/phone/arizona_phone_background1.png", "images/arizona/phone/arizona_phone_background2.png"],
     "lockScreens": ["images/arizona/phone/arizona_lock_screen1.png", "images/arizona/phone/arizona_lock_screen2.png"],
@@ -605,7 +1137,7 @@
     ]
 }
 ,
-  {
+{
       "group": "Roosevelt",
       "displayName": "William Roosevelt",
       "type": "npc",
