@@ -7,15 +7,20 @@
       "age": "forty-seven",
       "gender": "cis man",
       "pronouns": "he/him",
-      "occupation": "civilian",
+      "occupation": "rancher",
       "orientation": "bisexual",
       "faceClaim": "christian kane",
       "pictures": ["images/nash.png", "images/nash2.png", "images/nash3.png"],
-      "fullBodyPictures": ["images/nash/nash_full_body1.png", "images/nash/nash_full_body2.png", "images/nash/nash_full_body3.png", "images/nash/nash_full_body4.png", "images/nash/nash_full_body5.png", "images/nash/nash_full_body6.png"],
+      "fullBodyPictures": ["images/nash/nash_full_body1.png", "images/nash/nash_full_body2.png", "images/nash/nash_full_body3.png", "images/nash/nash_full_body4.png", "images/nash/nash_full_body5.png", "images/nash/nash_full_body6.png", "images/nash/nash_full_body7.png"],
       "extraPictures": ["images/nash/extras/extra3.png", "images/nash/extras/extra1.png", "images/nash/extras/extra2.png", "images/nash/extras/extra4.png", "images/nash/extras/extra5.png", "images/nash/extras/extra7.png", "images/nash/extras/extra8.png", "images/nash/extras/extra9.png", "images/nash/extras/extra10.png", "images/nash/extras/extra12.png", "images/nash/extras/extra13.png", "images/nash/extras/extra14.png", "images/nash/extras/extra15.png", "images/nash/extras/extra16.png", "images/nash/extras/extra18.png", "images/nash/extras/extra19.png", "images/nash/extras/extra17.png" ],
       "details": [
     "has the fashion sense of a color blind toddler",
-    "no one know his name is ignatius and if they do they don't share that information. his name is nash, that's it.",
+    "at all times embodeying the energy of someone who loved wearing puka shell necklaces in the 2000s and doesn't get why they went out of fashion",
+    "needs reading glasses and for some reason picked the squarest, brownest possible frame",
+    "pierced his ears while in college but won't tell anyone that, though you can tell at close inspection",
+    "has never taken a single goddamn picture of himself that wasn't old man coded. as in, weirdly framed, slightly out of focus, either too close or too far, succeeding in making even the most handsome of men look unflattering",
+    "doesn't share with people that his name is ignatius. his name is nash, that's it.",
+    "set the family lawyers on a fun little war with wikipeadia where every now and again the family lawyers manage to get the name nash there and then some (in nash's opinion) pedantic, little asshole comes back and corrects it to ignatius.",
     "wears his heart on his sleeve.",
     "profoundly ashamed of his wealth. feels like he is stealing something from someone every time he uses any of it.",
     "has an iq of 186 but its not like it matters or something. (except it does secretly, he cares a lot about it. too much of his self worth is attached to the idea of being smart. every time he does something dumb, he thinks it takes away from it somehow.)",
@@ -23,98 +28,205 @@
     "so convinced love is sacrifice that if he didn’t have to give away something to be with the person he loves, he would think that there is something wrong with the relationship",
     "he doesn’t even know he is insecure and wrong about the way he thinks of relationships. isn’t that adorable? (it’s not, it’s ruining his life.)",
     "loves chocolate and deserts of all kinds. if he is mad at you and you get him a donut, he is no longer mad at you. he is that easy. it’s always time for cake.",
-    "loves poetry so much. just so much. he wants to quote it halfway through a conversation. every conversation actually. all the conversations.",
-    "okay hear him out— music is poetry you sing.",
-    "he just loves words and languages, he is a word loving little guy.",
+    "loves poetry so much. just so much. he wants to quote it halfway through a conversation. every conversation actually. all the conversations. cringe is something he doesn't have access to. nash can only do profoundly sincere.",
+    "loves every type of art actually. paintings and poetry and music and interpretative dancing and actually archetecture is just visual art you live in and same goes for cars actually and ads are just a really good speech to convince you of something. art is everything, if you would let him just—",
+    "really does love poetry way more though, he will vaguely remember the date one patinging he likes was made in, but he can correctly quote this one poem he read one time, because it lives in his brain rent free",
+    "he just loves words and languages, and he needs to learn every language in world because he needs to know what his favorite poem sounds like in all fo them and how the translator chose to change the sentence so the feeling would stick, because this word doesn't exist in this language and—",
+    "can (and given the opportunity will) rent for six straight hours about art.",
+    "it's like a little... a little something he has an interest on... a special type of interest on you could say... something like a special... i feel like there is a word for it but i can't remember it right now",
     "has never met someone he won’t immediately start caring for.",
-    "has never met a troubled person he won’t immediately want to save.",
+    "has never met a troubled person he won’t immediately want to save or parent or fix. a thing you can do actually. you can fix people if you are wondering.",
     "prefers riding horses to riding a motorcycle, but prefers riding his motorcycle to driving.",
     "wears his cowboy hat mostly all the time.",
-    "calls people ma’am and sir or kid. those are the only pet names he uses. maybe when really in love he can say sweetheart.",
+    "calls people ma’am and sir or kid.",
     "would rather ignore his own emotions and just focus on helping everyone else.",
-    "unironically recites poetry mid conversation.",
-    "tries to be understanding and patient but honestly thinks his way is usually the best way and things would be a lot easier in life if everyone just started listening to him.",
+    "tries to be understanding and patient but honestly deep down he is sure his way is usually the best way and things would be a lot easier in life if everyone just started listening to him.",
     "thinks it’s his job to clean up people’s messes.",
     "lowkey judging people for doing wrong shit. given the chance will call them out. also given the chance will make them correct the “wrong” behavior.",
-    "the type of person to spend lots of hours trying the same thing over and over again, because he wants to get it right and he is sure he can do it if he just tries a little harder for just a little longer. no he can’t stop right now.",
+    "he decides what is right and wrong, by the way, if you are wondering who does. it's him. the arbiter of truth, the final boss of morality. he has decided so.",
+    "the type of person to spend lots of hours trying the same thing over and over again, because he wants to get it right and he is sure he can do it if he just tries a little harder for just a little longer. no he can’t stop right now. just let him—",
     "taps and touches and nudges and points and pulls closer.",
-    "can speak about seven different languages. read in fourteen.",
-    "rarely ever lets people in on how smart he can actually be. because if they don’t know, what they say doesn’t matter. but if they do know and somehow they say he isn’t that smart, he will fall apart and never find a way to be put back together again.",
-    "rebels in tiny small ways that aren’t obvious even to himself, like refusing to tie his uniform tie when he was in school. or refusing to drive when his family owns a car company. or never having learned to tie a tie even though in a family of businessman he probably should have at some point.",
-    "thinks he is a cowboy, he is nothing else. not someone who likes art, or someone who is smart. just a cowboy. so attached to the sense of self he created over the years that he wouldn’t know how to function if he was forced to give up his accent, horse and cowboy hat, even if there is a lot more to him.",
-    "can sing and play guitar and actually likes music because music is poetry, but way underplays how much because that’s his brother theo’s thing and two people in the same family couldn’t possibly have the same interest, right?",
-    "adhd and autistic highkey.",
-    "‘this book seems like something you would like’ is the instant way to his heart."],
+    "can speak about seven different languages. read in fourteen. wants to learn more, there is no such thing as being done with education just let him learn a little more. he has time.",
+    "never learned to tie a tie.",
+    "rarely ever lets people in on how smart he can actually be. would rather pretend he is just a dumb cowboy with a silly little hat and a propensity to get into fights than you know the full complex picture of him. because if they don’t know, what they say doesn’t matter. but if they <i>do</i> know and they call him dumb (evne jokingly) he will fall apart and never find a way to be put back together again.",
+    "thinks he is a cowboy, he is nothing else. not someone who likes art, or someone who is smart, or someone willing to sacrifice everything for his family. he is just a cowboy. and it's healthy actually to make your sense of self as small and simple as you can. his own idea of himself cannot and should not contain the entire complexity of his being. he is a sterotype that he saw in a movie as a kid, a shadow of a memory of the man he wished his grandfather could have been, he is a cowboy living in the family ranch, taking care of animals for no complex or upsetting reasons."],
       "weaknesses": ["self-sacrificing, ", "dogmatic, ", "judgmental, ", "stubborn, ", "self-indulgent, ", "prideful, ", "restless."],
       "strengths": ["honest, ", "charming, ", "enthusiastic, ", "caring, ", "loyal, ", "generous, ", "resilient."],
       "highlightColor": "#9ab38c",
       "connections": [
           { "type": "npc", "name": "William Roosevelt", "relationship": "grandfather" },
           { "type": "npc", "name": "Anna Roosevelt", "relationship": "mother" },
-          { "type": "bestFriend", "name": "Xander Nightingale", "relationship": "best friend" },
           { "type": "family", "name": "Richard Roosevelt", "relationship": "brother" },
           { "type": "family", "name": "Theo Roosevelt", "relationship": "brother" },
-          { "type": "family", "name": "Nate Roosevelt", "relationship": "brother" }
+          { "type": "family", "name": "Nate Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Noah Roosevelt", "relationship": "uncle" }
       ],
     "searchResults": [
         {
-            "title": "Nash Roosevelt - Wikipedia",
+            "title": "<b>Nash Roosevelt</b> - Wikipedia",
             "url": "https://en.wikipedia.org/wiki/Nash_Roosevelt",
-            "description": "Ignatius \"Nash\" Felix Roosevelt (born July 15, 1977) is an American former businessman, professor, and current ranch owner. He is known for his..."
+            "description": "Ignatius <b>\"Nash\"</b> Felix <b>Roosevelt</b> (born July 15) is a former businessman, professor, and current ranch owner. He is known for his..."
         },
         {
-            "title": "The Unconventional Path of Nash Roosevelt",
+            "title": "The Unconventional Path of <b>Nash Roosevelt</b>",
             "url": "https://www.biography.com/nash-roosevelt",
-            "description": "An in-depth look at the life of Nash Roosevelt, who turned away from his family's multimillion-dollar sports car business to pursue a simpler life..."
+            "description": "An in-depth look at the life of <b>Nash Roosevelt</b>, who turned away from his family's multimillion-dollar sports car business to pursue a simpler life..."
         },        
         {
             "title": "Theo Roosevelt: The Man Behind Roosevelt Records",
             "url": "https://www.musicindustryinsider.com/theo-roosevelt-record-label",
-            "description": "Theo Roosevelt, founder of Roosevelt Records, has taken the music industry by storm. His success has been supported by his family, including his brother Nash Roosevelt..."
+            "description": "Theo Roosevelt, founder of Roosevelt Records, has taken the music industry by storm. His success has been supported by his family, including his brother <b>Nash Roosevelt</b>..."
         },
         {
             "title": "Roosevelt Motors: A Legacy and Its Heir",
             "url": "https://www.businessinsider.com/roosevelt-motors-nash-roosevelt-legacy",
-            "description": "An article discussing the history of Roosevelt Motors and the surprising career choices of its would-be heir, Nash Roosevelt. Born into a legacy of luxury automobiles..."
+            "description": "An article discussing the history of Roosevelt Motors and the surprising career choices of its would-be heir, <b>Nash Roosevelt</b>. Born into a legacy of luxury automobiles..."
         },
         {
-            "title": "From Boardrooms to Classrooms: Nash Roosevelt's Journey",
+            "title": "From Boardrooms to Classrooms: <b>Nash Roosevelt</b>'s Journey",
             "url": "https://www.academicinsights.com/nash-roosevelt-journey",
-            "description": "Nash Roosevelt, once destined to lead Roosevelt Motors, chose a path in academia before settling into life as a ranch owner. His journey is a testament to..."
+            "description": "<b>Nash Roosevelt</b>, once destined to lead Roosevelt Motors, chose a path in academia before settling into life as a ranch owner. His journey is a testament to..."
         },
         {
             "title": "An Evening at Mike's Bar",
             "url": "https://www.smalltownstories.com/mikes-bar-concert",
-            "description": "Last night (February 21, 1997) Nash Roosevelt performed a surprise concert at a local bar, showcasing his hidden musical talent. The event was a hit among the small crowd..."
+            "description": "Last night (February 21, 1997) <b>Nash Roosevelt</b> performed a surprise concert at a local bar, showcasing his hidden musical talent. The event was a hit among the small crowd..."
         },
         {
             "title": "Echoes of the Past",
             "url": "https://www.poetrycorner.com/echoes-of-the-past",
-            "description": "The poem 'Echoes of the Past' published by Nash Roosevelt captures the essence of fleeting memories and lost time. In the first stanza, he writes..."
+            "description": "The poem 'Echoes of the Past' published by <b>Nash Roosevelt</b> captures the essence of fleeting memories and lost time. In the first stanza, he writes..."
         }
     ],
     "searchSidebar": {
-        "title": "Nash Roosevelt",
-        "subtitle": "Businessman",
+        "title": "<b>\"Nash\"</b> <b>Roosevelt</b> ",
+        "subtitle": "Rancher",
         "images": ["images/nash/sidebar1.png", "images/nash/sidebar2.png", "images/nash/sidebar3.png"],
-        "about": "Nash Roosevelt (born July 24, 1976) is an American former businessman, professor, and current ranch owner. Born into the wealthy and influential Roosevelt fami..",
-        "birth": "January 1, 1997",
-        "parents": "William Roosevelt, Anna Roosevelt"
+        "about": "Ignatius \"Nash\" Felix Roosevelt (born July 15) is an former businessman, professor, and ranch owner. Born into the wealthy and influential Roosevelt family.  He is known for his repeated attempts at getting information taken off wikip..",
+        "birth": "July 15",
+        "parents": "<span class=\"fake-link\">Anna Roosevelt</span> and unkonwn"
     },
     "history": {
-        "images": ["images/nash/extras/extra18.png", "images/nash/extras/extra19.png", "images/nash/extras/extra20.png", "images/nash/extras/extra21.png", "images/nash/extras/extra22.png", "images/nash/extras/extra23.png", "images/nash/extras/extra24.png", "images/nash/extras/extra25.png", "images/nash/extras/extra26.png", "images/nash/extras/extra27.png"],
-        "details": ["History detail 1", "History detail 2", "History detail 3"]
+        "images": ["images/nash/extras/extra20.png", "images/nash/extras/extra22.png", "images/nash/extras/extra57.png", "images/nash/extras/extra59.png", "images/nash/extras/extra24.png", "images/nash/extras/extra25.png", "images/nash/extras/extra26.png", "images/nash/extras/extra58.png", "images/nash/extras/extra30.png", "images/nash/extras/extra52.png", "images/nash/extras/extra33.png", "images/nash/extras/extra41.png", "images/nash/extras/extra31.png", "images/nash/extras/extra51.png", "images/nash/extras/extra60.png", "images/nash/extras/extra35.png", "images/nash/extras/extra37.png" ],
+        "details": [
+    "Oldest of the Roosevelt brothers, and like every one of his brothers, the product of a one-night stand.",
+    "nash — well, little nash — was a problem, that's what he was, what teachers and principals and school consolers said. a little ball of excited energy who needed to much convincing to understand that sometimes things were just how they were. a boy who should learn to respect authority. a perfectly capable yound man who should know better than to live his uniform tie untied despite the multiple warnings he recieved",
+    "nash got sent away to a boarding school from the moment he could walk. and he liked school, he did, he liked learning. but in all honesty, his favorite times were always the ones wehere he got suspended.",
+    "when some administrator had enough and sent him to spend a week home. when nash got to pack up, sleep in a jet and wake up to his grandpa waiting for him. and it was bad at first, yes, sure, but all he had to do was sit through a talking to and then— then his grandfather would sit with him and they would read together. giant old books people at school would say he was too little to under. then his gradfather would take him out to ride a horse, tell him old stories, talk about long gone men and all of their tales. then, well, what he really loved was to go with his grandfather to roosevelt motors. he would go to the office and he would sit on the edge of william roosevelt's desk and he would given a riddle or puzzle to try and figure it out while he worked, all the way up until he finally did, yes, and then he would get another and another. all the way until the day was over.",
+    "that was the best time.",
+    "he never did understood why he couldn't just stay home, stay with his grandpa, go to a normal school that ended at three and spend the rest of the afternoon at the company",
+    "not until little richie was old enough to go along and then nash couldn't come back, didn't want to get suspended. would wear his tie even sometimes.",
+    "because his little brother was there, and if he went back home, his little brother would be alone. and sometimes their schedules were similar enough that they could play together",
+    "one year later, and theo was there too and the three of them could hang out.",
+    "he wasn't alone. he was with his family. just far from home.",
+    "they went back home during summers, yes, and sometimes his grandpa was too busy to stay with him. but by then <i>nash</i> could tell the stories. <i>nash</i> could take them out to pet the horses at the family ranch even if he couldn't take them on rides. nash could give them puzzles just like his grandpa did.",
+    "it was good. god, it was good.",
+    "for a while life was good.",
+    "the thing was, well, the older nash got, the clearer it seemed that he was supposed to inherent the roosevelt empire. the roosevelt motors company.",
+    "his grandpa didn't need to ask him. he just told him. the classes he needed to change at school, which college he was going to, that he would major in business and minor in mechanical engineering, because he should know what the company was about even if he wasn't doing the engineering part.",
+    "ignatius roosevelt, first born, heir, math genius, business mogal of the century.",
+    "god did he want to want it.",
+    "he really did. he wanted to like it, he wanted to be in love with it. he wanted it to be one of his passions.", 
+    "but nash always did get numbers mixed up, and he never did care about roosevelt motors beyond having an excuse to spend time with his grandfather. he always failed to register that when his grandpa took him to the company it was to meet people he would one day be the boss of instead of someone he could talk to about the history of leather production and he couldn't stop thinking about the tie his grandfather wore to work everyday.",
+    "not only him no, but everyone else in there. managers and board members and business associates. all wearing a tie around their necks",
+    "it was some project at school. something about what you are gonna do with your life. it wasn't important. he had the grades. but he was doing it. he was doing it and a friend of his joked about it while everyone else at the table laughed. <i>which one of your families' companies are you gonna be the owner of nash?</i>. because he didn't need to finish, they knew already, everyone did, that's what he was going to do with his life.",
+    "he had to run off.",
+    "stumbled into a place hidden under the stairs",
+    "sat holding his chest tightly while the abillity to breathe was robbed from him and tears ran down his cheeks",
+    "he wanted to want it but— he didn't.",
+    "he didn't want it. not the tile, or the tie, or the cars or the name.",
+    "he didn't want it.",
+    "so he got drunk. he got profoundly drunk. he bought a plane ticket and he flew home with nothing but the school uniform he was wearing and he cried the whole way back home.",
+    "his grandfather was there. in his office, besides the little wall of accomplishments he had for each of his grandchildren, smiling at him, asking with both humor and concern <i>what are you doing at home, son?</i>",
+    "and at sixteen years old, eyes still red from tears, body still wobbly with alcohol, nash confessed the truth. he didn't want it. he didn't like it. he like poetry and music and he wanted to be an english teacher in some local high school or sing or write or— he didn't want roosevelt motors, or the roosevelt empire, or any of it actually. he wanted to live somewhere where his voice didn't echo. he wanted to see his grandpa more often. he wanted so very little— and god, he was sorry.",
+    "his grandfather hugged him, held him. put him to sleep in his own wing of the roosevelt mansion. and he promise it was fine, if he didn't want it he didn't need to do it.",
+    "nash really did sleep soundly that night",
+    "it was a shame that his grandfather would never look at him the same after it either."
+        ],
+        "extraImages": [ "images/nash/extras/extra71.png", "images/nash/extras/extra83.png", "images/nash/extras/extra48.png", "images/nash/extras/extra72.png", "images/nash/extras/extra68.png", "images/nash/extras/extra63.png", "images/nash/extras/extra53.png", "images/nash/extras/extra44.png", "images/nash/extras/extra62.png", "images/nash/extras/extra45.png", "images/nash/extras/extra40.png",  "images/nash/extras/extra73.png", "images/nash/extras/extra49.png", "images/nash/extras/extra65.png",  "images/nash/extras/extra50.png", "images/nash/extras/extra84.png", "images/nash/extras/extra70.png"],
+        "extraDetails": ["nash roosevelt finished school at the top of his class and disappeared to oxford to get his degree in art history.",
+        "and there he was a new man",
+        "he refused to use the family house, because of course the roosevelt family had a house every where in the world",
+        "he got a job as a barman and he paid rented out a bedroom with his own money thank you very much",
+        "and it was the life. it really was.",
+        "he pierced his ears, grew out his hair, started a rock band.",
+        "and he read poetry all day. he studied history, he spent forty minutes looking at paintings because where he was, that wasn't a waste of time.",
+        "he spent twice as long learning languages and reading and writing.",
+        "he didn't go back, didn't want to.",
+        "didn't know if he was too ashamed to look at his grandfather's face or if he was just angry but he didn't care, he had a whole new life set up.",
+        "in fact, william roosevelt didn't need to pay for his tuition anymore. he got a scholarship to get his maters. he had plans. a master than a doctorate. a little house somewhere far away from people. a job as professor in some university where no one would think his last name really meant anything other than a fun coincidence to the name of the car company",
+        "he got the news about nathaniel's while sitting under a tree and he really didn't move until the night fall",
+    "the next day, nash dropped out and maved back to texas.",
+    "maybe william didn't care about them but he did. maybe their mom didn't care about them. but he did. and he was still there. still breathing. he could be home to talk nate after a long day of school. he could be around to talk sense into richard and a little more anger into theo. just because everyone else before him had abandoned them it didn`t mean he had to.",
+    "That year he moved to the family ranch inside the roosevelt state, no more than a ten-minute walk away from the house he grew up in."
+]
     },
+    "mapLayers": {
+        "world": false,
+        "state": false,
+        "final": [
+          {
+            "inside": "Texas",
+            "name": "Roosevelt Ranch",
+            "description": "A ranch located inside the Roosevelt Estate.",
+            "type": "home",
+            "longerDescription": "I love you babeyyyyy",
+            "images": ["images/nash/location/ranch-home-1.png", "images/nash/location/ranch-home-2.png", "images/nash/location/ranch-home-3.png", "images/nash/location/ranch-home-4.png"]
+          },
+          {
+            "inside": "Texas",
+            "name": "Roosevelt Mansion",
+            "description": "The Roosevelt Mansion located inside the Roosevelt.",
+            "type": "home",
+            "images": ["images/nash/location/roosevelt-mansion-1.png", "images/nash/location/roosevelt-mansion-3.png", "images/nash/location/roosevelt-mansion-6.png", "images/nash/location/roosevelt-mansion-4.png"]
+          }
+        ]
+      },
     "phoneBackgrounds": ["images/nash/phone/nash_phone_background1.png", "images/nash/phone/nash_phone_background2.png"],
   "lockScreens": ["images/nash/phone/nash_lock_screen1.png", "images/nash/phone/nash_lock_screen2.png"],
 "photos": ["images/nash/phone/camera roll/photo1.png", "images/nash/phone/camera roll/photo2.png", "images/nash/phone/camera roll/photo3.png", "images/nash/phone/camera roll/photo4.png", "images/nash/phone/camera roll/photo5.png", "images/nash/phone/camera roll/photo6.png", "images/nash/phone/camera roll/photo7.png", "images/nash/phone/camera roll/photo8.png", "images/nash/phone/camera roll/photo9.png", "images/nash/phone/camera roll/photo10.png", "images/nash/phone/camera roll/photo11.png", "images/nash/phone/camera roll/photo12.png", "images/nash/phone/camera roll/photo13.png", "images/nash/phone/camera roll/photo14.png", "images/nash/phone/camera roll/photo15.png", "images/nash/phone/camera roll/photo20.png", "images/nash/phone/camera roll/photo21.png", "images/nash/phone/camera roll/photo22.png", "images/nash/phone/camera roll/photo24.png", "images/nash/phone/camera roll/photo16.png", "images/nash/phone/camera roll/photo17.png", "images/nash/phone/camera roll/photo18.png", "images/nash/phone/camera roll/photo19.png", "images/nash/phone/camera roll/photo25.png", "images/nash/phone/camera roll/photo26.png", "images/nash/phone/camera roll/photo27.png", "images/nash/phone/camera roll/photo28.png", "images/nash/phone/camera roll/photo29.png", "images/nash/phone/camera roll/photo30.png", "images/nash/phone/camera roll/photo31.png", "images/nash/phone/camera roll/photo32.png", "images/nash/phone/camera roll/photo33.png", "images/nash/phone/camera roll/photo34.png", "images/nash/phone/camera roll/photo35.png", "images/nash/phone/camera roll/photo36.png", "images/nash/phone/camera roll/photo37.png", "images/nash/phone/camera roll/photo38.png", "images/nash/phone/camera roll/photo39.png", "images/nash/phone/camera roll/photo40.png", "images/nash/phone/camera roll/photo41.png", "images/nash/phone/camera roll/photo42.png", "images/nash/phone/camera roll/photo43.png", "images/nash/phone/camera roll/photo44.png", "images/nash/phone/camera roll/photo45.png", "images/nash/phone/camera roll/photo46.png", "images/nash/phone/camera roll/photo47.png", "images/nash/phone/camera roll/photo48.png", "images/nash/phone/camera roll/photo49.png", "images/nash/phone/camera roll/photo50.png", "images/nash/phone/camera roll/photo51.png", "images/nash/phone/camera roll/photo52.png", "images/nash/phone/camera roll/photo53.png", "images/nash/phone/camera roll/photo54.png", "images/nash/phone/camera roll/photo55.png", "images/nash/phone/camera roll/photo56.png", "images/nash/phone/camera roll/photo57.png", "images/nash/phone/camera roll/photo58.png", "images/nash/phone/camera roll/photo59.png", "images/nash/phone/camera roll/photo60.png", "images/nash/phone/camera roll/photo61.png", "images/nash/phone/camera roll/photo62.png"],
-  "albums": [
-    { "name": "Vacation", "cover": "images/frank/albums/vacation.png" },
-    { "name": "Family", "cover": "images/frank/albums/family.png" }
-  ],
-  "forYou": ["images/frank/photos/photo3.png", "images/frank/photos/photo4.png"],
+  "albums": {
+    "My Albums": [
+      { "name": "Ari took my phone", "cover": "images/frank/phone/cover/cover2.png", "number": "11" },
+      { "name": "Family Vacation", "cover": "images/frank/phone/cover/cover1.png", "number": "11" },
+      { "name": "Ethan", "cover": "images/frank/phone/cover/cover1.png", "number": "11" }
+    ],
+    "": [
+      { "name": "Ari took my phone", "cover": "images/frank/phone/cover/cover2.png", "number": "11" },
+      { "name": "Family Vacation", "cover": "images/frank/phone/cover/cover1.png", "number": "11" },
+      { "name": "Ethan", "cover": "images/frank/phone/cover/cover1.png", "number": "11" }
+    ],
+    "Family Albums": [
+      { "name": "Woman I cry myself to...", "cover": "images/frank/phone/cover/cover3.png", "number": "11" }
+    ],
+    "Shared Albums": [
+      { "name": "Woman I cry myself to...", "cover": "images/frank/phone/cover/cover3.png", "number": "12" }
+    ]
+    },
+  "forYou": [{
+    "place":"Hamilton, TX", "date": "February, 29",
+    "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
+    "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
+    "middle": [ "images/frank/phone/camera roll/photo74.png"],
+    "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
+    },
+    {
+        "place":"Sucker Funny, TX", "date": "December, 21",
+        "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
+        "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
+        "middle": [ "images/frank/phone/camera roll/photo74.png"],
+        "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
+        }
+        ,
+        {
+            "place":"Very Funny, TX", "date": "December, 21",
+            "upper": [ "images/frank/phone/camera roll/photo70.png", "images/frank/phone/camera roll/photo71.png", "images/frank/phone/camera roll/photo72.png"],
+            "uppermiddle": [ "images/frank/phone/camera roll/photo73.png"],
+            "middle": [ "images/frank/phone/camera roll/photo74.png"],
+            "down": [ "images/frank/phone/camera roll/photo75.png","images/frank/phone/camera roll/photo76.png", "images/frank/phone/camera roll/photo78.png", "images/frank/phone/camera roll/photo69.png", "images/frank/phone/camera roll/photo68.png"]
+            }],
   "search": [
-    { "name": "John", "picture": "images/frank/photos/john.png" },
+    { "name": "John", "picture": "/images/frank/phone/camera roll/photo78.png" },
     { "name": "Anna", "picture": "images/frank/photos/anna.png" }
   ],
   "apps": ["Messages"],
@@ -132,7 +244,38 @@
       "lastUpdated": "2023-09-12T10:05:00",
       "isFavorite": true
     }
-  ]
+  ],
+  "nsfw": {
+        "images": [
+            "images/nash/extras/extra34.png", "images/nash/extras/extra54.png","images/nash/extras/extra32.png", "images/nash/extras/extra42.png", "images/nash/extras/extra43.png", "images/nash/extras/extra46.png", "images/nash/extras/extra29.png", "images/nash/extras/extra28.png", "images/nash/extras/extra55.png", "images/nash/extras/extra56.png", "images/nash/extras/extra21.png", "images/nash/extras/extra23.png", "images/nash/extras/extra39.png", "images/nash/extras/extra61.png", "images/nash/extras/extra64.png", "images/nash/extras/extra66.png", "images/nash/extras/extra67.png", "images/nash/extras/extra69.png", "images/nash/extras/extra38.png", "images/nash/extras/extra27.png", "images/nash/extras/extra47.png", "images/nash/extras/extra36.png"
+        ],
+        "leans": [
+            "dominant",
+            "top",
+            "occasionally switch",
+            "average sex drive"
+        ],
+        "body": [
+            "athletic",
+            "curvy",
+            "wears boxers",
+            "trimps body hair"
+        ],
+        "sounds": [
+            "moans partner's name",
+            "curses",
+            "grows in volume over time"
+        ],
+        "inclinations": [
+            "iniates",
+            "passionate",
+            "gentle",
+            "likes to takes his time"
+        ],
+        "bulletPoints": [
+          "definetly, absolutely, 100% has pink fluffy handcuffs"
+        ]
+    }
   },
   {
       "group": "Roosevelt",

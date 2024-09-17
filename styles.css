@@ -534,41 +534,50 @@ body {
 }
 
 .large-image-container {
-    width: 210px;
-    height: 210px;
+    width: 230px;
+    height: 242px;
 }
 
 .large-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     transition: transform 0.3s ease; /* Add transition for zoom-in effect */
 }
 
 .large-image:hover {
-    transform: scale(0.9); /* Zoom in effect */
+    transform: scale(0.98); /* Zoom in effect */
 }
 
 .small-images-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
 }
 
-.small-image {
-    width: 100px;
-    height: 100px;
+.small-image-0 {
+    width: 110px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease; /* Add transition for zoom-in effect */
+    border-radius: 0 10px 0 0;
+    transition: transform 0.3s ease;
+} 
+
+.small-image-1 {
+    width: 110px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0 0 10px 0;
+    transition: transform 0.3s ease;
 }
 
-.small-image:hover {
-    transform: scale(0.9); /* Zoom in effect */
+.small-image-0:hover,
+.small-image-1:hover {
+    transform: scale(0.95); 
 }
 
-/* Styles for sidebar content */
+
 .sidebar-title {
     font-size: 20px;
     font-weight: bold;
@@ -683,6 +692,8 @@ body {
     width: 100%;
     background: #fafafa;
     border-radius: 10px;
+    font-size: 14px;
+    text-transform: lowercase;
 }
 
 #historyImages{
@@ -699,6 +710,15 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 5px; /* Add margin to ensure spacing when wrapping */
+}
+
+.history-bullet-points{
+    padding-inline-start: 0px;
+    line-height: 1.5;
+}
+
+.history-bullet-points ul{
+    padding-inline-start: 20px;
 }
 
 .history-right {
@@ -2989,49 +3009,333 @@ body {
     border-radius: 50%;
 }
 
+/* MAP STARTS HERE */
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 17px;
+    gap: 15px;
+    width: 92%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.location-card {
+    background-color: rgb(244 244 244); /*#f4f4f4;*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    z-index: 1;
+}
+
+.final-level {
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.location-card:hover:hover {
+    transform: scale(1.02);
+}
+
+.top-bar-for-map {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+}
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.red {
+    background-color: #ff5f57;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #27c93f;
+}
+
+.location-card h3, h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.node-name-description{
+    font-size: 12px;
+    margin: 3px 0 0 0;
+}
+
+.inside-location-card{
+    padding: 10px;
+}
+
+.inside-location-card .description{
+    font-size: 12px;
+}
+
+.directions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    gap: 2px;
+}
+
+.directions-fake-btn{
+    background-color: #007aff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    width: 28%;
+    font-size: 11px;
+    justify-content: space-evenly;
+    height: 32px;
+}
+
+.directions-fake-btn img{
+    height: 15px;
+}
+
+.create-route-btn {
+    background-color: #ddd;
+    color: #007aff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 11px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 32px;
+    align-items: center;
+}
+
+.create-route-btn:hover {
+    background-color: #007aff;
+    color: #fff;
+}
+
+.create-route-btn:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(210deg) brightness(103%) contrast(102%);
+}
+
+.create-route-btn img{
+    margin: 7px 5px 5px;
+    width: 15px;
+}
+
+.create-route-btn.download img{
+    margin: 0px;
+    width: 15px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.location-image {
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button-for-map {
+    margin-top: 15px;
+    background-color: #ddd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 30px;
+    height: 25px;
+}
+
+.back-button-for-map:hover {
+    background-color: #555;
+}
+
+.node-info-modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 14px;
+    border-bottom: 1px solid #e9ebee;
+    font-weight: normal;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.image-gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-gallery img{
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+.node-details {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.node-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-btn {
+    background-color: #007aff;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #005fbb;
+}
+
+
+/* NSFW STARTS HERE */
 .nsfw-container{
     display: flex;
     flex-direction: column;
-    width: 680px;
     position: relative;
     gap: 10px;
-    padding-left: 10px;
 }
 
 .nsfw-info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
-    width: 100%;
+    width: 65%;
     background: #fafafa;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px 10px 0px 155px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .nsfw-details {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .nsfw-details div {
     flex: 1;
     text-align: center;
     font-size: 14px;
+    line-height: 1.5;
+    padding: 5px;
+    min-width: 290px;
 }
 
 .nsfw-bullet-points {
     width: 100%;
     font-size: 14px;
     line-height: 1.5;
+    padding-inline-start: 0px;
 }
 
 .nsfw-bullet-points ul {
     list-style-type: disc;
     padding-left: 20px;
+    padding-inline-start: 15px;
+}
+
+.nsfw-extra-images{
+    width: 660px;
+}
+
+.nsfw-extra-images img{
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+.nsfw-details h4{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
 }

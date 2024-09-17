@@ -43,17 +43,17 @@ const createSearchResultItem = (title, url, description) => {
 
     const itemTitle = document.createElement('div');
     itemTitle.className = 'search-result-title';
-    itemTitle.innerText = title;
+    itemTitle.innerHTML = title;
     item.appendChild(itemTitle);
 
     const itemUrl = document.createElement('div');
     itemUrl.className = 'search-result-url';
-    itemUrl.innerText = url;
+    itemUrl.innerHTML = url;
     item.appendChild(itemUrl);
 
     const itemDescription = document.createElement('div');
     itemDescription.className = 'search-result-description';
-    itemDescription.innerText = description;
+    itemDescription.innerHTML = description;
     item.appendChild(itemDescription);
 
     return item;
@@ -81,12 +81,14 @@ const populateSearchSidebar = (sidebarInfo, relatedPeople) => {
 
         const smallImagesContainer = document.createElement('div');
         smallImagesContainer.className = 'small-images-container';
-
+        let key = 0;
         sidebarInfo.images.slice(1, 3).forEach(imgSrc => {
+            
             const img = document.createElement('img');
             img.src = imgSrc;
-            img.className = 'small-image';
+            img.className = 'small-image-' + key;
             smallImagesContainer.appendChild(img);
+            key++;
         });
 
         imagesEl.appendChild(smallImagesContainer);
@@ -94,12 +96,12 @@ const populateSearchSidebar = (sidebarInfo, relatedPeople) => {
 
         const titleEl = document.createElement('div');
         titleEl.className = 'sidebar-title';
-        titleEl.innerText = sidebarInfo.title;
+        titleEl.innerHTML = sidebarInfo.title;
         searchSidebar.appendChild(titleEl);
 
         const subtitleEl = document.createElement('div');
         subtitleEl.className = 'sidebar-subtitle';
-        subtitleEl.innerText = sidebarInfo.subtitle;
+        subtitleEl.innerHTML = sidebarInfo.subtitle;
         searchSidebar.appendChild(subtitleEl);
 
         const aboutEl = document.createElement('div');
@@ -114,7 +116,7 @@ const populateSearchSidebar = (sidebarInfo, relatedPeople) => {
 
         const parentsEl = document.createElement('div');
         parentsEl.className = 'sidebar-section';
-        parentsEl.innerHTML = `<div class="sidebar-section-content"><strong>Parents:</strong> <span class="fake-link">${sidebarInfo.parents}</span></div>`;
+        parentsEl.innerHTML = `<div class="sidebar-section-content"><strong>Parents:</strong> ${sidebarInfo.parents}</div>`;
         searchSidebar.appendChild(parentsEl);
 
         const relatedPeopleEl = document.createElement('div');
@@ -1771,7 +1773,7 @@ const showInstagramStories = (images, container) => {
     startStory(); // Start the story by default
 };
 
-
+/* commenting the old history so it can be put back when i have more ideas
 const populateHistorySection = (character) => {
     historyImages.innerHTML = ''; // Clear existing images
     historyBulletPoints.innerHTML = ''; // Clear existing bullet points
@@ -1798,20 +1800,58 @@ const populateHistorySection = (character) => {
     populatePhone(character);
 };
 
+*/
+
+const populateHistorySection = (character) => {
+    historyImages.innerHTML = ''; // Clear existing images
+    historyBulletPoints.innerHTML = ''; // Clear existing bullet points
+    historyExtraImages.innerHTML = '';
+    historyExtraBulletPoints.innerHTML = '';
+
+    if (character.history) {
+        // Add history images
+        character.history.images.forEach(imageSrc => {
+            const img = document.createElement('img');
+            img.src = imageSrc;
+            img.className = 'shared-images'; // Use shared class for consistency
+            historyImages.appendChild(img);
+        });
+
+        // Add history bullet points
+        let bulletPointsHtml = '<ul>';
+        character.history.details.forEach(detail => {
+            bulletPointsHtml += `<li>${detail}</li>`;
+        });
+        bulletPointsHtml += '</ul>';
+        historyBulletPoints.innerHTML = bulletPointsHtml;
+
+        character.history.extraImages.forEach(imageSrc => {
+            const img = document.createElement('img');
+            img.src = imageSrc;
+            img.className = 'shared-images'; // Use shared class for consistency
+            historyExtraImages.appendChild(img);
+        });
+
+        let extraBulletPointsHtml = '<ul>';
+        character.history.extraDetails.forEach(detail => {
+            extraBulletPointsHtml += `<li>${detail}</li>`;
+        });
+        extraBulletPointsHtml += '</ul>';
+        historyExtraBulletPoints.innerHTML = extraBulletPointsHtml;
+
+    }
+
+    // Populate phone with character-specific information
+    populatePhone(character);
+};
+
+
 const populateNsfwSection = (character) => {
     // Select NSFW content containers
     const nsfwExtraImages = document.getElementById('nsfwExtraImages');
     const nsfwDetails = document.getElementById('nsfwDetails');
     const nsfwBulletPoints = document.getElementById('nsfwBulletPoints');
 
-    // Log if the elements are found or not
-    console.log('NSFW elements:', {
-        nsfwExtraImages: nsfwExtraImages !== null,
-        nsfwDetails: nsfwDetails !== null,
-        nsfwBulletPoints: nsfwBulletPoints !== null
-    });
-
-    // Clear existing NSFW content
     nsfwExtraImages.innerHTML = ''; 
     nsfwDetails.innerHTML = ''; 
     nsfwBulletPoints.innerHTML = ''; 
@@ -1829,24 +1869,28 @@ const populateNsfwSection = (character) => {
                 img.className = 'shared-images'; 
                 nsfwExtraImages.appendChild(img);
             });
-        } else {
-            console.warn('No NSFW images found for character:', character.displayName);
-        }
+        } 
 
-        // Log the NSFW details
-        if (character.nsfw.details && character.nsfw.details.length > 0) {
-            console.log('Adding NSFW details:', character.nsfw.details);
-            let detailsHtml = '<div>';
-            character.nsfw.details.forEach(detail => {
-                detailsHtml += `<p>${detail}</p>`;
-            });
-            detailsHtml += '</div>';
-            nsfwDetails.innerHTML = detailsHtml;
-        } else {
-            console.warn('No NSFW details found for character:', character.displayName);
-        }
+        let detailsHtml = '<div><h4>Leans</h4> ';
+        detailsHtml += character.nsfw.leans.join(' ╱ '); // Join with separator
+        detailsHtml += '</div>';
 
-        // Log the NSFW bullet points
+        detailsHtml += '<div><h4>Body</h4> ';
+        detailsHtml += character.nsfw.body.join(' ╱ '); // Join with separator
+        detailsHtml += '</div>';
+
+        detailsHtml += '<div><h4>Sounds</h4> ';
+        detailsHtml += character.nsfw.sounds.join(' ╱ '); // Join with separator
+        detailsHtml += '</div>';
+
+        detailsHtml += '<div><h4>Inclinations</h4> ';
+        detailsHtml += character.nsfw.inclinations.join(' ╱ '); // Join with separator
+        detailsHtml += '</div>';
+
+        nsfwDetails.innerHTML = detailsHtml;
+
+        
+
         if (character.nsfw.bulletPoints && character.nsfw.bulletPoints.length > 0) {
             console.log('Adding NSFW bullet points:', character.nsfw.bulletPoints);
             let bulletPointsHtml = '<ul>';
@@ -1855,18 +1899,179 @@ const populateNsfwSection = (character) => {
             });
             bulletPointsHtml += '</ul>';
             nsfwBulletPoints.innerHTML = bulletPointsHtml;
-        } else {
-            console.warn('No NSFW bullet points found for character:', character.displayName);
-        }
-    } else {
-        console.warn('No NSFW data found for character:', character.displayName);
+        } 
     }
+};
+
+const createConceptualMap = (character) => {
+    const mapContainer = document.getElementById('mapContainer');
+    mapContainer.innerHTML = ''; // Clear previous map
+
+    // Determine the initial layer to display
+    if (character.mapLayers.world) {
+        displayLayerContent('World', character.mapLayers.world, character);
+    } else if (character.mapLayers.state) {
+        displayLayerContent('State', character.mapLayers.state, character);
+    } else if (character.mapLayers.final) {
+        displayLayerContent('Final', character.mapLayers.final, character);
+    }
+};
+
+const displayLayerContent = (currentLayer, nodes, character) => {
+    const mapContainer = document.getElementById('mapContainer');
+    mapContainer.innerHTML = ''; // Clear previous content
+
+    // Determine if there is a valid previous layer
+    const hasPreviousLayer =
+        (currentLayer === 'State' && character.mapLayers.world) ||
+        (currentLayer === 'Final' && (character.mapLayers.state || character.mapLayers.world));
+
+    // Store the current layer and nodes as the previous state for "Back One"
+    previousLayer = currentLayer;
+    previousNodes = nodes;
+
+    // Create cards for each location
+    nodes.forEach((node) => {
+        const cardWrapper = document.createElement('div');
+        cardWrapper.className = 'location-card-wrapper'; // Wrapper for relative positioning
+        cardWrapper.style.position = 'relative'; // Set position to relative to contain the absolute positioning
+
+        const locationCard = document.createElement('div');
+        locationCard.className = `location-card${currentLayer === 'Final' ? ' final-level' : ''}`; // Different style for the last level
+
+        // Create the content of the card
+        const cardContent = `
+            <div class="top-bar-for-map">
+                <span class="circle red"></span>
+                <span class="circle yellow"></span>
+                <span class="circle green"></span>
+            </div>
+            <div class="inside-location-card">
+            <h3 class="node-name">${node.name}</h3>
+            <p class="node-name-description">${node.type ? node.type.charAt(0).toUpperCase() + node.type.slice(1) : ''}${node.inside ? ' • ' + node.inside : ''}</p>
+            <div class="directions">
+                <div class="directions-fake-btn"><img src="images/app_icons/directions-symbol-for-map.png">Directions</div>
+                <div class="create-route-btn"><img src="images/app_icons/three-dots-simbol-for-map.png">More</div>
+                <div class="create-route-btn download"><img src="images/app_icons/download-simbol-for-map.png">Download</div>
+            </div>
+            <p class="description">${node.description || ''}</p>
+            <div class="images-container">
+                ${node.images ? node.images.map(img => `<img src="${img}" class="location-image">`).join('') : ''}
+            </div>
+            </div>
+        `;
+        locationCard.innerHTML = cardContent;
+
+        // Add the click event listener for all layers
+        locationCard.addEventListener('click', () => {
+            if (currentLayer === 'World') {
+                const stateNodes = character.mapLayers.state ? character.mapLayers.state.filter(n => n.inside === node.name) : [];
+                if (stateNodes.length > 0) {
+                    displayLayerContent('State', stateNodes, character);
+                } else {
+                    showNodeInfo(node, character); // No further layers, show final info
+                }
+            } else if (currentLayer === 'State') {
+                const finalNodes = character.mapLayers.final ? character.mapLayers.final.filter(n => n.inside === node.name) : [];
+                if (finalNodes.length > 0) {
+                    displayLayerContent('Final', finalNodes, character);
+                } else {
+                    showNodeInfo(node, character); // No further layers, show final info
+                }
+            } else {
+                showNodeInfo(node, character); // Ensure `showNodeInfo` is called when reaching the final layer
+            }
+        });
+
+        cardWrapper.appendChild(locationCard); // Append the real card to the wrapper
+
+        mapContainer.appendChild(cardWrapper); // Add the card wrapper to map container
+    });
+
+    // Conditionally add back buttons
+    if (hasPreviousLayer) { // Check if there is a valid previous layer
+        const backOneButton = document.createElement('button');
+        backOneButton.innerText = '-';
+        backOneButton.className = 'back-button-for-map';
+        backOneButton.style.right = '50px';
+        backOneButton.addEventListener('click', () => {
+            if (currentLayer === 'State') {
+                createConceptualMap(character); // Back to world layer
+            } else if (currentLayer === 'Final') {
+                const worldNode = nodes[0].inside; // Find the parent world node
+                const stateNodes = character.mapLayers.state ? character.mapLayers.state.filter(n => n.name === worldNode) : [];
+                displayLayerContent('State', stateNodes, character);
+            }
+        });
+
+        mapContainer.appendChild(backOneButton);
+    }
+
+    const backToStartButton = document.createElement('button');
+    backToStartButton.innerText = 'x';
+    backToStartButton.className = 'back-button-for-map';
+    backToStartButton.addEventListener('click', () => {
+        createConceptualMap(character); // Go back to the initial map view
+    });
+
+    mapContainer.appendChild(backToStartButton);
+};
+
+const showNodeInfo = (node, character) => {
+    const mapContainer = document.getElementById('mapContainer');
+    mapContainer.innerHTML = ''; // Clear the map container for the new display
+
+    // Create a full-screen modal or slide-out panel
+    const nodeInfoModal = document.createElement('div');
+    nodeInfoModal.className = 'node-info-modal'; // Class for the modal styling
+
+    // Create the content for the modal
+    const modalContent = `
+        <div class="modal-header">
+            <h2>${node.name}</h2>
+        </div>
+        <div class="modal-body">
+            <div class="image-gallery">
+                ${node.images ? node.images.map((img, index) => `
+                    <img src="${img}" class="gallery-image">
+                `).join('') : ''}
+            </div>
+            <div class="node-details">
+                <p>${node.longerDescription || node.description}</p>
+            </div>
+        </div>
+    `;
+
+    nodeInfoModal.innerHTML = modalContent;
+    mapContainer.appendChild(nodeInfoModal);
+
+    const backOneButton = document.createElement('button');
+        backOneButton.innerText = '-';
+        backOneButton.className = 'back-button-for-map';
+        backOneButton.style.right = '50px';
+        backOneButton.addEventListener('click', () => {
+            // Go back to the previous layer
+            displayLayerContent(previousLayer, previousNodes, character);
+        });
+
+        mapContainer.appendChild(backOneButton)
+
+    const backToStartButton = document.createElement('button');
+    backToStartButton.innerText = 'x';
+    backToStartButton.className = 'back-button-for-map';
+    backToStartButton.addEventListener('click', () => {
+        createConceptualMap(character); // Go back to the initial map view
+    });
+
+    mapContainer.appendChild(backToStartButton);
 };
 
 
 
 
+
 const createCharacterElement = (character) => {
+    const nsfwContainer = document.querySelector('.nsfw-container');
     const characterEl = document.createElement('div');
     characterEl.className = 'character';
     characterEl.setAttribute('data-name', character.displayName);
@@ -1986,10 +2191,19 @@ const createCharacterElement = (character) => {
             // Populate search sidebar
             populateSearchSidebar(character.searchSidebar, relatedPeople);
 
-            // Populate the history section
+            createConceptualMap(character);
+
+            if(toggleNsfw.checked == true){
+                nsfwContainer.style.display = "flex";
             populateNsfwSection(character);
+            }
+            if(toggleNsfw.checked == false){
+                nsfwContainer.style.display = "none";
+            }
+
             populateHistorySection(character);
 
+            
             
         });
     }
