@@ -109,11 +109,6 @@ const populateSearchSidebar = (sidebarInfo, relatedPeople) => {
         aboutEl.innerHTML = `<div class="sidebar-section-title">About</div><div class="sidebar-section-content">${sidebarInfo.about}</div>`;
         searchSidebar.appendChild(aboutEl);
 
-        const birthEl = document.createElement('div');
-        birthEl.className = 'sidebar-section';
-        birthEl.innerHTML = `<div class="sidebar-section-content"><strong>Birth:</strong> ${sidebarInfo.birth}</div>`;
-        searchSidebar.appendChild(birthEl);
-
         const parentsEl = document.createElement('div');
         parentsEl.className = 'sidebar-section';
         parentsEl.innerHTML = `<div class="sidebar-section-content"><strong>Parents:</strong> ${sidebarInfo.parents}</div>`;
@@ -1825,20 +1820,22 @@ const populateHistorySection = (character) => {
         bulletPointsHtml += '</ul>';
         historyBulletPoints.innerHTML = bulletPointsHtml;
 
+        if(character.history.extraImages){
         character.history.extraImages.forEach(imageSrc => {
             const img = document.createElement('img');
             img.src = imageSrc;
             img.className = 'shared-images'; // Use shared class for consistency
             historyExtraImages.appendChild(img);
         });
-
+       };
+       if(character.history.extraDetails){
         let extraBulletPointsHtml = '<ul>';
         character.history.extraDetails.forEach(detail => {
             extraBulletPointsHtml += `<li>${detail}</li>`;
         });
         extraBulletPointsHtml += '</ul>';
         historyExtraBulletPoints.innerHTML = extraBulletPointsHtml;
-
+        };
     }
 
     // Populate phone with character-specific information
@@ -1907,28 +1904,30 @@ const createConceptualMap = (character) => {
     const mapContainer = document.getElementById('mapContainer');
     mapContainer.innerHTML = ''; // Clear previous map
 
-    // Determine the initial layer to display
-    if (character.mapLayers.world) {
-        displayLayerContent('World', character.mapLayers.world, character);
-    } else if (character.mapLayers.state) {
-        displayLayerContent('State', character.mapLayers.state, character);
-    } else if (character.mapLayers.final) {
-        displayLayerContent('Final', character.mapLayers.final, character);
+    // Find the first layer dynamically
+    const firstLayer = Object.keys(character.mapLayers).find(layer => !isNaN(layer));
+    if (firstLayer) {
+        displayLayerContent(firstLayer, character.mapLayers[firstLayer], character, null);
+    } else if (character.mapLayers.node) {
+        showNodeLayer(character.mapLayers.node, character);
     }
 };
 
-const displayLayerContent = (currentLayer, nodes, character) => {
+const displayLayerContent = (currentLayer, nodes, character, parentLayerNode) => {
     const mapContainer = document.getElementById('mapContainer');
     mapContainer.innerHTML = ''; // Clear previous content
 
+    // Display longer description and images from the parent layer node if available
+    addDescriptionContainer(parentLayerNode);
+
     // Determine if there is a valid previous layer
-    const hasPreviousLayer =
-        (currentLayer === 'State' && character.mapLayers.world) ||
-        (currentLayer === 'Final' && (character.mapLayers.state || character.mapLayers.world));
+    const currentLayerIndex = parseInt(currentLayer);
+    const hasPreviousLayer = currentLayerIndex > 1 && character.mapLayers[currentLayerIndex - 1];
 
     // Store the current layer and nodes as the previous state for "Back One"
     previousLayer = currentLayer;
     previousNodes = nodes;
+    previousParentNode = parentLayerNode; // Store the parent node for correct back navigation
 
     // Create cards for each location
     nodes.forEach((node) => {
@@ -1937,26 +1936,16 @@ const displayLayerContent = (currentLayer, nodes, character) => {
         cardWrapper.style.position = 'relative'; // Set position to relative to contain the absolute positioning
 
         const locationCard = document.createElement('div');
-        locationCard.className = `location-card${currentLayer === 'Final' ? ' final-level' : ''}`; // Different style for the last level
+        locationCard.className = `location-card`; // Use the same style for all levels
 
-        // Create the content of the card
         const cardContent = `
-            <div class="top-bar-for-map">
-                <span class="circle red"></span>
-                <span class="circle yellow"></span>
-                <span class="circle green"></span>
-            </div>
             <div class="inside-location-card">
             <h3 class="node-name">${node.name}</h3>
             <p class="node-name-description">${node.type ? node.type.charAt(0).toUpperCase() + node.type.slice(1) : ''}${node.inside ? ' • ' + node.inside : ''}</p>
-            <div class="directions">
-                <div class="directions-fake-btn"><img src="images/app_icons/directions-symbol-for-map.png">Directions</div>
-                <div class="create-route-btn"><img src="images/app_icons/three-dots-simbol-for-map.png">More</div>
-                <div class="create-route-btn download"><img src="images/app_icons/download-simbol-for-map.png">Download</div>
-            </div>
             <p class="description">${node.description || ''}</p>
             <div class="images-container">
                 ${node.images ? node.images.map(img => `<img src="${img}" class="location-image">`).join('') : ''}
+                ${node.moreImages ? node.moreImages.map(img => `<img src="${img}" class="location-image">`).join('') : ''}
             </div>
             </div>
         `;
@@ -1964,22 +1953,19 @@ const displayLayerContent = (currentLayer, nodes, character) => {
 
         // Add the click event listener for all layers
         locationCard.addEventListener('click', () => {
-            if (currentLayer === 'World') {
-                const stateNodes = character.mapLayers.state ? character.mapLayers.state.filter(n => n.inside === node.name) : [];
-                if (stateNodes.length > 0) {
-                    displayLayerContent('State', stateNodes, character);
+            const nextLayerIndex = currentLayerIndex + 1;
+            const nextLayer = character.mapLayers[nextLayerIndex];
+            if (nextLayer) {
+                const nextNodes = nextLayer.filter(n => n.inside === node.name);
+                if (nextNodes.length > 0) {
+                    displayLayerContent(nextLayerIndex.toString(), nextNodes, character, node);
                 } else {
-                    showNodeInfo(node, character); // No further layers, show final info
+                    showWarning(); // Show warning if no further nodes
                 }
-            } else if (currentLayer === 'State') {
-                const finalNodes = character.mapLayers.final ? character.mapLayers.final.filter(n => n.inside === node.name) : [];
-                if (finalNodes.length > 0) {
-                    displayLayerContent('Final', finalNodes, character);
-                } else {
-                    showNodeInfo(node, character); // No further layers, show final info
-                }
+            } else if (character.mapLayers.node && character.mapLayers.node.inside === node.name) {
+                showNodeLayer(character.mapLayers.node, character); // Show the node layer if it exists and matches
             } else {
-                showNodeInfo(node, character); // Ensure `showNodeInfo` is called when reaching the final layer
+                showWarning(); // Show warning if no further nodes
             }
         });
 
@@ -1989,82 +1975,158 @@ const displayLayerContent = (currentLayer, nodes, character) => {
     });
 
     // Conditionally add back buttons
-    if (hasPreviousLayer) { // Check if there is a valid previous layer
+    if (hasPreviousLayer) {
         const backOneButton = document.createElement('button');
         backOneButton.innerText = '-';
         backOneButton.className = 'back-button-for-map';
         backOneButton.style.right = '50px';
         backOneButton.addEventListener('click', () => {
-            if (currentLayer === 'State') {
-                createConceptualMap(character); // Back to world layer
-            } else if (currentLayer === 'Final') {
-                const worldNode = nodes[0].inside; // Find the parent world node
-                const stateNodes = character.mapLayers.state ? character.mapLayers.state.filter(n => n.name === worldNode) : [];
-                displayLayerContent('State', stateNodes, character);
-            }
-        });
+            const previousLayerIndex = currentLayerIndex - 1;
+            const parentLayerNodes = character.mapLayers[previousLayerIndex];
 
+            const parentNodeNames = [...new Set(nodes.map(node => node.inside))];
+            const parentNode = parentLayerNodes.find(n => parentNodeNames.includes(n.name));
+            const grandParentName = parentNode?.inside;
+
+            const filteredNodes = parentLayerNodes.filter(n => n.inside === grandParentName);
+            const grandParentNode = previousLayerIndex > 1 ? character.mapLayers[previousLayerIndex - 1].find(n => n.name === grandParentName) : null;
+
+            displayLayerContent(previousLayerIndex.toString(), filteredNodes, character, grandParentNode);
+        });
+    
         mapContainer.appendChild(backOneButton);
     }
-
+    
     const backToStartButton = document.createElement('button');
     backToStartButton.innerText = 'x';
     backToStartButton.className = 'back-button-for-map';
     backToStartButton.addEventListener('click', () => {
-        createConceptualMap(character); // Go back to the initial map view
+        createConceptualMap(character);
     });
 
     mapContainer.appendChild(backToStartButton);
 };
 
-const showNodeInfo = (node, character) => {
+const showNodeLayer = (nodeLayer, character) => {
     const mapContainer = document.getElementById('mapContainer');
     mapContainer.innerHTML = ''; // Clear the map container for the new display
+    mapContainer.style.height = '300px';
+    
+    const imageInsideMap = document.createElement('div');
+    imageInsideMap.className = 'image-inside-map-node';
 
-    // Create a full-screen modal or slide-out panel
-    const nodeInfoModal = document.createElement('div');
-    nodeInfoModal.className = 'node-info-modal'; // Class for the modal styling
+    mapContainer.style.backgroundImage = `url(${nodeLayer.background})`;
+    mapContainer.style.backgroundBlendMode = "luminosity";
+    mapContainer.style.backgroundPosition = "center";
+    imageInsideMap.style.backgroundImage = `url(${nodeLayer.background})`;
+    imageInsideMap.style.backgroundRepeat = "no-repeat";
+    imageInsideMap.style.backgroundSize = 'cover';
 
-    // Create the content for the modal
-    const modalContent = `
-        <div class="modal-header">
-            <h2>${node.name}</h2>
-        </div>
-        <div class="modal-body">
-            <div class="image-gallery">
-                ${node.images ? node.images.map((img, index) => `
-                    <img src="${img}" class="gallery-image">
-                `).join('') : ''}
-            </div>
-            <div class="node-details">
-                <p>${node.longerDescription || node.description}</p>
-            </div>
-        </div>
-    `;
+    // Create pins for each node
+    nodeLayer.pins.forEach(pin => {
+        const pinElement = document.createElement('div');
+        pinElement.className = 'pin';
+        pinElement.style.left = `${pin.coordinates.x}%`;
+        pinElement.style.top = `${pin.coordinates.y}%`;
+        pinElement.title = pin.description; // Set hover text
 
-    nodeInfoModal.innerHTML = modalContent;
-    mapContainer.appendChild(nodeInfoModal);
+        imageInsideMap.appendChild(pinElement);
+    });
 
+    mapContainer.appendChild(imageInsideMap);
+
+    const commentWrapper = document.createElement('div');
+    commentWrapper.className = 'comment-wrapper-node';
+    
+    nodeLayer.comments.forEach(comment => {
+        const commentElement = document.createElement('div');
+        commentElement.className = 'comment-inside-node';
+        commentElement.innerHTML = `${comment}`;
+
+        commentWrapper.appendChild(commentElement);
+    });
+
+    mapContainer.appendChild(commentWrapper);
+
+    // Add back buttons
     const backOneButton = document.createElement('button');
-        backOneButton.innerText = '-';
-        backOneButton.className = 'back-button-for-map';
-        backOneButton.style.right = '50px';
-        backOneButton.addEventListener('click', () => {
-            // Go back to the previous layer
-            displayLayerContent(previousLayer, previousNodes, character);
-        });
+    backOneButton.innerText = '-';
+    backOneButton.className = 'back-button-for-map';
+    backOneButton.style.right = '50px';
+    backOneButton.addEventListener('click', () => {
+        mapContainer.style = "";
 
-        mapContainer.appendChild(backOneButton)
+        // Find the parent layer nodes
+        const parentLayerNodes = character.mapLayers[previousLayer];
+        console.log('Parent Layer Nodes:', parentLayerNodes);
+
+        // Get the name of the parent node we're currently inside
+        const parentNodeName = nodeLayer.inside;
+        console.log('Parent Node Name:', parentNodeName);
+
+        // Find the parent node in the previous layer
+        const parentNode = parentLayerNodes.find(n => n.name === parentNodeName);
+        console.log('Parent Node:', parentNode);
+
+        // Determine the grandparent node name
+        const grandParentName = parentNode ? parentNode.inside : null;
+        console.log('Grandparent Name:', grandParentName);
+
+        // Filter to show all nodes that are inside the grandparent node
+        const filteredNodes = parentLayerNodes.filter(n => n.inside === grandParentName);
+        console.log('Filtered Nodes:', filteredNodes);
+
+        // Find the grandparent node for correct longer description display
+        const grandParentNode = previousLayer > 1 ? character.mapLayers[previousLayer - 1].find(n => n.name === grandParentName) : null;
+        console.log('Grandparent Node:', grandParentNode);
+
+        displayLayerContent(previousLayer, filteredNodes, character, grandParentNode); 
+    });
+
+    mapContainer.appendChild(backOneButton);
 
     const backToStartButton = document.createElement('button');
     backToStartButton.innerText = 'x';
     backToStartButton.className = 'back-button-for-map';
     backToStartButton.addEventListener('click', () => {
-        createConceptualMap(character); // Go back to the initial map view
+        mapContainer.style = "";
+        createConceptualMap(character); 
     });
 
     mapContainer.appendChild(backToStartButton);
 };
+
+const addDescriptionContainer = (node) => {
+    if (node && node.longerDescription) {
+        const mapContainer = document.getElementById('mapContainer');
+        const descriptionContainer = document.createElement('div');
+        descriptionContainer.className = 'description-container';
+
+        const imagesHtml = node.images ? node.images.map(img => `<img src="${img}" class="location-image">`).join('') : '';
+        const moreImagesHtml = node.moreImages ? node.moreImages.map(img => `<img src="${img}" class="location-image">`).join('') : '';
+        descriptionContainer.innerHTML = `
+            <div class="images-container">
+                ${imagesHtml}
+                ${moreImagesHtml}
+            </div>
+            <p class="longer-description">${node.longerDescription}</p>
+        `;
+        mapContainer.appendChild(descriptionContainer);
+    }
+};
+
+const showWarning = () => {
+    const warning = document.createElement('div');
+    warning.className = 'warning-for-map';
+    warning.innerText = "I didn't put anything here yet, check back later!";
+    document.body.appendChild(warning);
+
+    // Remove the warning after a few seconds
+    setTimeout(() => {
+        warning.remove();
+    }, 3000); // Adjust the timeout duration as needed (3000ms = 3 seconds)
+};
+
 
 
 
