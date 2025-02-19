@@ -1593,6 +1593,12 @@
         "Younger Face Claim": "tom blyth"
       },
       "pictures": ["images/nate.png"],
+      "fullBodyPictures": ["images/theo/theo_full_body1.png", "images/theo/theo_full_body2.png", "images/theo/theo_full_body3.png", "images/theo/theo_full_body4.png", "images/theo/theo_full_body5.png"],
+      "extraPictures": ["./images/theo/extras/extra17.png"
+     ],
+      "details": [
+    "blah blah"
+],
       "connections": [
           { "type": "npc", "name": "William Roosevelt", "relationship": "grandfather" },
           { "type": "npc", "name": "Anna Roosevelt", "relationship": "mother" },
