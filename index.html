@@ -32,6 +32,15 @@
                 Toggle NSFW Content
             </label>
         </div>
+        <!-- Hidden section to display new image order -->
+         <!-- Hidden Button -->
+<button id="toggleReorderMode" style="position: fixed;">Toggle Reorder Mode</button>
+
+<div id="newOrderDisplay" style="display: none;">
+    <h3>New Image Order:</h3>
+    <textarea id="newOrderText" rows="5" cols="50" readonly></textarea>
+</div>
+
     </div>
     <div id="bioModal" class="modal">
         <div class="modal-content">
@@ -55,22 +64,30 @@
                 </div>
                 <span class="close" id="closeModal">&times;</span>
             </div>
-            <div class="google-search-section" id="googleSearchSection">
-                <div class="search-bar">
-                    <input type="text" id="searchInput" value="" disabled>
-                    <button id="searchButton" disabled>Search</button>
+            <div class="window" id="characterWindow">
+                <div class="title-bar">
+                <div class="window-controls">
+                    <span class="close-button"></span>
+                    <span class="minimize-button"></span>
+                    <span class="maximize-button"></span>
                 </div>
-                <div class="search-results-container">
-                    <div class="search-results" id="searchResults"></div>
-                    <div class="search-sidebar" id="searchSidebar"></div>
+                <div class="window-title">Character Info</div>
                 </div>
-            </div>
+                <div class="window-tabs">
+                <ul class="tab-list">
+                </ul>
+                </div>
+                <div class="window-content">
+                </div>
+            </div>  
             <div class="history-container">
                 <div class="history-left">
                     <div class="history-info" id="historyInfo">
                         <div class="history-images" id="historyImages"></div>
+                        <div class="history-at-a-glance" id="historyAtAGlance"></div>
                         <div class="history-bullet-points" id="historyBulletPoints"></div>
                         <div class="history-images" id="historyExtraImages"></div>
+                        <div class="theme-song" id="themeSong"></div>
                         <div class="history-bullet-points" id="historyExtraBulletPoints"></div>
                     </div>
                 </div>

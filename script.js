@@ -29,13 +29,220 @@ const randomPicture = (pictures) => pictures[Math.floor(Math.random() * pictures
 
 const randomIndex = (arrayLength) => Math.floor(Math.random() * arrayLength);
 
-const populateSearchResults = (searchResultsData) => {
-    searchResults.innerHTML = '';
+const createTab = (name, contentElement) => {
+    const tab = document.createElement('li');
+    tab.innerText = name;
+    tab.addEventListener('click', () => {
+        // Remove active class from other tabs
+        document.querySelectorAll('.tab-list li').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // Hide other content sections
+        document.querySelectorAll('.window-content > div').forEach(div => div.style.display = 'none');
+        contentElement.style.display = 'flex';
+    });
+    return tab;
+};
+
+const populateTopBar = (container, topBarData) => {
+    if (!topBarData) return; // Return early if no top bar data is provided
+
+    const topBar = document.createElement('div');
+    topBar.className = 'top-bar-container';
+
+    const nameAndTags = document.createElement('div');
+    nameAndTags.className = 'name-and-tags-together';
+
+    const titleAndSubEl = document.createElement('div');
+    titleAndSubEl.className = 'sidebar-and-title';
+
+
+    const titleEl = document.createElement('div');
+        titleEl.className = 'sidebar-title';
+        titleEl.innerHTML = topBarData.title;
+        titleAndSubEl.appendChild(titleEl);
+
+        const subtitleEl = document.createElement('div');
+        subtitleEl.className = 'sidebar-subtitle';
+        subtitleEl.innerHTML = topBarData.subtitle;
+        titleAndSubEl.appendChild(subtitleEl);
+
+        nameAndTags.appendChild(titleAndSubEl);
+
+        if(topBarData.tags){
+        topBarData.tags.forEach(tag=>{
+            const lilTag = document.createElement('div');
+            lilTag.className = 'lil-tag-for-top-bar';
+            lilTag.style.backgroundColor = topBarData.highlightColorHere;
+            lilTag.style.border = '2px solid rgba(0, 0, 0, 0.3)';
+            lilTag.innerHTML = tag;
+            nameAndTags.appendChild(lilTag);
+        })
+        }
+
+        topBar.appendChild(nameAndTags)
+
+        const imagesEl = document.createElement('div');
+        imagesEl.className = 'sidebar-images';
+
+        const largeImageContainer = document.createElement('div');
+        largeImageContainer.className = 'large-image-container';
+
+        const largeImg = document.createElement('img');
+        largeImg.src = topBarData.images[0];
+        largeImg.className = 'large-image';
+
+        largeImageContainer.appendChild(largeImg);
+        imagesEl.appendChild(largeImageContainer);
+
+        const smallImagesContainer = document.createElement('div');
+        smallImagesContainer.className = 'small-images-container';
+        let key = 0;
+        topBarData.images.slice(1, 3).forEach(imgSrc => {
+            
+           const smallImagesContainerContains = document.createElement('div');
+           smallImagesContainerContains.className = 'small-images-container-contains';
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.className = 'small-image-' + key;
+            smallImagesContainerContains.appendChild(img);
+            smallImagesContainer.appendChild(smallImagesContainerContains)
+            key++;
+        });
+
+        imagesEl.appendChild(smallImagesContainer);
+        topBar.appendChild(imagesEl);
+
+        
+
+    // Create a large container with an image and news
+    const largeContainer = document.createElement('div');
+    largeContainer.className = 'top-bar-large-container';
+    largeContainer.style.backgroundColor = topBarData.highlightColorHere;
+    if (topBarData.imageNews) {
+        const newsImage = document.createElement('div');
+        newsImage.className = 'top-bar-large-image';
+        const largeImage = document.createElement('img');
+        largeImage.src = topBarData.imageNews;
+        newsImage.appendChild(largeImage);
+        largeContainer.appendChild(newsImage);
+    }
+    
+    if (topBarData.newsType) {
+        const newsContainer = document.createElement('div');
+        newsContainer.className = 'top-bar-news';
+    
+        // Check if the news type is 'youtube' or 'instagram'
+        if (topBarData.newsType === 'youtube' || topBarData.newsType === 'instagram') {
+            // Create a wrapper for the icon, platform name, and handle
+            const headerContainer = document.createElement('div');
+            headerContainer.className = 'news-header-container';
+    
+            // Create the small circle for the icon
+            const iconContainer = document.createElement('div');
+            iconContainer.className = 'news-icon-container';
+    
+            const iconImage = document.createElement('img');
+            iconImage.src = `images/app_icons/${topBarData.newsType}.png`; // Icon path based on type
+            iconContainer.appendChild(iconImage);
+    
+            const platformAndHandle = document.createElement('div');
+            platformAndHandle.className = 'news-plataform-and-handle'
+
+            // Add the platform name
+            const platformName = document.createElement('span');
+            platformName.className = 'news-platform-name';
+            platformName.innerText = topBarData.newsType.charAt(0).toUpperCase() + topBarData.newsType.slice(1); // Capitalize first letter
+            platformAndHandle.appendChild(platformName);
+            // Add the handle
+            const handle = document.createElement('span');
+            handle.className = 'news-handle';
+            handle.innerText = topBarData.handle || ''; // Display the handle from JSON or leave blank if not provided
+            platformAndHandle.appendChild(handle);
+    
+            // Append icon, platform name, and handle to the header container
+            headerContainer.appendChild(iconContainer);
+            headerContainer.appendChild(platformAndHandle);
+    
+            // Add the fake title
+            const fakeTitle = document.createElement('div');
+            fakeTitle.className = 'news-fake-title';
+            fakeTitle.innerText = topBarData.newsTitle || 'Untitled'; // Display the fake title from JSON or 'Untitled'
+    
+            // Add the description
+            const newsDescription = document.createElement('div');
+            newsDescription.className = 'news-description';
+            newsDescription.innerHTML = topBarData.news || ''; // The actual news text
+
+            const newsDate = document.createElement('div');
+            newsDate.className = 'news-date';
+            newsDate.innerHTML = topBarData.newsDate || '';
+    
+            // Append the header and other elements to the main news container
+            newsContainer.appendChild(headerContainer);
+            newsContainer.appendChild(fakeTitle);
+            newsContainer.appendChild(newsDescription);
+            newsContainer.appendChild(newsDate);
+        } else {
+            // Standard news handling
+            newsContainer.innerHTML = topBarData.news;
+        }
+    
+        largeContainer.appendChild(newsContainer);
+    }
+    
+    
+    
+    topBar.appendChild(largeContainer);
+
+    // Create two small containers for age/DOB and misc info
+
+    const largeContainerRight = document.createElement('div');
+    largeContainerRight.className = 'top-bar-right-container';
+
+    const smallContainer1 = document.createElement('div');
+    smallContainer1.className = 'top-bar-small-container';
+    smallContainer1.innerHTML = `<strong>Born:</strong> ${topBarData.ageDob || 'N/A'}`;
+    smallContainer1.style.backgroundColor = topBarData.highlightColorHere;
+
+    const smallContainer2 = document.createElement('div');
+    smallContainer2.className = 'top-bar-small-container';
+    smallContainer2.innerHTML = topBarData.miscTop || 'N/A';
+    smallContainer2.style.backgroundColor = topBarData.highlightColorHere;
+
+    const wideContainer = document.createElement('div');
+    wideContainer.className = 'top-bar-wide-container';
+
+    if (topBarData.miscWidePic) {
+        wideContainer.style.backgroundImage = `url(${topBarData.miscWidePic})`;
+        wideContainer.style.backgroundSize = 'cover'; 
+        wideContainer.style.backgroundPosition = 'center';
+        
+       wideContainer.className = 'top-bar-wide-container-with-pic';
+    }
+
+    wideContainer.innerHTML = topBarData.miscWide || 'N/A';
+    wideContainer.style.backgroundColor = topBarData.highlightColorHere;
+
+    largeContainerRight.appendChild(smallContainer1);
+    largeContainerRight.appendChild(smallContainer2);
+    largeContainerRight.appendChild(wideContainer);
+    
+    topBar.appendChild(largeContainerRight);
+
+    container.appendChild(topBar);
+};
+
+
+
+const populateSearchResults = (container, searchResultsData) => {
+    container.innerHTML = '';
     searchResultsData.forEach(result => {
         const resultItem = createSearchResultItem(result.title, result.url, result.description);
-        searchResults.appendChild(resultItem);
+        container.appendChild(resultItem);
     });
 };
+
 
 const createSearchResultItem = (title, url, description) => {
     const item = document.createElement('div');
@@ -59,137 +266,77 @@ const createSearchResultItem = (title, url, description) => {
     return item;
 };
 
-const populateSearchSidebar = (sidebarInfo, relatedPeople) => {
-    console.log('Sidebar Info:', sidebarInfo);
-    console.log('Related People:', relatedPeople);
 
-    searchSidebar.innerHTML = ''; // Clear previous sidebar content
+const populateSearchSidebar = (container, sidebarInfo, relatedPeople) => {
 
-    if (sidebarInfo) {
-        const imagesEl = document.createElement('div');
-        imagesEl.className = 'sidebar-images';
-
-        const largeImageContainer = document.createElement('div');
-        largeImageContainer.className = 'large-image-container';
-
-        const largeImg = document.createElement('img');
-        largeImg.src = sidebarInfo.images[0];
-        largeImg.className = 'large-image';
-
-        largeImageContainer.appendChild(largeImg);
-        imagesEl.appendChild(largeImageContainer);
-
-        const smallImagesContainer = document.createElement('div');
-        smallImagesContainer.className = 'small-images-container';
-        let key = 0;
-        sidebarInfo.images.slice(1, 3).forEach(imgSrc => {
-            
-            const img = document.createElement('img');
-            img.src = imgSrc;
-            img.className = 'small-image-' + key;
-            smallImagesContainer.appendChild(img);
-            key++;
-        });
-
-        imagesEl.appendChild(smallImagesContainer);
-        searchSidebar.appendChild(imagesEl);
-
-        const titleEl = document.createElement('div');
-        titleEl.className = 'sidebar-title';
-        titleEl.innerHTML = sidebarInfo.title;
-        searchSidebar.appendChild(titleEl);
-
-        const subtitleEl = document.createElement('div');
-        subtitleEl.className = 'sidebar-subtitle';
-        subtitleEl.innerHTML = sidebarInfo.subtitle;
-        searchSidebar.appendChild(subtitleEl);
+    container.innerHTML = ''; // Clear previous sidebar content
 
         const aboutEl = document.createElement('div');
         aboutEl.className = 'sidebar-section';
         aboutEl.innerHTML = `<div class="sidebar-section-title">About</div><div class="sidebar-section-content">${sidebarInfo.about}</div>`;
-        searchSidebar.appendChild(aboutEl);
+        container.appendChild(aboutEl);
 
-        const parentsEl = document.createElement('div');
-        parentsEl.className = 'sidebar-section';
-        parentsEl.innerHTML = `<div class="sidebar-section-content"><strong>Parents:</strong> ${sidebarInfo.parents}</div>`;
-        searchSidebar.appendChild(parentsEl);
+        if (sidebarInfo.tidbits) {
+            Object.entries(sidebarInfo.tidbits).forEach(([title, content]) => {
+                const tidbitEl = document.createElement('div');
+                tidbitEl.className = 'sidebar-tidbit';
+                
+                tidbitEl.innerHTML = `
+                    <div class="sidebar-inner-tidbit"><strong>${title}:</strong> ${content}</div>
+                `;
+                
+                container.appendChild(tidbitEl);
+            });
+        }
+
+        const horizonalDivider = document.createElement('div')
+        horizonalDivider.className = 'horizonal-divider-light';
+        container.appendChild(horizonalDivider)
 
         const relatedPeopleEl = document.createElement('div');
-        relatedPeopleEl.className = 'sidebar-section';
-        relatedPeopleEl.innerHTML = `<div class="sidebar-section-title">Related People</div>`;
-        const relatedPeopleContentEl = document.createElement('div');
-        relatedPeopleContentEl.className = 'related-people-carousel';
+relatedPeopleEl.className = 'sidebar-section';
+relatedPeopleEl.innerHTML = `<div class="search-for-title">People also search for</div>`;
+const relatedPeopleContentEl = document.createElement('div');
+relatedPeopleContentEl.className = 'related-people-content';
 
-        const prevButton = document.createElement('button');
-        prevButton.id = 'prevRelated';
-        prevButton.className = 'carousel-button';
-        prevButton.innerText = '<';
+// Ensure that relatedPeople data exists and has up to four entries
+if (sidebarInfo.relatedPeople && sidebarInfo.relatedPeople.length > 0) {
+    sidebarInfo.relatedPeople.slice(0, 4).forEach(person => {
+        const personEl = document.createElement('div');
+        personEl.className = 'related-person';
 
-        const nextButton = document.createElement('button');
-        nextButton.id = 'nextRelated';
-        nextButton.className = 'carousel-button';
-        nextButton.innerText = '>';
+        // Create and set the image
+        const personImg = document.createElement('img');
+        personImg.src = person.imageSrc;
+        personImg.alt = person.name;
+        personImg.className = 'related-person-image';
 
-        const relatedPeopleWrapper = document.createElement('div');
-        relatedPeopleWrapper.className = 'related-people-wrapper';
-        relatedPeopleWrapper.style.display = 'flex';
-        relatedPeopleWrapper.style.transition = 'transform 0.5s ease-in-out';
+        // Create and set the name
+        const personName = document.createElement('div');
+        personName.className = 'related-person-name';
+        personName.innerText = person.name;
 
-        relatedPeople.forEach(person => {
-            const personEl = document.createElement('div');
-            personEl.className = 'related-person';
-            const personImg = document.createElement('img');
-            personImg.src = randomPicture(person.pictures);
-            const personName = document.createElement('div');
-            personName.className = 'related-person-name';
-            personName.innerText = person.displayName;
-            personEl.appendChild(personImg);
-            personEl.appendChild(personName);
-            relatedPeopleWrapper.appendChild(personEl);
-        });
+        // Append image and name to the person element
+        personEl.appendChild(personImg);
+        personEl.appendChild(personName);
 
-        relatedPeopleContentEl.appendChild(prevButton);
-        relatedPeopleContentEl.appendChild(relatedPeopleWrapper);
-        relatedPeopleContentEl.appendChild(nextButton);
-        relatedPeopleEl.appendChild(relatedPeopleContentEl);
-        searchSidebar.appendChild(relatedPeopleEl);
+        // Append person element to the content container
+        relatedPeopleContentEl.appendChild(personEl);
+    });
 
-        let currentIndex = 0;
-        const visibleItems = 4;
-        const totalItems = relatedPeople.length;
-        const itemWidth = 60; // Adjust this to match the actual width of each item
+    // Append the related people content to the main container
+    relatedPeopleEl.appendChild(relatedPeopleContentEl);
+    container.appendChild(relatedPeopleEl);
 
-        relatedPeopleWrapper.style.width = `${itemWidth * totalItems}px`;
-
-        const updateCarousel = () => {
-            const offset = -(currentIndex * itemWidth);
-            relatedPeopleWrapper.style.transform = `translateX(${offset}px)`;
-        };
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - visibleItems + totalItems) % totalItems;
-            updateCarousel();
-        });
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + visibleItems) % totalItems;
-            updateCarousel();
-        });
-
-        updateCarousel(); // Initialize carousel to the start
-
-        // MutationObserver to handle DOM changes
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                if (mutation.type === 'childList') {
-                    updateCarousel();
-                }
-            });
-        });
-
-        observer.observe(relatedPeopleWrapper, { childList: true });
-    }
+    const seeMoreNow = document.createElement('div');
+    seeMoreNow.classList = 'see-more-now-b';
+    seeMoreNow.innerHTML = "See more &#129122;"
+    container.appendChild(seeMoreNow);
+}
 };
+
+
+
 
 const historyPhone = document.getElementById('historyPhone');
 const lockScreen = document.getElementById('lockScreen');
@@ -536,22 +683,37 @@ const renderMessagesContent = (character) => {
 
     // Generate HTML for favorite people
     const favoritesHtml = sortedMessages
-        .filter(msg => msg.isFavorite)
-        .map(fav => {
-            const participant = fav.participants.find(p => p !== character.displayName);
-            const profilePicture = getProfilePicture(participant);
-            const savedAsName = getSavedAsName(participant); // Use the function to get the "saved as" name or default
+    .filter(msg => msg.isFavorite)
+    .map(fav => {
+        const participant = fav.participants.find(p => p !== character.displayName);
+        const profilePicture = getProfilePicture(participant);
+        const savedAsName = getSavedAsName(participant); // Use the function to get the "saved as" name or default
 
-            // Handle cases where the participant might not have a proper identifier
-            const messageIdentifier = fav.type === 'group' ? fav.groupName : participant;
-
+        const generateGroupIcon = (participants) => {
+            const participantImages = participants.map(name => getProfilePicture(name));
+            const participantIcons = participantImages.map(img => `<img src="${img}" class="group-participant-icon">`).join('');
+            
             return `
-                <div class="messages-favorite-person" onclick="openMessagesMessage('${character.displayName}', '${messageIdentifier}')">
-                    <img src="${profilePicture}" alt="${savedAsName}">
-                    <span>${savedAsName}</span>
+                <div class="group-icon-fave">
+                    ${participantIcons}
                 </div>
             `;
-        }).join('');
+        };
+
+        // Handle cases where the participant might not have a proper identifier
+        const messageIdentifier = fav.type === 'group' ? fav.groupName : participant;
+        const picOrGroup = fav.type === 'group' 
+            ? generateGroupIcon(fav.participants.filter(p => p !== character.displayName)) 
+            : `<img src="${profilePicture}" alt="${savedAsName}">`;
+
+        return `
+            <div class="messages-favorite-person" onclick="openMessagesMessage('${character.displayName}', '${messageIdentifier}')">
+                ${picOrGroup}
+                <span>${savedAsName}</span>
+            </div>
+        `;
+    }).join('');
+
 
     // Generate HTML for messages list
     const messagesHtml = sortedMessages.map(message => {
@@ -1468,7 +1630,7 @@ const renderPhotosContent = (photos, albumsSections, forYou, search) => {
                 <div class="topbar-inside">Select</div>
             </div>
             <div class="photos-here">
-                ${photos.map(photo => `<img src="${photo}" class="photo">`).join('')}
+                ${photos.map(photo => `<img src="${photo}" class="photo shared-images">`).join('')}
             </div>
         </div>
         <div class="tab-content albums">
@@ -1801,8 +1963,10 @@ const populateHistorySection = (character) => {
     historyImages.innerHTML = ''; // Clear existing images
     historyBulletPoints.innerHTML = ''; // Clear existing bullet points
     historyExtraImages.innerHTML = '';
+    themeSong.innerHTML = '';
     historyExtraBulletPoints.innerHTML = '';
-
+    historyAtAGlance.innerHTML = '';
+            
     if (character.history) {
         // Add history images
         character.history.images.forEach(imageSrc => {
@@ -1812,7 +1976,17 @@ const populateHistorySection = (character) => {
             historyImages.appendChild(img);
         });
 
-        // Add history bullet points
+        if (character.history.glances) {
+            for (let [title, description] of Object.entries(character.history.glances)) {
+                const glanceDiv = document.createElement('div');
+                glanceDiv.className = 'at-a-glance';
+                
+                glanceDiv.innerHTML = `<h4>${title}:</h4> ${description}`;
+                
+                historyAtAGlance.appendChild(glanceDiv); 
+            }
+        }
+        
         let bulletPointsHtml = '<ul>';
         character.history.details.forEach(detail => {
             bulletPointsHtml += `<li>${detail}</li>`;
@@ -1824,10 +1998,21 @@ const populateHistorySection = (character) => {
         character.history.extraImages.forEach(imageSrc => {
             const img = document.createElement('img');
             img.src = imageSrc;
-            img.className = 'shared-images'; // Use shared class for consistency
+            img.className = 'shared-images'; 
             historyExtraImages.appendChild(img);
         });
        };
+
+       if (character.history.themeSongLyrics) {
+        character.history.themeSongLyrics.forEach(songLyric => {
+            const song = document.createElement('div');
+            song.innerHTML = songLyric;
+            song.className = 'song-idk';
+            themeSong.appendChild(song); // Append to the parent element
+        });
+    }
+    
+    
        if(character.history.extraDetails){
         let extraBulletPointsHtml = '<ul>';
         character.history.extraDetails.forEach(detail => {
@@ -1853,13 +2038,10 @@ const populateNsfwSection = (character) => {
     nsfwDetails.innerHTML = ''; 
     nsfwBulletPoints.innerHTML = ''; 
 
-    // Check if NSFW data exists in character object
-    if (character.nsfw) {
-        console.log('NSFW data found for character:', character.displayName);
 
-        // Log the NSFW images
+    if (character.nsfw) {
+        
         if (character.nsfw.images && character.nsfw.images.length > 0) {
-            console.log('Adding NSFW images:', character.nsfw.images);
             character.nsfw.images.forEach(imageSrc => {
                 const img = document.createElement('img');
                 img.src = imageSrc;
@@ -1920,6 +2102,8 @@ const displayLayerContent = (currentLayer, nodes, character, parentLayerNode) =>
     // Display longer description and images from the parent layer node if available
     addDescriptionContainer(parentLayerNode);
 
+    
+
     // Determine if there is a valid previous layer
     const currentLayerIndex = parseInt(currentLayer);
     const hasPreviousLayer = currentLayerIndex > 1 && character.mapLayers[currentLayerIndex - 1];
@@ -1944,8 +2128,8 @@ const displayLayerContent = (currentLayer, nodes, character, parentLayerNode) =>
             <p class="node-name-description">${node.type ? node.type.charAt(0).toUpperCase() + node.type.slice(1) : ''}${node.inside ? ' • ' + node.inside : ''}</p>
             <p class="description">${node.description || ''}</p>
             <div class="images-container">
-                ${node.images ? node.images.map(img => `<img src="${img}" class="location-image">`).join('') : ''}
-                ${node.moreImages ? node.moreImages.map(img => `<img src="${img}" class="location-image">`).join('') : ''}
+                ${node.images ? node.images.map(img => `<img src="${img}" class="location-image shared-images">`).join('') : ''}
+                ${node.moreImages ? node.moreImages.map(img => `<img src="${img}" class="location-image shared-images">`).join('') : ''}
             </div>
             </div>
         `;
@@ -2018,6 +2202,7 @@ const showNodeLayer = (nodeLayer, character) => {
     mapContainer.style.backgroundImage = `url(${nodeLayer.background})`;
     mapContainer.style.backgroundBlendMode = "luminosity";
     mapContainer.style.backgroundPosition = "center";
+    mapContainer.style.backgroundSize = "cover";
     imageInsideMap.style.backgroundImage = `url(${nodeLayer.background})`;
     imageInsideMap.style.backgroundRepeat = "no-repeat";
     imageInsideMap.style.backgroundSize = 'cover';
@@ -2118,7 +2303,7 @@ const addDescriptionContainer = (node) => {
 const showWarning = () => {
     const warning = document.createElement('div');
     warning.className = 'warning-for-map';
-    warning.innerText = "I didn't put anything here yet, check back later!";
+    warning.innerText = "Nothing here yet, check back later.";
     document.body.appendChild(warning);
 
     // Remove the warning after a few seconds
@@ -2128,6 +2313,251 @@ const showWarning = () => {
 };
 
 
+
+let isReorderModeActive = false;
+let dragSrcEl = null;
+const elementsWithListeners = new WeakSet();
+let initialOrders = {};
+
+function addDragEventListeners(element) {
+    if (!elementsWithListeners.has(element)) {
+        element.addEventListener('dragstart', handleDragStart);
+        element.addEventListener('dragover', handleDragOver);
+        element.addEventListener('dragenter', handleDragEnter);
+        element.addEventListener('dragleave', handleDragLeave);
+        element.addEventListener('drop', handleDrop);
+        element.addEventListener('dragend', handleDragEnd);
+        elementsWithListeners.add(element);
+    }
+}
+
+function removeDragEventListeners(element) {
+    if (elementsWithListeners.has(element)) {
+        element.removeEventListener('dragstart', handleDragStart);
+        element.removeEventListener('dragover', handleDragOver);
+        element.removeEventListener('dragenter', handleDragEnter);
+        element.removeEventListener('dragleave', handleDragLeave);
+        element.removeEventListener('drop', handleDrop);
+        element.removeEventListener('dragend', handleDragEnd);
+        elementsWithListeners.delete(element);
+    }
+}
+
+const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+            mutation.addedNodes.forEach((node) => {
+                handleNodeAdded(node);
+            });
+        }
+    }
+});
+
+function handleNodeAdded(node) {
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+
+    if (node.classList.contains('shared-images')) {
+        if (isReorderModeActive) {
+            node.setAttribute('draggable', true);
+            addDragEventListeners(node);
+        }
+    }
+
+    const nestedSharedImages = node.querySelectorAll('.shared-images');
+    nestedSharedImages.forEach((img) => {
+        if (isReorderModeActive) {
+            img.setAttribute('draggable', true);
+            addDragEventListeners(img);
+        }
+    });
+}
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+function activateReorderMode() {
+    isReorderModeActive = true;
+    document.body.classList.add('reorder-mode-active');
+    initialOrders = {};
+
+    const images = document.querySelectorAll('.shared-images');
+    images.forEach((img) => {
+        img.setAttribute('draggable', true);
+        addDragEventListeners(img);
+    });
+
+    storeInitialOrders();
+
+    // Update the new order display initially
+    updateNewOrderDisplay();
+}
+
+function deactivateReorderMode() {
+    isReorderModeActive = false;
+    document.body.classList.remove('reorder-mode-active');
+
+    const images = document.querySelectorAll('.shared-images');
+    images.forEach((img) => {
+        img.removeAttribute('draggable');
+        removeDragEventListeners(img);
+    });
+
+    initialOrders = {};
+
+    // Final update of the new order display
+    updateNewOrderDisplay();
+}
+
+function storeInitialOrders() {
+    const images = document.querySelectorAll('.shared-images');
+    const containersSet = new Set();
+
+    images.forEach((img) => {
+        containersSet.add(img.parentNode);
+    });
+
+    const containers = Array.from(containersSet);
+
+    containers.forEach((container) => {
+        let containerIdentifier = getContainerIdentifier(container);
+
+        const imagesInContainer = container.querySelectorAll('.shared-images');
+        const imageUrls = Array.from(imagesInContainer).map((img) => {
+            const src = img.src;
+            const index = src.indexOf('/images/');
+            if (index !== -1) {
+                return '.' + src.substring(index);
+            } else {
+                return src;
+            }
+        });
+
+        initialOrders[containerIdentifier] = imageUrls;
+    });
+}
+
+function updateNewOrderDisplay() {
+    const images = document.querySelectorAll('.shared-images');
+    const containersSet = new Set();
+
+    images.forEach((img) => {
+        containersSet.add(img.parentNode);
+    });
+
+    const containers = Array.from(containersSet);
+    const newOrderPerContainer = {};
+
+    containers.forEach((container) => {
+        let containerIdentifier = getContainerIdentifier(container);
+
+        const imagesInContainer = container.querySelectorAll('.shared-images');
+        const imageUrls = Array.from(imagesInContainer).map((img) => {
+            const src = img.src;
+            const index = src.indexOf('/images/');
+            if (index !== -1) {
+                return '.' + src.substring(index);
+            } else {
+                return src;
+            }
+        });
+
+        const initialOrder = initialOrders[containerIdentifier] || [];
+        if (!arraysEqual(imageUrls, initialOrder)) {
+            newOrderPerContainer[containerIdentifier] = imageUrls;
+        }
+    });
+
+    const newOrderText = document.getElementById('newOrderText');
+    if (newOrderText) {
+        newOrderText.value = JSON.stringify(newOrderPerContainer, null, 2);
+    }
+
+    console.log('Changed Image Order:', JSON.stringify(newOrderPerContainer, null, 2));
+}
+
+function arraysEqual(a1, a2) {
+    return JSON.stringify(a1) === JSON.stringify(a2);
+}
+
+function getContainerIdentifier(container) {
+    if (container.id) {
+        return container.id;
+    } else if (container.className) {
+        return container.className.split(' ')[0];
+    } else {
+        return 'unknownContainer';
+    }
+}
+
+// Event handlers
+function handleDragStart(e) {
+    if (!isReorderModeActive) return;
+    dragSrcEl = this;
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', null);
+    this.classList.add('dragging');
+}
+
+function handleDragOver(e) {
+    if (!isReorderModeActive) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    return false;
+}
+
+function handleDragEnter(e) {
+    if (!isReorderModeActive) return;
+    this.classList.add('over');
+}
+
+function handleDragLeave(e) {
+    if (!isReorderModeActive) return;
+    this.classList.remove('over');
+}
+
+function handleDrop(e) {
+    if (!isReorderModeActive) return;
+    e.stopPropagation();
+
+    if (dragSrcEl !== this) {
+        const dragParent = dragSrcEl.parentNode;
+        const dropParent = this.parentNode;
+
+        if (dragParent === dropParent) {
+            const children = Array.from(dragParent.children);
+            const dragIndex = children.indexOf(dragSrcEl);
+            const dropIndex = children.indexOf(this);
+
+            if (dragIndex < dropIndex) {
+                dragParent.insertBefore(dragSrcEl, this.nextSibling);
+            } else {
+                dragParent.insertBefore(dragSrcEl, this);
+            }
+        }
+    }
+    return false;
+}
+
+function handleDragEnd(e) {
+    if (!isReorderModeActive) return;
+    this.classList.remove('dragging');
+    const images = document.querySelectorAll('.shared-images');
+    images.forEach((img) => img.classList.remove('over'));
+
+    // Update order if necessary
+    updateNewOrderDisplay();
+}
+
+// Event listener for the reorder mode toggle button
+const toggleReorderButton = document.getElementById('toggleReorderMode');
+
+toggleReorderButton.addEventListener('click', () => {
+    isReorderModeActive = !isReorderModeActive;
+    if (isReorderModeActive) {
+        activateReorderMode();
+    } else {
+        deactivateReorderMode();
+    }
+});
 
 
 
@@ -2157,7 +2587,6 @@ const createCharacterElement = (character) => {
                 if (character && character.connections) {
                     showNpcBubbles(characterEl, character.connections);
                 }
-                
             }
             if (toggleConnections.checked) {
                 showConnections(characterEl);
@@ -2177,45 +2606,40 @@ const createCharacterElement = (character) => {
             currentImages = character.fullBodyPictures || [];
             currentImageIndex = randomIndex(currentImages.length);
 
-            carouselImages.innerHTML = ''; // Clear existing images
-            bioExtraImages.innerHTML = ''; // Clear existing extra images
 
-            // Add images to carousel container
+            carouselImages.innerHTML = ''; 
+            bioExtraImages.innerHTML = ''; 
+
             currentImages.forEach((imageSrc) => {
                 const img = document.createElement('img');
                 img.src = imageSrc;
-                img.style.width = '250px'; // Ensure each image has the correct width
-                img.style.height = '400px'; // Ensure each image has the correct height
+                img.style.width = '250px'; 
+                img.style.height = '400px'; 
                 carouselImages.appendChild(img);
             });
 
-            // Add duplicate first and last images for smooth transition
             const firstImgClone = carouselImages.firstElementChild.cloneNode(true);
             const lastImgClone = carouselImages.lastElementChild.cloneNode(true);
             carouselImages.appendChild(firstImgClone);
             carouselImages.insertBefore(lastImgClone, carouselImages.firstElementChild);
 
-            // Adjust container width to fit all images including clones
             carouselImages.style.width = `${(currentImages.length + 2) * 250}px`;
 
             updateCarousel();
 
-            // Add extra images
             character.extraPictures.forEach(pic => {
                 const img = document.createElement('img');
                 img.src = pic;
-                img.className = 'shared-images'; // Use shared class for consistency
+                img.className = 'shared-images'; 
                 bioExtraImages.appendChild(img);
             });
 
-            // Add character details
-            let detailsHtml = '<div class="bio-details">';
-            detailsHtml += `<div>${character.age}</div>`;
-            detailsHtml += `<div>${character.gender}</div>`;
-            detailsHtml += `<div>${character.pronouns}</div>`;
-            detailsHtml += `<div>${character.occupation}</div>`;
-            detailsHtml += `<div>${character.orientation}</div>`;
-            detailsHtml += `<div>${character.faceClaim}</div>`;
+            let detailsHtml = '<div class="bio-details-inside">';
+
+            for (let [title, value] of Object.entries(character.atAGlance)) {
+                detailsHtml += `<div><h4>${title}:</h4> ${value}</div>`;
+            }
+
             detailsHtml += '</div>';
 
             let bulletPointsHtml = '<ul>';
@@ -2241,37 +2665,118 @@ const createCharacterElement = (character) => {
             bioStrengths.innerHTML = strengthsHtml;
             bioModal.style.display = 'block';
 
-            // Populate search results
-            searchInput.value = character.displayName;
-            populateSearchResults(character.searchResults);
-
-            // Get related people from the same group
             const relatedPeople = charactersData
                 .filter(char => char.group === character.group && char.displayName !== character.displayName)
                 .map(char => char);
 
-            // Populate search sidebar
-            populateSearchSidebar(character.searchSidebar, relatedPeople);
+            const characterWindow = document.getElementById('characterWindow');
+            const tabList = characterWindow.querySelector('.tab-list');
+            const windowContent = characterWindow.querySelector('.window-content');
+
+            tabList.innerHTML = '';
+            windowContent.innerHTML = '';
+
+            const tabs = [];
+
+            if (character.searchResults && character.searchResults.length > 0) {
+                const googleSearchContent = document.createElement('div');
+                googleSearchContent.className = 'tab-content';
+                googleSearchContent.style.display = 'none'; // Hide initially
+            
+                const searchBar = document.createElement('div');
+                searchBar.className = 'google-search-bar';
+            
+                const searchBarLogo = document.createElement('img');
+                searchBarLogo.src = './images/app_icons/google-logo.png';
+                searchBarLogo.className = 'google-search-bar-logo';
+            
+                searchBar.appendChild(searchBarLogo);
+            
+                const searchWho = document.createElement('div');
+                searchWho.className = 'google-search-bar-title';
+            
+                const nameSearch = document.createElement('p');
+                nameSearch.innerHTML = character.displayName;
+                nameSearch.className = 'google-search-bar-title-name';
+            
+                searchWho.appendChild(nameSearch);
+                
+                const rightieRight = document.createElement('div');
+                rightieRight.className = 'rightie-right-idk';
+            
+                // Add a thin line separator
+                const separator = document.createElement('div');
+                separator.className = 'google-search-separator';
+                rightieRight.appendChild(separator);
+            
+                // Create three images with specified file paths and classes
+                const imageNames = ['google-speak', 'google-leans', 'google-search'];
+                imageNames.forEach(name => {
+                    const image = document.createElement('img');
+                    image.src = `./images/app_icons/${name}.png`;
+                    image.className = `same-stupid-image`;
+                    rightieRight.appendChild(image); // Append each image to searchWho
+                });
+            
+                searchWho.appendChild(rightieRight);
+                searchBar.appendChild(searchWho);
+                
+                googleSearchContent.appendChild(searchBar);
+            
+                // Create the top bar if information is available
+                if (character.searchTopBar) {
+                    populateTopBar(googleSearchContent, character.searchTopBar);
+                }
+            
+                const searchResultsContainer = document.createElement('div');
+                searchResultsContainer.className = 'search-results-container';
+            
+                
+            
+                populateSearchResults(searchResultsContainer, character.searchResults);
+                googleSearchContent.appendChild(searchResultsContainer);
+
+                if (character.searchSidebar) {
+                    const searchSidebarContainer = document.createElement('div');
+                    searchSidebarContainer.className = 'search-sidebar-container';
+                    populateSearchSidebar(searchSidebarContainer, character.searchSidebar, relatedPeople);
+                    googleSearchContent.appendChild(searchSidebarContainer);
+                }
+            
+                tabs.push({ name: 'Google Search', content: googleSearchContent });
+            }
+            
+            
+
+            tabs.forEach((tabData, index) => {
+                const tab = createTab(tabData.name, tabData.content);
+                tabList.appendChild(tab);
+                windowContent.appendChild(tabData.content);
+
+                if (index === 0) {
+                    tab.click();
+                }
+            });
+
+            characterWindow.style.display = 'block';
 
             createConceptualMap(character);
 
-            if(toggleNsfw.checked == true){
+            if (toggleNsfw.checked == true) {
                 nsfwContainer.style.display = "flex";
-            populateNsfwSection(character);
+                populateNsfwSection(character);
             }
-            if(toggleNsfw.checked == false){
+            if (toggleNsfw.checked == false) {
                 nsfwContainer.style.display = "none";
             }
 
             populateHistorySection(character);
-
-            
-            
         });
     }
 
     return characterEl;
 };
+
 
 const updateCarousel = () => {
     const offset = -(currentImageIndex + 1) * 250; // Adjusted for correct width
@@ -2405,18 +2910,23 @@ const showConnections = (characterEl) => {
         if (char.displayName !== characterName) {
             const targetEl = document.querySelector(`[data-name="${char.displayName}"]`);
 
-            if (char.connections.some(conn => conn.name === characterName)) {
-                const connection = char.connections.find(conn => conn.name === characterName);
-                let connectionType = '';
+            // Check if the target character has a connection to the hovered character
+            const connection = char.connections.find(conn => conn.name === characterName);
 
-                if (connection) {
-                    connectionType = connection.relationship;
-                }
+            if (connection) {
+                const connectionType = connection.type; // Use 'type' to determine highlight class and color
+                const relationshipText = connection.relationship; // Use 'relationship' for label text
 
                 if (connectionType) {
-                    let highlightClass = 'family-highlight';
-                    let borderColor = 'rgb(229, 229, 247)'; // Default color for family
-                    switch (connectionType) {
+                    let highlightClass = '';
+                    let borderColor = '';
+
+                    // Determine highlight class and color based on connection type
+                    switch (connectionType.toLowerCase()) { // Ensure case-insensitive comparison
+                        case 'family':
+                            highlightClass = 'family-highlight';
+                            borderColor = 'rgb(229, 229, 247)';
+                            break;
                         case 'best friend':
                             highlightClass = 'best-friend-highlight';
                             borderColor = 'rgb(222, 255, 222)';
@@ -2426,15 +2936,26 @@ const showConnections = (characterEl) => {
                             borderColor = 'rgb(255, 192, 192)';
                             break;
                         // Add more cases as needed
+                        default:
+                            highlightClass = 'default-highlight';
+                            borderColor = 'rgb(200, 200, 200)';
+                            break;
                     }
 
+                    // Add the highlight class to the target element
                     targetEl.classList.add(highlightClass);
-                    let connectionLabel = targetEl.querySelector('.connection-label');
+                    // Tag the highlight with the source character
+                    targetEl.dataset.highlightedBy = characterName;
+
+                    // Check if a label already exists for this connection
+                    let connectionLabel = targetEl.querySelector(`.connection-label[data-source-character="${characterName}"]`);
 
                     if (!connectionLabel) {
+                        // Create a new label
                         connectionLabel = document.createElement('div');
                         connectionLabel.className = 'connection-label';
-                        connectionLabel.innerText = connectionType;
+                        connectionLabel.dataset.sourceCharacter = characterName; // Tag with source character
+                        connectionLabel.innerText = relationshipText; // Display the relationship
                         connectionLabel.style.borderColor = borderColor; // Set the border color
                         targetEl.appendChild(connectionLabel);
                     }
@@ -2446,14 +2967,20 @@ const showConnections = (characterEl) => {
     });
 };
 
+
 const hideConnections = (characterEl) => {
     const characterName = characterEl.getAttribute('data-name');
 
     charactersData.forEach(char => {
         if (char.displayName !== characterName) {
             const targetEl = document.querySelector(`[data-name="${char.displayName}"]`);
-            targetEl.classList.remove('family-highlight', 'best-friend-highlight', 'love-highlight');
-            const connectionLabels = targetEl.querySelectorAll('.connection-label');
+            // Only remove the highlight if it was added by this character
+            if (targetEl.dataset.highlightedBy === characterName) {
+                targetEl.classList.remove('family-highlight', 'best-friend-highlight', 'love-highlight');
+                delete targetEl.dataset.highlightedBy; // Clean up the data attribute
+            }
+            // Select only the labels added by this character
+            const connectionLabels = targetEl.querySelectorAll(`.connection-label[data-source-character="${characterName}"]`);
             connectionLabels.forEach(label => {
                 label.classList.remove('show'); // Remove the class to hide the label
                 setTimeout(() => {
@@ -2463,6 +2990,7 @@ const hideConnections = (characterEl) => {
         }
     });
 };
+
 
 closeModal.addEventListener('click', () => {
     bioModal.style.display = 'none';
@@ -2515,3 +3043,6 @@ fetch('characters.json')
         renderGroups(data);
     })
     .catch(error => console.error('Error loading character data:', error));
+
+
+

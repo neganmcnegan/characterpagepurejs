@@ -4,12 +4,17 @@
       "displayName": "Nash Roosevelt",
       "fullName": "𝐈𝐆𝐍𝐀𝐓𝐈𝐔𝐒 \"𝐍𝐀𝐒𝐇\" 𝐅𝐄𝐋𝐈𝐗 𝐑𝐎𝐎𝐒𝐄𝐕𝐄𝐋𝐓",
       "type": "playable",
-      "age": "forty-seven",
-      "gender": "cis man",
-      "pronouns": "he/him",
-      "occupation": "rancher",
-      "orientation": "bisexual",
-      "faceClaim": "christian kane",
+      "atAGlance": {
+        "Nicknames": "nashie, nas, ash",
+        "Age": "fifty-one",
+        "Occupation": "rancher",
+        "Gender": "cis man",
+        "Pronouns": "he/him",
+        "Orientation": "bisexual",
+        "Height": "5'9\" or 1,76cm",
+        "Face Claim": "christian kane",
+        "Younger Face Claim": "cody christian"
+      },
       "pictures": ["images/nash.png", "images/nash2.png", "images/nash3.png"],
       "fullBodyPictures": ["images/nash/nash_full_body1.png", "images/nash/nash_full_body2.png", "images/nash/nash_full_body3.png", "images/nash/nash_full_body4.png", "images/nash/nash_full_body5.png", "images/nash/nash_full_body6.png", "images/nash/nash_full_body7.png"],
       "extraPictures": ["images/nash/extras/extra3.png", "images/nash/extras/extra1.png", "images/nash/extras/extra2.png", "images/nash/extras/extra4.png", "images/nash/extras/extra5.png", "images/nash/extras/extra7.png", "images/nash/extras/extra8.png", "images/nash/extras/extra9.png", "images/nash/extras/extra10.png", "images/nash/extras/extra12.png", "images/nash/extras/extra13.png", "images/nash/extras/extra14.png", "images/nash/extras/extra15.png", "images/nash/extras/extra16.png", "images/nash/extras/extra18.png", "images/nash/extras/extra19.png", "images/nash/extras/extra17.png" ],
@@ -107,8 +112,10 @@
         "about": "Ignatius \"Nash\" Felix Roosevelt (born July 15) is an former businessman, professor, and ranch owner. Born into the wealthy and influential Roosevelt family.  He is known for his repeated attempts at getting information taken off wikip..",
         "parents": "<span class=\"fake-link\">Anna Roosevelt</span> and unkonwn"
     },
+    
     "history": {
         "images": ["images/nash/extras/extra20.png", "images/nash/extras/extra22.png", "images/nash/extras/extra57.png", "images/nash/extras/extra59.png", "images/nash/extras/extra24.png", "images/nash/extras/extra25.png", "images/nash/extras/extra26.png", "images/nash/extras/extra58.png", "images/nash/extras/extra30.png", "images/nash/extras/extra52.png", "images/nash/extras/extra33.png", "images/nash/extras/extra41.png", "images/nash/extras/extra31.png", "images/nash/extras/extra51.png", "images/nash/extras/extra60.png", "images/nash/extras/extra35.png", "images/nash/extras/extra37.png" ],
+        "glances": {"nationality": "american", "ethnicity": "cherokee","religion": "spiritual but not religious","star sign": "leo sun, aries rising, leo moon"},
         "details": [
         "Oldest of the Roosevelt brothers, and like every one of his brothers, the product of a one-night stand.",
         "nash — well, little nash — was a problem, that's what he was, what teachers and principals and school consolers said. a little ball of excited energy who needed to much convincing to understand that sometimes things were just how they were. a boy who should learn to respect authority. a perfectly capable yound man who should know better than to live his uniform tie untied despite the multiple warnings he recieved",
@@ -144,6 +151,7 @@
         "nash really did sleep soundly that night",
         "it was a shame that his grandfather would never look at him the same after it either."
         ],
+        "themeSongLyrics": ["how do you dress for the rain? how do you brace for the pain of a heart not fully broken?"],
         "extraImages": [ "images/nash/extras/extra71.png", "images/nash/extras/extra83.png", "images/nash/extras/extra48.png", "images/nash/extras/extra72.png", "images/nash/extras/extra68.png", "images/nash/extras/extra63.png", "images/nash/extras/extra53.png", "images/nash/extras/extra44.png", "images/nash/extras/extra62.png", "images/nash/extras/extra45.png", "images/nash/extras/extra40.png",  "images/nash/extras/extra73.png", "images/nash/extras/extra49.png", "images/nash/extras/extra65.png",  "images/nash/extras/extra50.png", "images/nash/extras/extra84.png", "images/nash/extras/extra70.png"],
         "extraDetails": ["nash roosevelt finished school at the top of his class and disappeared to oxford to get his degree in art history.",
         "and there he was a new man",
@@ -174,10 +182,10 @@
           {
             "inside": "Texas",
             "name": "Roosevelt Mansion",
-            "description": "The Roosevelt Mansion located inside the Roosevelt.",
+            "description": "The Roosevelt Mansion located inside the Roosevelt estate.",
             "type": "home",
             "longerDescription": "Nash's childhood home, a ten minute walk away from his house. or rather, a three minute ride.",
-            "images": ["images/nash/location/roosevelt-mansion-1.png", "images/nash/location/roosevelt-mansion-3.png", "images/nash/location/roosevelt-mansion-6.png", "images/nash/location/roosevelt-mansion-4.png", "images/nash/location/roosevelt-mansion-2.png", "images/nash/location/roosevelt-mansion-5.png", "images/nash/location/roosevelt-mansion-7.png", "images/nash/location/roosevelt-mansion-8.png", "images/nash/location/roosevelt-mansion-9.png"]
+            "images": ["./images/nash/location/roosevelt-mansion-1.png", "./images/nash/location/roosevelt-mansion-6.png", "./images/nash/location/roosevelt-mansion-17.png", "./images/nash/location/roosevelt-mansion-22.png", "./images/nash/location/roosevelt-mansion-16.png", "./images/nash/location/roosevelt-mansion-15.png", "./images/nash/location/roosevelt-mansion-12.png", "./images/nash/location/roosevelt-mansion-8.png", "./images/nash/location/roosevelt-mansion-21.png", "./images/nash/location/roosevelt-mansion-9.png", "./images/nash/location/roosevelt-mansion-5.png", "./images/nash/location/roosevelt-mansion-7.png", "./images/nash/location/roosevelt-mansion-20.png", "./images/nash/location/roosevelt-mansion-23.png", "./images/nash/location/roosevelt-mansion-18.png", "./images/nash/location/roosevelt-mansion-2.png", "./images/nash/location/roosevelt-mansion-10.png"]
           }
         ],
         "2": [
@@ -198,7 +206,7 @@
           {
             "inside": "Roosevelt Mansion",
             "name": "William's office",
-            "description": "William Roosevelt's office. Inside of which there is a wall with every award, medal or public acknowledgements every one of the Roosevelt siblings has ever goten all the way to the day William passed. It has not been used since.",
+            "description": "William Roosevelt's office. Inside of which there is a wall with every award, medal or public acknowledgements every one of the Roosevelt brothers has ever goten all the way to the day William passed. It has not been used since.",
             "type": "Special place",
             "images": ["images/nash/location/williams-office-1.png", "images/nash/location/williams-office-2.png", "images/nash/location/williams-office-3.png"]
           }
@@ -416,89 +424,41 @@
       "displayName": "Richard Roosevelt",
       "fullName": "𝐑𝐈𝐂𝐇𝐀𝐑𝐃 𝐃𝐄𝐀𝐍 𝐑𝐎𝐎𝐒𝐄𝐕𝐄𝐋𝐓",
       "type": "playable",
-      "age": "forty-four",
-      "gender": "cis man",
-      "pronouns": "he/him",
-      "occupation": "businessman and engineer",
-      "orientation": "bisexual",
-      "faceClaim": "david harbour",
+      "atAGlance": {
+        "Nicknames": "richie rich, rich, dick",
+        "Age": "forty-seven",
+        "Occupation": "c.e.o. and mechanical engineer",
+        "Gender": "cis man",
+        "Pronouns": "he/him",
+        "Orientation": "bisexual",
+        "Height": "6'3\" or 1,90cm",
+        "Face Claim": "david harbour",
+        "Younger Face Claim": "luke benward"
+      },
       "pictures": ["images/richard.png", "images/richard2.png", "images/richard3.png"],
       "fullBodyPictures": ["images/richard/richard_full_body1.png", "images/richard/richard_full_body2.png", "images/richard/richard_full_body3.png", "images/richard/richard_full_body4.png", "images/richard/richard_full_body5.png", "images/richard/richard_full_body6.png"],
-      "extraPictures": [
-        "./images/richard/extras/extra30.png",
-        "./images/richard/extras/extra4.png",
-        "./images/richard/extras/extra2.png",
-        "./images/richard/extras/extra18.png",
-        "./images/richard/extras/extra40.png",
-        "./images/richard/extras/extra31.png",
-        "./images/richard/extras/extra53.png",
-        "./images/richard/extras/extra32.png",
-        "./images/richard/extras/extra63.png",
-        "./images/richard/extras/extra23.png",
-        "./images/richard/extras/extra22.png",
-        "./images/richard/extras/extra16.png",
-        "./images/richard/extras/extra50.png",
-        "./images/richard/extras/extra13.png",
-        "./images/richard/extras/extra3.png",
-        "./images/richard/extras/extra26.png",
-        "./images/richard/extras/extra15.png",
-        "./images/richard/extras/extrak.png",
-
-        "./images/richard/extras/extra20.png",
-        "./images/richard/extras/extra33.png",
-        "./images/richard/extras/extra61.png",
-        "./images/richard/extras/extra58.png",
-        "./images/richard/extras/extra5.png",
-        "./images/richard/extras/extra29.png",
-        "./images/richard/extras/extra45.png",
-        "./images/richard/extras/extra19.png",
-        "./images/richard/extras/extra62.png",
-        "./images/richard/extras/extra46.png",
-        "./images/richard/extras/extra12.png",
-        "./images/richard/extras/extra28.png",
-        "./images/richard/extras/extra7.png",
-        "./images/richard/extras/extra57.png",
-        "./images/richard/extras/extra21.png",
-        "./images/richard/extras/extra25.png",
-        "./images/richard/extras/extra51.png",
-        "./images/richard/extras/extra59.png",
-        "./images/richard/extras/extra52.png",
-        "./images/richard/extras/extra24.png",
-        "./images/richard/extras/extra56.png",
-        "./images/richard/extras/extra44.png",
-        "./images/richard/extras/extra60.png",
-        "./images/richard/extras/extrak.png",
-        
-        "./images/richard/extras/extra8.png",
-        "./images/richard/extras/extra17.png",
-        "./images/richard/extras/extra10.png",
-        "./images/richard/extras/extra27.png",
-        "./images/richard/extras/extra9.png",
-        "./images/richard/extras/extra6.png",
-        "./images/richard/extras/extra1.png",
-        "./images/richard/extras/extra11.png",
-        "./images/richard/extras/extra14.png",
-        "./images/richard/extras/extra34.png",
-        "./images/richard/extras/extra35.png",
-        "./images/richard/extras/extra36.png",
-        "./images/richard/extras/extra37.png",
-        "./images/richard/extras/extra38.png",
-        "./images/richard/extras/extra39.png",
-        "./images/richard/extras/extra41.png",
-        "./images/richard/extras/extra42.png",
-        "./images/richard/extras/extra47.png",
-        "./images/richard/extras/extra48.png",
-        "./images/richard/extras/extra49.png",
-        "./images/richard/extras/extra54.png",
-        "./images/richard/extras/extra55.png",
-        "./images/richard/extras/extra64.png",
-        "./images/richard/extras/extra65.png"
-
+      "extraPictures": ["./images/richard/extras/extra30.png",
+"./images/richard/extras/extra4.png",
+"./images/richard/extras/extra2.png",
+"./images/richard/extras/extra18.png",
+"./images/richard/extras/extra40.png",
+"./images/richard/extras/extra31.png",
+"./images/richard/extras/extra53.png",
+"./images/richard/extras/extra32.png",
+"./images/richard/extras/extra63.png",
+"./images/richard/extras/extra23.png",
+"./images/richard/extras/extra22.png",
+"./images/richard/extras/extra16.png",
+"./images/richard/extras/extra50.png",
+"./images/richard/extras/extra13.png",
+"./images/richard/extras/extra3.png",
+"./images/richard/extras/extra26.png",
+"./images/richard/extras/extra15.png"
      ],
       "details": [
     "he wants it and he wants it now and he wants it well done.",
     "thinks he is hot and makes it known to everyone in the world.",
-    "poses for every picture. you will not easily find a candid picture of him. you can try taking a picture thinking he is distracted and when you look down at your phone, somehow, at some point, he turned and smiled for it.",
+    "poses for every picture. you will not  find a candid picture of him easily. you can try taking a picture thinking he is distracted and when you look down at your phone, somehow, in someway, at some point he noticed and turned to smile for the picture.",
     " life is a game that you can win, actually. well, not you. richard. life is a game that richard can win. or at least he thinks so.",
     "very sore loser. or better yet, not a loser. refuses to accept a loss. will keep playing again and again until he has won.",
     "will free dive and free climb and go racing and go skydiving and bungee jumping and— really, anything to feel alive.",
@@ -511,11 +471,12 @@
     "everything in the world is just a skill that takes practice and if that’s all everything is, then he can figure them all out and do them too.",
     "at all times trying to make overachievers feel incompetent while looking like he put no work in it.",
     "actually, honestly a huge engineering nerd who wants to come off as cool.",
-    "there is a trophy wall in his childhood home where all his achievements were pinned and collected by his grandfather and he cares about it more than anything in the entire world.",
-    "thinks unconditional love is not real and thinks the idea of falling in love is kind of dumb, actually.",
-    "loves to get in a relationship, jump head first, act like that's gonna be forever and then get bored"
+    "there is a trophy wall in his childhood home where all his achievements were pinned and collected by his grandfather and he cares about it more than anything in existence.",
+    "thinks unconditional love is not real.",
+    "loves to get in a relationship, jump head first, act like that's gonna be forever and then get bored",
+    "one of those men who reached such an acute limited excellence at twenty-one, that everything afterward savored of anti-climax."
     ],
-      "weaknesses": ["careless, ", "arrogant, ", "restless, ", "impatient, ", "envious, ", "entitled, ", "headstrong."],
+      "weaknesses": ["careless, ", "insecure, ", "restless, ", "impatient, ", "envious, ", "entitled, ", "arrogant."],
       "strengths": ["charismatic, ", "playful, ", "straightfoward, ", "adventurous, ", "bold, ", "intelligent, ", "ambitious."],
       "highlightColor": "#b0d0a9",
       "connections": [
@@ -526,262 +487,827 @@
           { "type": "family", "name": "Nate Roosevelt", "relationship": "brother" },
           { "type": "family", "name": "Noah Roosevelt", "relationship": "uncle" }
       ],
-      "searchResults": [
+        "searchResults": [
+            {
+                "title": "<b>About Our CEO: Richard Roosevelt</b> - Roosevelt Motors",
+                "url": "https://www.rooseveltmotors.com/about/richard-roosevelt",
+                "description": "Richard Roosevelt, CEO of Roosevelt Motors, has led the company into new eras of innovation and success. With a focus on luxury and performance, he has expanded..."
+            },
+            {
+                "title": "Roosevelt Motors: A Global Empire Led by <b>Richard Roosevelt</b>",
+                "url": "https://www.autonews.com/roosevelt-motors-global-expansion",
+                "description": "<b>Richard Roosevelt</b> continues to push the boundaries of automotive innovation. As the head of Roosevelt Motors, he has spearheaded international expansion into electric..."
+            },
+            {
+                "title": "The Billionaire Heartbreaker: The Women Left Behind by <b>Richard Roosevelt</b>",
+                "url": "https://www.tabloidnews.com/richard-roosevelt-heartbreaker",
+                "description": "<b>Richard Roosevelt</b> is not just known for his success in business but for his notorious love life. With a string of high-profile relationships, he has left behind a trail of broken..."
+            },
+            {
+                "title": "Richard Roosevelt’s Fast Cars: Behind the Legacy of Roosevelt Racing",
+                "url": "https://www.fastcars.com/richard-roosevelt-racing",
+                "description": "The Roosevelt name has long been associated with luxury vehicles, but <b>Richard Roosevelt</b> has taken it a step further by founding Roosevelt Racing, a division focu..."
+            },
+            {
+                "title": "A Conversation with <b>Richard Roosevelt</b>: Business, Cars, and Global Dominance",
+                "url": "https://www.forbes.com/richard-roosevelt-interview",
+                "description": "In an exclusive interview, <b>Richard Roosevelt</b> talks about his vision for Roosevelt International, the challenges of leading a global empire, and his passion for fast cars..."
+            },
+            {
+                "title": "The Untouchable: Why <b>Richard Roosevelt</b> is One of the Most Powerful Men in Business",
+                "url": "https://www.powerplayers.com/richard-roosevelt-most-powerful",
+                "description": "<b>Richard Roosevelt</b> has become one of the most influential figures in international business. His ability to navigate complex markets and industries has ceme..."
+            }
+        ],
+        "searchSidebar": {
+            "title": "<b>Richard Roosevelt</b>",
+            "subtitle": "CEO and Engineer",
+            "images": ["images/richard/sidebar1.png", "images/richard/sidebar2.png", "images/richard/sidebar3.png"],
+            "about": "Richard Roosevelt is the heir to the Roosevelt empire and the current CEO of Roosevelt Motors. Known for his business acumen and bold leadership, Richard has expanded the company's reach globally, particularly in the luxury sports car ma...",
+            "tidbits":{"Parents": "AnnaRoosevelt", "Brothers": "One and"},
+            "relatedPeople": [
         {
-            "title": "<b>About Our CEO: Richard Roosevelt</b> - Roosevelt Motors",
-            "url": "https://www.rooseveltmotors.com/about/richard-roosevelt",
-            "description": "Richard Roosevelt, CEO of Roosevelt Motors, has led the company into new eras of innovation and success. With a focus on luxury and performance, he has expanded..."
+            "name": "Noah Roosevelt",
+            "imageSrc": "images/noah.png"
         },
         {
-            "title": "Roosevelt Motors: A Global Empire Led by <b>Richard Roosevelt</b>",
-            "url": "https://www.autonews.com/roosevelt-motors-global-expansion",
-            "description": "<b>Richard Roosevelt</b> continues to push the boundaries of automotive innovation. As the head of Roosevelt Motors, he has spearheaded international expansion into electric..."
+            "name": "Theo Roosevelt",
+            "imageSrc": "images/theo.png"
         },
         {
-            "title": "The Billionaire Heartbreaker: The Women Left Behind by <b>Richard Roosevelt</b>",
-            "url": "https://www.tabloidnews.com/richard-roosevelt-heartbreaker",
-            "description": "<b>Richard Roosevelt</b> is not just known for his success in business but for his notorious love life. With a string of high-profile relationships, he has left behind a trail of broken..."
+            "name": "William Roosevelt",
+            "imageSrc": "images/william.png"
         },
         {
-            "title": "Richard Roosevelt’s Fast Cars: Behind the Legacy of Roosevelt Racing",
-            "url": "https://www.fastcars.com/richard-roosevelt-racing",
-            "description": "The Roosevelt name has long been associated with luxury vehicles, but <b>Richard Roosevelt</b> has taken it a step further by founding Roosevelt Racing, a division focu..."
-        },
-        {
-            "title": "A Conversation with <b>Richard Roosevelt</b>: Business, Cars, and Global Dominance",
-            "url": "https://www.forbes.com/richard-roosevelt-interview",
-            "description": "In an exclusive interview, <b>Richard Roosevelt</b> talks about his vision for Roosevelt International, the challenges of leading a global empire, and his passion for fast cars..."
-        },
-        {
-            "title": "The Untouchable: Why <b>Richard Roosevelt</b> is One of the Most Powerful Men in Business",
-            "url": "https://www.powerplayers.com/richard-roosevelt-most-powerful",
-            "description": "<b>Richard Roosevelt</b> has become one of the most influential figures in international business. His ability to navigate complex markets and industries has ceme..."
+            "name": "Nate Roosevelt",
+            "imageSrc": "images/nate.png"
         }
-    ],
-    "searchSidebar": {
-        "title": "<b>Richard Roosevelt</b>",
-        "subtitle": "CEO and Engineer",
-        "images": ["images/richard/sidebar1.png", "images/richard/sidebar2.png", "images/richard/sidebar3.png"],
-        "about": "Richard Roosevelt is the heir to the Roosevelt empire and the current CEO of Roosevelt Motors. Known for his business acumen and bold leadership, Richard has expanded the company's reach globally, particularly in the luxury sports car ma...",
-        "parents": "<span class=\"fake-link\">Anna Roosevelt</span> and unknown"
-    },
+    ]
+        },
+        "searchTopBar": {
+           "title": "<b>Richard Roosevelt</b>",
+            "subtitle": "CEO and Engineer",
+            "tags": ["Overview", "Cars", "Brothers"],
+            "highlightColorHere": "#c3dae2",
+            "images": ["images/richard/sidebar1.png", "images/richard/sidebar2.png", "images/richard/sidebar3.png"],
+            "imageNews": "images/richard/sidebar4.png",
+            "newsType": "instagram",
+            "handle": "@richardroosevelt",
+            "newsTitle": "Richard Roosevelt | Instagram",
+            "news": "👑",
+            "newsDate": "1 month ago",
+            "ageDob": "December 5th. (47 years old)",
+            "miscTop": "<strong>Height:</strong> 6'3",
+            "miscWidePic": "images/richard/sidebar5.png",
+            "miscWide": "<p>Roosevelt Incendio breaks records in sales."
+        },    
     "history": {
         "images": [
-    
-    
-      "./images/richard/extras/extra60.png",
-      "./images/richard/extras/extra33.png",
-      "./images/richard/extras/extra61.png",
-      "./images/richard/extras/extra58.png",
-      "./images/richard/extras/extra5.png", 
-      "./images/richard/extras/extra29.png",
-      "./images/richard/extras/extra51.png",
-      "./images/richard/extras/extra62.png",
-      "./images/richard/extras/extra20.png", 
-      "./images/richard/extras/extra4.png", 
-      "./images/richard/extras/extra28.png",
-      "./images/richard/extras/extra7.png", 
-      "./images/richard/extras/extra57.png",
-      "./images/richard/extras/extra21.png", 
-      "./images/richard/extras/extra25.png",
-      "./images/richard/extras/extra59.png",
-      
-      "./images/richard/extras/extrak.png",
-    "./images/richard/extras/extra6.png", 
-      "./images/richard/extras/extra19.png",
-      "./images/richard/extras/extra1.png",
-      "./images/richard/extras/extra11.png", 
-      "./images/richard/extras/extra14.png", 
-      "./images/richard/extras/extra22.png", 
-      "./images/richard/extras/extra24.png", 
-      "./images/richard/extras/extra26.png",
-      "./images/richard/extras/extra32.png",
-      "./images/richard/extras/extra34.png",
-      "./images/richard/extras/extra35.png",
-      "./images/richard/extras/extra36.png",
-      "./images/richard/extras/extra37.png",
-      "./images/richard/extras/extra38.png",
-      "./images/richard/extras/extra39.png",
-      "./images/richard/extras/extra40.png",
-      "./images/richard/extras/extra41.png",
-      "./images/richard/extras/extra42.png",
-      "./images/richard/extras/extra42.png",
-      "./images/richard/extras/extra44.png",
-      "./images/richard/extras/extra45.png",
-      "./images/richard/extras/extra46.png",
-      "./images/richard/extras/extra47.png",
-      "./images/richard/extras/extra48.png",
-      "./images/richard/extras/extra49.png",
-      "./images/richard/extras/extra50.png",
-      "./images/richard/extras/extra52.png",
-      "./images/richard/extras/extra53.png",
-      "./images/richard/extras/extra54.png",
-      "./images/richard/extras/extra55.png",
-      "./images/richard/extras/extra56.png"
+    "./images/richard/extras/extra20.png",
+"./images/richard/extras/extra48.png",
+"./images/richard/extras/extra61.png",
+"./images/richard/extras/extra58.png",
+"./images/richard/extras/extra5.png",
+"./images/richard/extras/extra29.png",
+"./images/richard/extras/extra69.png",
+"./images/richard/extras/extra19.png",
+"./images/richard/extras/extra62.png",
+"./images/richard/extras/extra46.png",
+"./images/richard/extras/extra71.png",
+"./images/richard/extras/extra28.png",
+"./images/richard/extras/extra7.png",
+"./images/richard/extras/extra67.png",
+"./images/richard/extras/extra78.png",
+"./images/richard/extras/extra72.png",
+"./images/richard/extras/extra51.png"
     ],
-        "details": [],
-        "extraImages": [],
-        "extraDetails": []
+    "glances": {"nationality": "american", "ethnicity": "white","religion": "atheist","star sign": "sagittarius sun, gemini rising, aries moon"},
+        "details": [
+    "second oldest of the roosevelt brothers. and like every one of his brothers, the product of a one night stand, or so he believes.",
+    "he could never remember how old he was, whether he was ten or eleven. him and theo had always been so close that in those first few years their ages got coupled together <i>when</i> they <i>were twelve</i>, <i>when</i> they <i>were thirteen</i>, that’s how people talked about it, even if he was always one year and some change older than theo.",
+    "the exact date always escaped him, he just remembered he was at the roosevelt christmas ball, his favorite event. nash was being introduced to a bunch of strangers again. his mom was nowhere to be seen. nate with a babysitter and him and theo were playing some game of tag that involved too many complicated rules through a crowd. weaving through strangers and laughing a little too loud.",
+    "he just ran into the man. it was an accident. richard offered out a million apologies right away, but the guy was wrong, he could tell, and he wasn’t listening.",
+    "the stranger asked for his name, looked him down like someone who had been sold a better product than the one delivered and said, something, something like “thank god you don’t look like me.”",
+    "richard just stood there.",
+    "he couldn’t stop the stranger either. not before he went on a little tirade about how he was better off staying away, he would never take a dna test so don’t even ask, hell, richard should tell his mom she’d never see a single cent of his money, not a one, he would rather burn it down than pay for her cab.",
+    "richard didn’t say anything. didn’t move, even.",
+    "theo found him standing in the same spot a good five minutes later, long after the man had left. but when theo asked him what had happened, he just said ‘nothing’.",
+    "he had always been terrible anyway, at talking, at explaining himself. he never could do it in a way that didn’t make himself sound awful.",
+    "he tried. when nash gave up on the spot as heir and their grandfather shifted his attention towards richard. he went up to nash’s wing and offered him a stolen beer. he sat at the foot of his brother’s bed and talked for a while. and he asked ‘please, don’t be mad at me.’",
+    "because it didn’t matter, not for nash, it never would. he was the first born, the smartest, the nicest, the most intelligent. the moment he changed his mind, their grandpa would give him the spot back. it didn’t matter because, even if you put all that aside, he just liked nash too, in an uncomplicated way. nash had the same interests as their grandpa, they shared puzzles and favorite books and jokes richard’s inability to comprehend french didn’t let him get.",
+    "it didn’t matter because he didn’t have to convince their grandfather to like him. not like richard had. like he was lying to make himself sound like a good option. but nash didn’t care. he was mad at the world and richard was just part of it.",
+    "he tried explaining it to theo too. when richard spending his every moment trying to live up to what nash had been meant richard spending every moment around their grandfather, and very few of them around theo.",
+    "he caught him in the hallway after class. knowing he was late for rowing team, while people ran in different directions around him, while theo’s friend told him to hurry up. he tried ‘please, man, you gotta get it.’",
+    "because, fuck, it didn’t matter for theo. there was this thing about him, this thing about his fucking smile. it never mattered what he was doing, people just liked him, anyway. he could break the rules and he would get a cookie for coming up with a clever work around. richard had to try. but theo didn’t listen. he laughed, said it’s fine, told him to relax. they would find time later, summer was right around the corner.",
+    "he even tried explaining to nate. which he shouldn’t have really. because when he was fifteen, nate was just eight. a kid who didn’t know anything but the fact that nash was mad, and theo was sad and richard was gone. richard caught him in the game room alone, throwing a ball against the wall and challenging himself to catch it. he offered to play a game with him, tried a ‘please, just—’ but he never finished that thought he just ended up crying."
+],
+"themeSongLyrics": ["so let's take a drive around town in my douchebag car, like the superstar that i pretend to be. <br>nothing feels better than buying love when push comes to shove, i'm lonely"],
+        "extraImages": ["./images/richard/extras/extra59.png",
+"./images/richard/extras/extra73.png",
+"./images/richard/extras/extra68.png",
+"./images/richard/extras/extra98.png",
+"./images/richard/extras/extra70.png",
+"./images/richard/extras/extra57.png",
+"./images/richard/extras/extra100.png",
+"./images/richard/extras/extra91.png",
+"./images/richard/extras/extra64.png",
+"./images/richard/extras/extra94.png",
+"./images/richard/extras/extra43.png",
+"./images/richard/extras/extra105.png",
+"./images/richard/extras/extra107.png",
+"./images/richard/extras/extra11.png",
+"./images/richard/extras/extra74.png",
+"./images/richard/extras/extra44.png",
+"./images/richard/extras/extra60.png"],
+        "extraDetails": [
+    "richard hadn’t meant to fall for emily. she was theo’s, and theo was his best friend.",
+    "it wasn’t intention, wasn’t malicious, wasn’t an attack on theo. it was just.",
+    "theo walked over from the pool with her in tow, said ‘richard, this is emily,’ ‘emily, this is richard’, and his heart sped up.",
+    "it never stopped really.",
+    "his breath would catch every time her hands brushed his. his gaze would find hers across every room. the world would stop and hold for a few seconds, whenever she said his name.",
+    "but it didn’t matter. he wouldn’t do anything.",
+    "she was theo’s. for the last few years of school. she was theo’s, for the year he went off to college and they stayed behind. she was theo’s and theo’s only.",
+    "she was theo’s until the summer where she came knocking at his door in the middle of the night, saying she couldn’t do this anymore, couldn’t spend another night pretending she didn’t want him.",
+    "she was theo’s until she kissed him and then she wasn’t anymore.",
+    "for all the months that followed, they talked around their betrayal. mornings and afternoons wasted with theo, and alcohol, and lavish parties, with fast cars, endless jokes, stupid dares. with the three of them friends like they had always been.",
+    "but every other night she would come back to his room.",
+    "he went back to college when summer ended and it was <i>theo</i> who called to tell him the good news. she was pregnant! they were having a baby.",
+    "richard didn’t call back to talk just to her, told himself that wasn’t the kind of thing you did through the phone.",
+    "he was going home in a few months anyway.",
+    "that night, they asked him to babysit. watch noah for a couple hours so they could go to the lake.",
+    "he saw nash ran out first, heard the sirens after, their grandfather the last to leave.",
+    "nate stood at the door and asked richard if maybe he didn’t want him to take noah so he could go over and find out what’s happening.",
+    "noah held his thumb like he was asking him not to leave.",
+    "she was buried one week later and part of theo went with her.",
+    "and when it was all said and done, even thinking about it seemed like an unfair thing to do to theo.",
+    "he couldn’t, no, he didn’t know, didn't know what that would do to theo, what it would do to both of them if the answer was yes. she was theo’s wife, noah was theo’s kid, and that was the end of it.",
+    "besides he loved noah anyway, he didn’t need him to call him dad to do it."
+]
     },
     "mapLayers": {
         "1": [
           {
             "inside": "Texas",
-            "name": "Roosevelt Ranch",
-            "description": "A ranch located inside the Roosevelt Estate.",
-            "type": "home",
-            "images": ["images/nash/location/roosevelt-ranch-1.png", "images/nash/location/roosevelt-ranch-2.png", "images/nash/location/roosevelt-ranch-3.png"]
+            "name": "Roosevelt Motors HQ",
+            "description": "The main office of Roosevelt Motors Coorporation.",
+            "type": "work",
+            "images": ["images/richard/location/roosevelt-motors-2.png", "images/richard/location/roosevelt-motors-1.png", "images/richard/location/roosevelt-motors-3.png"]
           },
           {
             "inside": "Texas",
             "name": "Roosevelt Mansion",
-            "description": "The Roosevelt Mansion located inside the Roosevelt.",
+            "description": "The Roosevelt Mansion located inside the Roosevelt estate.",
             "type": "home",
-            "longerDescription": "Nash's childhood home, a ten minute walk away from his house. or rather, a three minute ride.",
-            "images": ["images/nash/location/roosevelt-mansion-1.png", "images/nash/location/roosevelt-mansion-3.png", "images/nash/location/roosevelt-mansion-6.png", "images/nash/location/roosevelt-mansion-4.png", "images/nash/location/roosevelt-mansion-2.png", "images/nash/location/roosevelt-mansion-5.png", "images/nash/location/roosevelt-mansion-7.png", "images/nash/location/roosevelt-mansion-8.png", "images/nash/location/roosevelt-mansion-9.png"]
+            "longerDescription": "Richard's childhood home, from which he wished he had never moved away. Sometimes, he will spend weeks living in his wing and pretend he is still just visiting.",
+            "images": ["./images/nash/location/roosevelt-mansion-1.png", "./images/nash/location/roosevelt-mansion-6.png", "./images/richard/location/roosevelt-mansion-17.png", "./images/nash/location/roosevelt-mansion-22.png", "./images/nash/location/roosevelt-mansion-16.png", "./images/nash/location/roosevelt-mansion-15.png", "./images/nash/location/roosevelt-mansion-12.png", "./images/nash/location/roosevelt-mansion-8.png", "./images/nash/location/roosevelt-mansion-21.png", "./images/nash/location/roosevelt-mansion-9.png", "./images/nash/location/roosevelt-mansion-5.png", "./images/nash/location/roosevelt-mansion-7.png", "./images/nash/location/roosevelt-mansion-20.png", "./images/nash/location/roosevelt-mansion-23.png", "./images/richard/location/roosevelt-mansion-18.png", "./images/nash/location/roosevelt-mansion-2.png", "./images/nash/location/roosevelt-mansion-10.png"]
           }
         ],
         "2": [
           {
-            "inside": "Roosevelt Ranch",
-            "name": "Nash's home",
-            "description": "The \"small\" two stories house where Nash lives. A ten minute walk or three minute ride away from the mansion where he grew up.",
-            "type": "home",
-            "images": ["images/nash/location/ranch-home-1.png", "images/nash/location/ranch-home-2.png", "images/nash/location/ranch-home-3.png", "images/nash/location/ranch-home-4.png"]
+            "inside": "Roosevelt Motors HQ",
+            "name": "Richard's office",
+            "description": "Where Richard's suit jacket is often found, without the man that's supposed to be wearing it.",
+            "type": "work",
+            "images": ["images/richard/location/roosevelt-office-4.png", "images/richard/location/roosevelt-office-2.png", "images/richard/location/roosevelt-office-3.png"]
+          },
+          {
+            "inside": "Roosevelt Motors HQ",
+            "name": "The Engineering Floor",
+            "description": "Where assistants and interns often find Richard when asked to fetch him.",
+            "type": "work",
+            "images": ["images/richard/location/engineering-floor-1.png", "images/richard/location/engineering-floor-3.png", "images/richard/location/engineering-floor-2.png"]
           },
           {
             "inside": "Roosevelt Mansion",
-            "name": "Nash's wing",
-            "description": "The wing William Roosevelt had built for Nash. its entrace is in one of the walls of a pentagon in the second floor of the mansion. Above the door is a plaque where <i>Ignatius' wing</i> is engraved in marble. His name is now covered with tape where Nash is written with a permanent marker.",
+            "name": "Richard's wing",
+            "description": "The wing William Roosevelt had built for Richard. its entrace is in one of the walls of a pentagon in the second floor of the mansion. Above the door is a plaque where <i>Richard's wing</i> is engraved in marble.",
             "type": "Special place",
-            "images": ["images/nash/location/nashs-wing-1.png", "images/nash/location/nashs-wing-3.png", "images/nash/location/nashs-wing-1.png"]
+            "images": ["images/richard/location/richards-wing-5.png", "images/richard/location/richards-wing-1.png", "images/richard/location/richards-wing-3.png"]
           },
           {
             "inside": "Roosevelt Mansion",
             "name": "William's office",
-            "description": "William Roosevelt's office. Inside of which there is a wall with every award, medal or public acknowledgements every one of the Roosevelt siblings has ever goten all the way to the day William passed. It has not been used since.",
+            "description": "William Roosevelt's office. Inside of which there is a wall with every award, medal or public acknowledgements every one of the Roosevelt brother has ever goten all the way to the day William passed. Richard will sometimes visit it, just to look at it.",
             "type": "Special place",
             "images": ["images/nash/location/williams-office-1.png", "images/nash/location/williams-office-2.png", "images/nash/location/williams-office-3.png"]
           }
-        ],
-        "node": {
-          "inside": "Nash's wing",
-          "background": "images/nash/location/nashs-study-room.png",
-          "pins": [
-            {
-              "coordinates": { "x": 48, "y": 18 },
-              "description": "First edition The Great Gatsby, fifteen year old Nash's favorite book. A gift."
-            },
-            {
-              "coordinates": { "x": 52, "y": 87 },
-              "description": "1337 along side a dial. There is a clicking sound when you turn the dial. Nash doesn't know what it does"
-            },
-            {
-              "coordinates": { "x": 38, "y": 83 },
-              "description": "The Portrait of Jan Six by Rembrandt. An original."
-            }
-          ],
-          "comments": ["since nash loved puzzles, william roosevelt put multiple ones built into the very walls.", "nash never finished solving all of them.", "he hasn't been in this room in over twenty years."]
-        }
+        ]
       },
-    "phoneBackgrounds": ["images/nash/phone/nash_phone_background1.png", "images/nash/phone/nash_phone_background2.png"],
-    "lockScreens": ["images/nash/phone/nash_lock_screen1.png", "images/nash/phone/nash_lock_screen2.png"],
+    "phoneBackgrounds": ["images/richard/phone/richard_phone_background1.png", "images/richard/phone/richard_phone_background2.png"],
+    "lockScreens": ["images/richard/phone/richard_lock_screen1.png", "images/richard/phone/richard_lock_screen2.png"],
     "photos": [
-    "images/nash/phone/camera roll/photo12.png", 
-    "images/nash/phone/camera roll/photo43.png", 
-    "images/nash/phone/camera roll/photo87.png", 
-    "images/nash/phone/camera roll/photo56.png", 
-    "images/nash/phone/camera roll/photo29.png", 
-    "images/nash/phone/camera roll/photo1.png", 
-    "images/nash/phone/camera roll/photo58.png", 
-    "images/nash/phone/camera roll/photo68.png", 
-    "images/nash/phone/camera roll/photo86.png", 
-    "images/nash/phone/camera roll/photo25.png",
-    "images/nash/phone/camera roll/photo3.png", 
-    "images/nash/phone/camera roll/photo22.png", 
-    "images/nash/phone/camera roll/photo9.png", 
-    "images/nash/phone/camera roll/photo10.png", 
-    "images/nash/phone/camera roll/photo11.png", 
-    "images/nash/phone/camera roll/photo57.png", 
-    "images/nash/phone/camera roll/photo42.png", 
-    "images/nash/phone/camera roll/photo14.png", 
-    "images/nash/phone/camera roll/photo40.png", 
-    "images/nash/phone/camera roll/photo35.png", 
-    "images/nash/phone/camera roll/photo76.png", 
-    "images/nash/phone/camera roll/photo78.png", 
-    "images/nash/phone/camera roll/photo77.png", 
-    "images/nash/phone/camera roll/photo79.png", 
-    "images/nash/phone/camera roll/photo80.png", 
-    "images/nash/phone/camera roll/photo81.png", 
-    "images/nash/phone/camera roll/photo82.png", 
-    "images/nash/phone/camera roll/photo83.png", 
-    "images/nash/phone/camera roll/photo8.png", 
-    "images/nash/phone/camera roll/photo41.png", 
-    "images/nash/phone/camera roll/photo66.png", 
-    "images/nash/phone/camera roll/photo65.png", 
-    "images/nash/phone/camera roll/photo16.png", 
-    "images/nash/phone/camera roll/photo17.png", 
-    "images/nash/phone/camera roll/photo88.png", 
-    "images/nash/phone/camera roll/photo13.png",
-    "images/nash/phone/camera roll/photo34.png", 
-    "images/nash/phone/camera roll/photo26.png", 
-    "images/nash/phone/camera roll/photo7.png", 
-    "images/nash/phone/camera roll/photo21.png",
-    "images/nash/phone/camera roll/photo39.png", 
-    "images/nash/phone/camera roll/photo54.png", 
-    "images/nash/phone/camera roll/photo63.png", 
-    "images/nash/phone/camera roll/photo18.png", 
-    "images/nash/phone/camera roll/photo64.png", 
-    "images/nash/phone/camera roll/photo44.png", 
-    "images/nash/phone/camera roll/photo33.png", 
-    
-    "images/nash/phone/camera roll/photo52.png", 
-    "images/nash/phone/camera roll/photo73.png", 
-    "images/nash/phone/camera roll/photo53.png", 
-    "images/nash/phone/camera roll/photo31.png", 
-    "images/nash/phone/camera roll/photo28.png", 
-    "images/nash/phone/camera roll/photo15.png", 
-    "images/nash/phone/camera roll/photo6.png", 
-    "images/nash/phone/camera roll/photo75.png", 
-    "images/nash/phone/camera roll/photo23.png", 
-    "images/nash/phone/camera roll/photo24.png", 
-    "images/nash/phone/camera roll/photo62.png", 
-    "images/nash/phone/camera roll/photo27.png",
-    "images/nash/phone/camera roll/photo85.png", 
-    "images/nash/phone/camera roll/photo32.png", 
-    "images/nash/phone/camera roll/photo19.png", 
-    "images/nash/phone/camera roll/photo37.png", 
-    "images/nash/phone/camera roll/photo30.png", 
-    "images/nash/phone/camera roll/photo47.png", 
-    "images/nash/phone/camera roll/photo48.png", 
-    "images/nash/phone/camera roll/photo50.png", 
-    "images/nash/phone/camera roll/photo61.png", 
-    "images/nash/phone/camera roll/photo38.png", 
-    "images/nash/phone/camera roll/photo71.png", 
-    "images/nash/phone/camera roll/photo72.png", 
-    "images/nash/phone/camera roll/photo84.png", 
-    "images/nash/phone/camera roll/photo59.png", 
-    "images/nash/phone/camera roll/photo60.png", 
-    "images/nash/phone/camera roll/photo36.png", 
-    "images/nash/phone/camera roll/photo2.png",
-    
-    "images/nash/phone/camera roll/photo4.png", 
-    "images/nash/phone/camera roll/photo20.png"
+    "images/richard/phone/camera roll/photo12.png" 
 ],
     "albums": {
       "My Albums": [
-        { "name": "Stupid galas I was dragged to", "cover": "images/nash/phone/camera roll/photo35.png",  "number": "54" },
+        { "name": "Stupid galas I was dragged to", "cover": "images/richard/phone/camera roll/photo35.png",  "number": "54" },
         { "name": "For when they get too cocky", "cover": 
-        "images/nash/phone/camera roll/photo88.png",  "number": "32" },
-        { "name": "Noah's concerts", "cover": "images/nash/phone/cover/cover1.png", "number": "56" },
-        { "name": "Pictures from another life", "cover": "images/nash/phone/camera roll/photo5.png", "number": "23" },
-        { "name": "The ranch", "cover":  "images/nash/phone/cover/cover3.png", "number": "156" },
-        { "name": "Princess", "cover": "images/nash/phone/cover/cover2.png", "number": "78" }
+        "images/richard/phone/camera roll/photo88.png",  "number": "32" },
+        { "name": "Noah's concerts", "cover": "images/richard/phone/cover/cover1.png", "number": "56" },
+        { "name": "Pictures from another life", "cover": "images/richard/phone/camera roll/photo5.png", "number": "23" },
+        { "name": "The ranch", "cover":  "images/richard/phone/cover/cover3.png", "number": "156" },
+        { "name": "Princess", "cover": "images/richard/phone/cover/cover2.png", "number": "78" }
       ],
       "Family Albums": [
-        { "name": "Family Dinners", "cover": "images/nash/phone/cover/cover4.png", "number": "178" },
-        { "name": "Noah", "cover": "images/nash/phone/cover/cover6.png", "number": "187" },
-        { "name": "At Theo's park", "cover": "images/nash/phone/cover/cover5.png", "number": "59" }
+        { "name": "Family Dinners", "cover": "images/richard/phone/cover/cover4.png", "number": "178" },
+        { "name": "Noah", "cover": "images/richard/phone/cover/cover6.png", "number": "187" },
+        { "name": "At Theo's park", "cover": "images/richard/phone/cover/cover5.png", "number": "59" }
+      ]
+    },
+    "forYou": [{
+        "place":"Juilliard School, NY", "date": "December, 12",
+        "upper": [ "images/nash/phone/camera roll/photo95.png", "images/nash/phone/camera roll/photo90.png", "images/nash/phone/camera roll/photo97.png"],
+        "uppermiddle": [ "images/nash/phone/camera roll/photo92.png"],
+        "middle": [ "images/nash/phone/camera roll/photo93.png"],
+        "down": [ "images/nash/phone/camera roll/photo91.png", "images/nash/phone/camera roll/photo98.png", "images/nash/phone/camera roll/photo89.png", "images/nash/phone/camera roll/photo99.png"]
+        },
+        {
+        "place":"Roosevelt Ranch, TX", "date": "July, 18",
+        "upper": [ "images/nash/phone/camera roll/photo109.png", "images/nash/phone/camera roll/photo101.png", "images/nash/phone/camera roll/photo107.png"],
+        "uppermiddle": [ "images/nash/phone/camera roll/photo103.png"],
+        "middle": [ "images/nash/phone/camera roll/photo104.png"],
+        "down": [ "images/nash/phone/camera roll/photo111.png", "images/nash/phone/camera roll/photo102.png", "images/nash/phone/camera roll/photo108.png", "images/nash/phone/camera roll/photo105.png"]
+        }],
+  "search": [
+    { "name": "Richie", "picture": "./images/nash/phone/people/rich.png" },
+    { "name": "Theo", "picture": "./images/nash/phone/people/theo.png" },
+    { "name": "Nate", "picture": "./images/nash/phone/people/nate.png" },
+    { "name": "Noah", "picture": "./images/nash/phone/people/noah.png" },
+    { "name": "Princess", "picture": "./images/nash/phone/people/princess.png" },
+    { "name": "Mom", "picture": "./images/nash/phone/people/mom.png" }
+  ],
+  "apps": ["Messages"],
+  "dockApps": ["Photos", "Messages", "Camera", "Settings"],
+  "messages":{"messages": [
+   
+    {
+      "type": "individual",
+      "name": "Nash Roosevelt",
+      "participants": ["Richard Roosevelt", "Nash Roosevelt"],
+      "conversations": [
+        { "from": "Nash Roosevelt", "text": "It's mom's birthday." },
+        { "from": "Nash Roosevelt", "text": "Send her a message." },
+        { "from": "Richard Roosevelt", "text": "Oww did you get a job as her secretary?" },
+        { "from": "Richard Roosevelt", "text": "Welcome to the coorporate world" },
+        { "from": "Richard Roosevelt", "text": "I'll send you a gift basket made only of ties" },
+        { "from": "Nash Roosevelt", "text": "How do I send an emoji" },
+        { "from": "Nash Roosevelt", "text": "I wanna send one of me just staring at you" },
+        { "from": "Richard Roosevelt", "text": "I think it's better that you don't know" },
+        { "from": "Richard Roosevelt", "text": "Gives you more character when texting" },
+        { "from": "Richard Roosevelt", "text": "Just describing what you wanna send instead" },
+        { "from": "Nash Roosevelt", "text": "Will you please, Richard Dean Roosevelt, please, send your mom a happy birthday?" },
+        { "from": "Richard Roosevelt", "text": "So she's not screaming at you about it?" },
+        { "from": "Nash Roosevelt", "text": "So she doesn't get sad" },
+        { "from": "Richard Roosevelt", "text": "Booooooo" },
+        { "from": "Nash Roosevelt", "text": "I'm going to get someone to teach me emojis, I need them." },
+        { "from": "Richard Roosevelt", "text": "I already sent a happy birthday, Nashniel, I have a PA who does this for me" },
+        { "from": "Nash Roosevelt", "text": "And you couldn't have said that ten texts ago?" },
+        { "from": "Richard Roosevelt", "text": "No I missed your voice :)" },
+        { "from": "Nash Roosevelt", "text": "How did you" },
+        { "from": "Nash Roosevelt", "text": "Wait" },
+        { "from": "Nash Roosevelt", "text": ">:(" },
+        { "from": "Richard Roosevelt", "text": "That's an emoticon, not an emoji" },
+        { "info": "Friday at 9:15am"},
+        { "from": "Nash Roosevelt", "text": "What's the weather like over there?" },
+        { "from": "Richard Roosevelt", "text": "???" },
+        { "from": "Richard Roosevelt", "text": "Are you for real?" },
+        { "from": "Richard Roosevelt", "text": "Are you trying to make small talk through text right now?" },
+        { "from": "Nash Roosevelt", "text": "Can you answer my question" }
+      ],
+      "latestMessage": "Can you answer my question",
+      "newMessageCount": 1,
+      "lastUpdated": "2023-09-12T10:06:00",
+      "isFavorite": true
+    },
+         
+    {
+      "type": "individual",
+      "name": "Theo Roosevelt",
+      "participants": ["Theo Roosevelt", "Richard Roosevelt"],
+      "conversations": [
+        { "from": "Theo Roosevelt", "text": "You suck." },
+        { "from": "Richard Roosevelt", "text": "no. u." },
+        { "from": "Richard Roosevelt", "text": "Why do I suck?" },
+        { "from": "Theo Roosevelt", "text": "Did you specifically disable auto capitalization to send that?" },
+        { "from": "Richard Roosevelt", "text": "Why do I suck, asshole?" },
+        { "from": "Theo Roosevelt", "text": "You need to stop hanging out with 20 yr olds" },
+        { "from": "Theo Roosevelt", "text": "It's getting embarassing for you." },
+        { "from": "Richard Roosevelt", "text": "Fine, don't tell me." },
+        { "from": "Theo Roosevelt", "text": "Do you know a Mia with blue eyes?" },
+        { "from": "Richard Roosevelt", "text": "No" },
+        { "from": "Richard Roosevelt", "text": "Should I?" },
+        { "from": "Theo Roosevelt", "text": "She knows you" },
+        { "from": "Theo Roosevelt", "text": "You didn't call her back" },
+        { "from": "Richard Roosevelt", "text": "Oof. Were you trying to sleep with her?" },
+        { "from": "Theo Roosevelt", "text": "No, asshole, I was trying to sign her for the label" },
+        { "from": "Richard Roosevelt", "text": "Oof." },
+        { "from": "Richard Roosevelt", "text": "I suck" },
+        { "from": "Theo Roosevelt", "text": "My thoughts exactly." },
+        { "info": "Monday at 11:53am"},
+        { "from": "Richard Roosevelt", "text": "Hey, what are you doing later?" },
+        { "from": "Theo Roosevelt", "text": "A lot." },
+        { "from": "Richard Roosevelt", "text": "Fine, okay, fuck me then, Theo." },
+        { "from": "Richard Roosevelt", "text": "Sorry for asking your highness for a little of your time." },
+        { "from": "Theo Roosevelt", "text": "You didn't ask for my time, you asked the vaguest possible question and got mad before I had the chance to expand on it." },
+        { "from": "Theo Roosevelt", "text": "I'll cancel my plans. What do you want?" },
+        { "from": "Richard Roosevelt", "text": "Well, now I don't want it anymore." },
+        { "from": "Theo Roosevelt", "text": "You know personally I feel like I'm strong enough that I could kill you if I tried" },
+        { "from": "Richard Roosevelt", "text": "You know personally I feel like I'm strong enough that I could kill you if I tried" },
+        { "from": "Theo Roosevelt", "text": "You can't mock someone's accent through text, dumbass" },
+        { "from": "Richard Roosevelt", "text": "And yet you knew what I was doing." },
+        { "from": "Theo Roosevelt", "text": "Are you really not gonna say what you wanted?" },
+        { "from": "Richard Roosevelt", "text": "Do you wanna hang out?" },
+        { "from": "Theo Roosevelt", "text": "No, I'm okay, thank you." },
+        { "from": "Richard Roosevelt", "text": "I'm" },
+        { "from": "Richard Roosevelt", "text": "I'm never talking to you again." },
+        { "from": "Richard Roosevelt", "text": "The betrayal I just suffered" },
+        { "from": "Richard Roosevelt", "text": "I'll remember this for the rest of my life" },
+        { "from": "Theo Roosevelt", "text": "And yet you deserved it." },
+        { "from": "Theo Roosevelt", "text": "I'm omw to Motors." },
+        { "info": "Wednesday at 2:23am"},
+        { "from": "Richard Roosevelt", "text": "YOUR SONG IS PLAYING ON THE RAIO" },
+        { "from": "Theo Roosevelt", "text": "Huh? How" },
+        { "from": "Theo Roosevelt", "text": "Which one" },
+        { "from": "Richard Roosevelt", "text": "the one that goes like." },
+        { "from": "Richard Roosevelt", "text": "tututuu toNIGHT tatustatustu." },
+        { "from": "Richard Roosevelt", "text": "maybe its not a radio" },
+        { "from": "Richard Roosevelt", "text": "maybe its a cd." },
+        { "from": "Theo Roosevelt", "text": "Are you drunk?" },
+        { "from": "Richard Roosevelt", "text": "shut up, ryan blaze" },
+        { "from": "Richard Roosevelt", "text": "bask in your fame" },
+        { "from": "Richard Roosevelt", "text": "TONIIIIGHT TONIIGHTHTHHT." },
+        { "from": "Theo Roosevelt", "text": "Go drink some water, Richard" },
+        { "info": "Wednesday at 8:51am"},
+        { "from": "Richard Roosevelt", "text": "I was drunk" },
+        { "from": "Theo Roosevelt", "text": "No! Really?" },
+        { "from": "Richard Roosevelt", "text": "I swear" },
+        { "from": "Theo Roosevelt", "text": "A true testament to how good you are at pretending to be sober" },
+        { "from": "Theo Roosevelt", "text": "You are an actór really" },
+        { "from": "Richard Roosevelt", "text": "Good song though. You should try doing something with music" },
+        { "from": "Richard Roosevelt", "text": "Maybe learn the guitar, see if that helps. Your voice is alright" },
+        { "from": "Richard Roosevelt", "text": "I could teach you a thing or two" },
+        { "from": "Theo Roosevelt", "text": "Well, if you are gonna teach me then I'll certantly try." },
+        { "info": "Friday at 8:51am"},
+        { "from": "Theo Roosevelt", "text": "You hate me. Be honest." },
+        { "from": "Richard Roosevelt", "text": "What did I doooo" },
+        { "from": "Theo Roosevelt", "text": "They are screening me to get a visitors pass to walk into Motors right now!" },
+        { "from": "Richard Roosevelt", "text": "What other pass would you get? You don't work here" },
+        { "from": "Theo Roosevelt", "text": "You hate me" },
+        { "from": "Richard Roosevelt", "text": "Whaaaaat" },
+        { "from": "Theo Roosevelt", "text": "You don't have to get a visitors pass to go into Records!" },
+        { "from": "Richard Roosevelt", "text": "Well, I should that's a security risk" },
+        { "from": "Richard Roosevelt", "text": "Do you just let anyone with the Roosevelt last name into places? What if we have a long last cousin?" },
+        { "from": "Theo Roosevelt", "text": "It's not anyone! It's you, fucker!" },
+        { "from": "Richard Roosevelt", "text": "IDs are easy to steal. My face is on Google" },
+        { "from": "Theo Roosevelt", "text": "You literally lothe me" },
+        { "from": "Richard Roosevelt", "text": "One quick google search for Ryan Blaze and they could be stealing all of my trade secrets" },
+        { "from": "Theo Roosevelt", "text": "What trade secrets Richard? You have been making the same car in slightly different equally shark looking frame for about 20 years" },
+        { "from": "Richard Roosevelt", "text": "gasp" },
+        { "from": "Richard Roosevelt", "text": "See this is why you have to get a visitors pass." },
+        { "from": "Richard Roosevelt", "text": "I let Nash and Nate come and go" },
+        { "from": "Theo Roosevelt", "text": "Yeah, because they would never come" },
+        { "from": "Richard Roosevelt", "text": "I'm gonna revoke your visitors pass!" },
+        { "from": "Theo Roosevelt", "text": "Fine I don't wanna go in anymore!" },
+        { "from": "Richard Roosevelt", "text": "Fine!!" },
+        { "info": "Friday at 9:15am"},
+        { "from": "Richard Roosevelt", "text": "Where the fuck are you? Do visitors pass take that long?" },
+        { "from": "Theo Roosevelt", "text": "Yes" },
+        { "from": "Theo Roosevelt", "text": "And also I went to look for you in your office like a dumbass" },
+        { "from": "Theo Roosevelt", "text": "I'm on the lift now" },
+        { "from": "Richard Roosevelt", "text": "Lift" },
+        { "from": "Theo Roosevelt", "text": "I hate you" }
+      ],
+      "latestMessage": "I hate you",
+      "newMessageCount": 1,
+      "lastUpdated": "2023-02-12T14:06:00",
+      "isFavorite": true
+    }
+  ],
+"savedImages": [
+      {
+        "name": "Theo Roosevelt",
+        "saved as": "Theodore Roosevelt Jr.",
+        "profilePicture": "./images/richard/phone/people/theo.png"
+      }
+    ]
+},
+  "nsfw": {
+        "images": [
+            "./images/richard/extras/extra112.png",
+"./images/richard/extras/extra109.png",
+"./images/richard/extras/extra82.png",
+"./images/richard/extras/extra101.png",
+"./images/richard/extras/extra97.png",
+"./images/richard/extras/extra104.png",
+"./images/richard/extras/extra38.png",
+"./images/richard/extras/extra92.png",
+"./images/richard/extras/extra96.png",
+"./images/richard/extras/extra83.png",
+"./images/richard/extras/extra110.png",
+"./images/richard/extras/extra111.png",
+"./images/richard/extras/extra21.png",
+"./images/richard/extras/extra106.png",
+"./images/richard/extras/extra85.png",
+"./images/richard/extras/extra108.png",
+"./images/richard/extras/extra99.png"        ],
+        "leans": [
+            "dominant",
+            "switch",
+            "very high sex drive"
+        ],
+        "body": [
+            "athletic",
+            "curvy",
+            "wears boxers",
+            "trimps body hair"
+        ],
+        "sounds": [
+            "groans",
+            "moans",
+            "calls partner's name",
+            "dirty talks",
+            "prefers loud partner",
+            "daddy kink"
+        ],
+        "inclinations": [
+            "iniates",
+            "adventurous",
+            "rough",
+            "passionate",
+            "gentle",
+            "likes both quickies and long sessions"
+        ],
+        "bulletPoints": [
+          "very into: pinning partner’s hands and having hands pulled, pulling partner’s hair and having hair pulled, spanking, marking, seeing partner in lingerie, worshiping and being worshiped, praising, creampie.",
+          "sometimes into: humiliating, degrading, choking and being choked, pegging."
+        ]
+    }
+  },
+  {
+      "group": "Roosevelt",
+      "displayName": "Theo Roosevelt",
+      "fullName": "𝐓𝐇𝐄𝐎𝐃𝐎𝐑𝐄 𝐀𝐍𝐃𝐑𝐄𝐖 𝐑𝐎𝐎𝐒𝐄𝐕𝐄𝐋𝐓",
+      "type": "playable",
+      "atAGlance": {
+        "Nicknames": "theo, teddy",
+        "Age": "forty-three",
+        "Occupation": "c.e.o. and musciain",
+        "Gender": "cis man",
+        "Pronouns": "he/him",
+        "Orientation": "bisexual",
+        "Height": "5'10\" or 1,79cm",
+        "Face Claim": "sean maguire",
+        "Younger Face Claim": "dacre montgomery",
+        "Voice Claim": "shawn mendes"
+      },
+      "pictures": ["images/theo.png", "images/theo2.png"],
+      "fullBodyPictures": ["images/theo/theo_full_body1.png", "images/theo/theo_full_body2.png", "images/theo/theo_full_body3.png", "images/theo/theo_full_body4.png", "images/theo/theo_full_body5.png"],
+      "extraPictures": ["./images/theo/extras/extra17.png",
+    "./images/theo/extras/extra35.png",
+    "./images/theo/extras/extra50.png",
+    "./images/theo/extras/extra69.png",
+    "./images/theo/extras/extra8.png",
+    "./images/theo/extras/extra43.png",
+    "./images/theo/extras/extra5.png",
+    "./images/theo/extras/extra66.png",
+    "./images/theo/extras/extra27.png",
+    "./images/theo/extras/extra44.png",
+    "./images/theo/extras/extra6.png",
+    "./images/theo/extras/extra45.png",
+    "./images/theo/extras/extra10.png",
+    "./images/theo/extras/extra53.png",
+    "./images/theo/extras/extra51.png",
+    "./images/theo/extras/extra42.png",
+    "./images/theo/extras/extra26.png"
+     ],
+      "details": [
+    "“Yes, Theodore Roosevelt, yes, like the president, no, I have no association.” — He does blame his mom for having to have this conversation every time someone hears his last name. He is half sure she did it on purpose so she could laugh about it every time he had to explain it.",
+    "Deathly allergic to bees, but yellow is his favorite color.",
+    "Thinks that if you don’t tell people what to think of you, they will choose it themselves— and he can't risk them choosing the wrong one",
+    "His hair always has a perfectly little Superman swirl. Yes, it’s on purpose. Yes, it takes too long to do every morning. No, he will not admit it is on purpose.",
+    "The kind of annoying music person who might never have touched the instrument before but as long as you give them a vague idea/play it in front of them they can sorta figure it out in about a minute or two.",
+    "Loves the sound of a good symphony more than anything else in the world.",
+    "Gives people the benefit of the doubt even if that ends with him getting hurt every time.",
+    "Keeps getting in competitions he knows he can’t win to try and prove himself wrong, and still when he loses, he is just as disappointed as if he didn’t know it was going to happen from the start. A glutton for punishment in that way.",
+    "Wants people to tell him that no, actually, he is the most amazing person that they ever met and that the little voice inside him telling him he is worthless is wrong.",
+    "Wants life to be grand and have meaning and be wonderful in a way that goes beyond what it initially seems.",
+    "Will make things harder if he can make them prettier.",
+    "If something is worth doing then it's worth overdoing",
+    "Jack of all trades, master of none.",
+    "Definitely has undiagnosed ADHD, anxiety and ASD",
+    "Probably the most successful, happy, and accomplished out of the brothers, but nobody cares because he didn’t inherit the family business.",
+    "Owns a record label and a high-concept amusement park.",
+    "It would not be enough for someone to just choose him. They would have to choose him over something else. There would have to have been other equally amazing options, and for him to have been picked over them for it to be worth anything to him.",
+    "Has a terrible little voice at the back of his head telling him that if it’s not a competition, if it’s not something he won, then it is not that special to begin with.",
+    "If he wasn't taught not to beg, you would never hear him doing anything else."
+],
+      "weaknesses": ["inconsistent, ", "superficial, ", "over-sensitive, ", "self-indulgent, ", "distractible, ", "impractical, ", " too idealistic."],
+      "strengths": ["quick-witted, ", "optimistic, ", "spontaneous, ", "creative, ", "loyal, ", "observant, ", "empathetic."],
+      "highlightColor": "#b0d0a9",
+      "connections": [
+          { "type": "npc", "name": "William Roosevelt", "relationship": "grandfather" },
+          { "type": "npc", "name": "Anna Roosevelt", "relationship": "mother" },
+          { "type": "family", "name": "Nash Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Richard Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Nate Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Noah Roosevelt", "relationship": "father" }
+      ],
+      "searchResults": [
+    {
+        "title": "Roosevelt Records: Inside <b>Theo Roosevelt</b>’s Music Empire",
+        "url": "https://www.musicindustryinsider.com/theo-roosevelt-record-label",
+        "description": "Theo Roosevelt, founder of Roosevelt Records, has built one of the most artist-friendly labels in the industry. Known for signing innovative musicians across genres, Theo..."
+    },
+    {
+        "title": "Adventure Land: A Billionaire’s Playground or a Visionary Theme Park?",
+        "url": "https://www.travelweek.com/adventure-land-theo-roosevelt",
+        "description": "<b>Theo Roosevelt</b>’s Adventure Land is more than just a theme park—it’s an immersive, high-concept experience that blends fantasy and..."
+    },
+    {
+        "title": "The Music Mogul You Should Be Talking About: <b>Theo Roosevelt</b>’s Quiet Rise",
+        "url": "https://www.forbes.com/theo-roosevelt-quiet-rise",
+        "description": "Theo Roosevelt's impact on the music industry is undeniable. From signing Grammy-winning artists to pushing boundaries with immersive live experiences…"
+    },
+    {
+        "title": "<b>Theo Roosevelt</b>’s High-Profile Love Life: A Timeline",
+        "url": "https://www.tabloidnews.com/theo-roosevelt-dating-history",
+        "description": "From award-winning actresses to chart-topping musicians, <b>Theo Roosevelt</b>’s dating history reads like a VIP guest list. But while his relationships start with whirlwind..."
+    },
+    {
+        "title": "Roosevelt Brothers: The One Who Got Away from the Family Legacy",
+        "url": "https://www.businessinsider.com/roosevelt-brothers-theo-roosevelt-success",
+        "description": "Unlike his brother Richard, who runs Roosevelt Motors, <b>Theo Roosevelt</b> carved his own path in entertainment. With Roosevelt Records and Adventure Land under his belt..."
+    },
+    {
+        "title": "Who is Ryan Blaze? The Strange One-Year Career of <b>Theo Roosevelt</b>",
+        "url": "https://www.musicflashback.com/ryan-blaze-theo-roosevelt",
+        "description": "Before becoming a record executive, <b>Theo Roosevelt</b> had his own brief moment in the spotlight—under the stage name Ryan Blaze. His short-lived music career in the early 2000s saw him release a single album..."
+    }
+    ],
+      "searchSidebar": {
+          "title": "<b>Theo Roosevelt</b>",
+          "subtitle": "CEO and Musician",
+          "images": ["images/theo/sidebar1.png", "images/theo/sidebar2.png", "images/theo/sidebar3.png"],
+          "about": "Theo Roosevelt is an american songwriter and C.E.O.. The middle brother of the wealthy Roosevelt family, he has largely avoided the corporate world in favor of the entertainment industry...",
+          "tidbits":{"Parents": "<a class=\"fake-link\">Anna Roosevelt</a>", "Brothers": "<a class=\"fake-link\">Richard Roosevelt</a>, <a class=\"fake-link\">Nash Roosevelt</a>, <a class=\"fake-link\">Nathaniel Roosevelt</a>", "Son": "<a class=\"fake-link\">Noah Roosevelt</a>"},
+          "relatedPeople": [
+      {
+          "name": "Noah Roosevelt",
+          "imageSrc": "images/noah.png"
+      },
+      {
+          "name": "Richard Roosevelt",
+          "imageSrc": "images/richard.png"
+      },
+      {
+          "name": "William Roosevelt",
+          "imageSrc": "images/william.png"
+      },
+      {
+          "name": "Nate Roosevelt",
+          "imageSrc": "images/nate.png"
+      }
+  ]
+      },
+      "searchTopBar": {
+         "title": "<b>Theo Roosevelt</b>",
+          "subtitle": "CEO and Musician",
+          "tags": ["Overview", "Albums", "Brothers"],
+          "highlightColorHere": "#c3dae2",
+          "images": ["images/theo/sidebar1.png", "images/theo/sidebar2.png", "images/theo/sidebar3.png"],
+          "imageNews": "images/theo/sidebar4.png",
+          "newsType": "instagram",
+          "handle": "@theoroosevelt",
+          "newsTitle": "Theo Roosevelt | Instagram",
+          "news": "Tomorrow this little guy is about to...",
+          "newsDate": "14 days ago",
+          "ageDob": "July 11th. (43 years old)",
+          "miscTop": "<strong>Son:</strong> Noah Roosevelt",
+          "miscWidePic": "images/theo/sidebar5.png",
+          "miscWide": "<p>Adventure land park to open new attraction with."
+      },    
+  "history": {
+      "images": [
+      "./images/theo/extras/extra21.png",
+      "./images/theo/extras/extra15.png",
+      "./images/theo/extras/extra56.png",
+      "./images/theo/extras/extra20.png",
+      "./images/theo/extras/extra63.png",
+      "./images/theo/extras/extra47.png",
+      "./images/theo/extras/extra12.png",
+      "./images/theo/extras/extra29.png",
+      "./images/theo/extras/extra80.png",
+      "./images/theo/extras/extra31.png",
+      "./images/theo/extras/extra13.png",
+      "./images/theo/extras/extra46.png",
+      "./images/theo/extras/extra73.png",
+      "./images/theo/extras/extra19.png",
+      "./images/theo/extras/extra60.png",
+      "./images/theo/extras/extra11.png",
+      "./images/theo/extras/extra52.png"
+  ],
+  "glances": {"nationality": "american", "ethnicity": "white","religion": "atheist","star sign": "cancer sun, aquarius rising, pisces moon"},
+      "details": [
+    "Second youngest of the Roosevelt brothers. And like every one of his brothers, the product of a one-night stand.",
+    "People always talked about Theo Roosevelt as though he was a thing of wonder. They never really meant it as a compliment, no, but did that matter? Easy laugh, charming smile, bright blue eyes brimming with trust.",
+    "Theo's first wondrous feat was beating death.",
+    "It happened when he was five. Too young to form any real concrete memories beyond vague distress. Theo only ever heard the whole thing through stories. Some mythical tale of some strange bee. It always seemed bigger in it than it could have ever been in real life. Bumblebees didn’t grow past an inch. But when people talked about it, they said always said it was horrible. Scary, bloody, monstrous. Sometimes, the bee grew along with the tale, became a whole hive.",
+    "From what Theo remembered, the real event was very simple, actually. He was playing outside with his brother Richard when he stepped on a bumblebee. He hadn’t noticed much wrong until Richard did. He thought he had stepped on a rock or something, cut himself. He wanted to keep playing, he just couldn't breathe. There was a lot of yelling, running, , calling for help. He remembered Nash clutching his hand so hard it hurt. He remembered hospital lights, babysitters and staff and gossip. He remembered his grandpa showing up a few hours later in the hospital, telling him he’d have to carry around an epipen now just in case. He remembered his mom back from Europe a week later calling him resurected as a joke.",
+    "Theo wasn’t scared during it. No, really. It was later that he'd found himself clutching his throat before going to sleep, trying to breathe while coughing out noises like a clogged windpipe. His body mimicking the breathlessness of it all, without a real reason for it.",
+    "He would sneak into Richard’s bedroom then. Sleep on the couch near his bed. Sometimes Richard would sense his distress and come to him instead. Theo left to onto the certainty that if something happened without his notice, then at least Richard would be there to call for help.",
+    "Theo's second wondrous feat was being William Roosevelt’s favorite. At least that’s what people said, how they framed. Nash, the child prodigy, firstborn, best, most sensible choice. Richard, hardworking and ambitious, deserving of the spot for sheer sense urgency and need. They did not know how Theo, strange child that Theo was, with an inclination for music and too much time spent outside staring at the stars, usurped it from both boys.",
+    "How strange, how quaint, how wonderous.",
+    "Theo didn’t feel like the favorite.",
+    "Or if he did, he didn't know why it was that people always talked about it like his grandpa had made a mistake, picking him instead of any of the other better choices. Like he'd performed a tricking of some sort by making the great William Roosevelt like him, when he clearly didn't deserve it",
+    "There were a few tiny ones too, along the way. A few tiny magical feats. He skipped a grade in kindergarten, another in middle school. Which meant by the time he got to high school, he was in the same grade as his brother Richard. He'd performed alongisde orchestras packed full of adults when he was only fourteen. He manage to keep the sort of smile that convinced small children to calm down and figures of authorities even past the age where awkwardness should start to settle in. It was magic."
+],
+"themeSongLyrics": ["trying to be cool about it, feelin' like an absolute fool about it, wishin' you were kind enought<br> to be cruel about it. tellin' myself i can always do without it, knowin' that it probably isn't true"],
+        "extraImages": ["./images/theo/extras/extra39.png",
+      "./images/theo/extras/extra55.png",
+      "./images/theo/extras/extra16.png",
+      "./images/theo/extras/extra3.png",
+      "./images/theo/extras/extra34.png",
+      "./images/theo/extras/extra24.png",
+      "./images/theo/extras/extra65.png",
+      "./images/theo/extras/extra71.png",
+      "./images/theo/extras/extra77.png",
+      "./images/theo/extras/extra30.png",
+      "./images/theo/extras/extra41.png",
+      "./images/theo/extras/extra61.png",
+      "./images/theo/extras/extra36.png",
+      "./images/theo/extras/extra38.png",
+      "./images/theo/extras/extra67.png",
+      "./images/theo/extras/extra54.png",
+      "./images/theo/extras/extra68.png"
+],
+        "extraDetails": [
+    "If you asked <i>Theo</i>, the second most wondrous thing he had ever managed to do was meet Emily Lambert.",
+    "It was the summer before their senior year. He was wasting his days away at the country club, and she was working part-time.",
+    "They talked for one hour only that first day, and Theo knew it was love like he knew the skies were blue and he was breathing.",
+    "From the one, they spent every day of that summer together. Laughing, playing, partying.", 
+    "And when it ended, he had begged his grandfather to let her come with him to his private boarding school in Switzerland. Donate a new building to the school, ask a favor from the dean, pay her tuition, and promise good grades.—His grandfather agreed to it, of course, under the condition that Theo went to university after graduation.",
+    "Then it was him and her and Richard. His best friend, the love of his life. They spent every moment together, out in their own little world of adventures, starting parties, getting in trouble, making a mess out of the world around them.",
+    "The rest of the world didn’t really matter. School even less. They were living in a magic realm of their own. Theo still graduated high school as salutatorian. (Because Richard was valedictorian, of course.) Because he knew how quickly his grandfather could take this away from him if he didn’t behave as ordered. But it didn’t matter.",
+    "Richard left for college like he always meant to do, and Theo begged his grandfather to allow him a gap year or two. So he and Emily could settle, get married, so the world could fall into place.—They traded on Theo’s life like concessions required approval. A gap year for the promise that when Theo did go to college, he’d choose engineering. Another for the promise that when he and Emily got married, they would live in the Roosevelt estate. A final one for a chance at picking Theo’s first son’s name.",
+    "Emily hated every single promise made. She hated it, and she hated Theo’s grandfather, and she made it known to anyone wondering, but it didn’t matter.",
+    "He married Emily the summer after he graduated. Exactly two years after having met her. And the summer after that, she was pregnant.",
+    "Theo knew that his brother, Richard, loved Emily. He couldn’t blame him; she was easy to love. But he didn’t care, it didn’t matter. Because Emily loved him. Richard would never do anything with her, Theo knew that, and she was his. In every way that mattered. She had chosen him in every way that was important. Nash could have his genius. Richard could have the spot as CEO. Theo had Emily.",
+    "The third most wondrous thing that Theo ever did was die. Third, because, well, he thinks it should be higher on the list, but most everyone else calls his assessment theatrical, dramatic.",
+    "It was two months after Noah was born.",
+    "Richard had stayed behind with the baby that night, promised to take care of him. He had always cared about him more than he cared about anyone else in the world.",
+    "(TW: Death) Theo went out with Emily to the lake in the Roosevelt estate. She had insisted. Something about wanting to feel wild again, less motherly, more free.",
+    "The two of them jumped off the cliff into the water, but only he came out of it.",
+    "The first thing he did was call for help.",
+    "The second was go back to look for her.",
+    "He spent the entire night there, diving back into the muddy dark water. Even after the police and emergency services arrived, even after they had insisted that he stop looking so they could work. Even after his grandma and Nash showed up to look at him pitifully.",
+    "He only left when they removed him. Physically dragged away by Nash while they pulled her body out of the water.",
+    "He didn’t speak for a week after. They never really pulled him out of the water, if he was being honest. Maybe they pulled her, but whoever Theo was, he died in the lake with her that day.",
+    "It took him a week to speak, a month to manage to go outside. About three to sleep through a night. He kept dreaming that she was asleep next to him, waking up to an empty bed and finding himself unable to move for an hour, at least.",
+    "The most wondrous thing Theo ever did was Noah Roosevelt.",
+    "It was five AM, probably, he was lacking good sleep. The world a cloud of dark and grey and fear. He turned to his son in his crib, and Noah was awake, looking at him. All Theo did was ask, 'What?' and his baby burst into laughter. It was the best sound he’d ever heard. Music couldn’t compare to it.",
+    "he still went to college, majored in mechanical engineering, minored in music. there was no breaking promises in the roosevelt household.",
+    "he thought it was funny too, that his grandfather named noah, only for noah to change his name to noah when he turned ten. never to be known as whatever william roosevelt had picked. he always was ten times better than anything theo could dream of being."
+]
+    },
+    "mapLayers": {
+        "1": [
+          {
+            "inside": "World",
+            "name": "Texas",
+            "description": "Theo spends the year traveling back and forth between LA and Texas for work.",
+            "type": "state",
+            "images": ["./images/theo/location/texas-1.png", "./images/theo/location/texas-2.png", "./images/theo/location/texas-3.png"]
+          },
+          {
+            "inside": "World",
+            "name": "LA",
+            "description": "Theo spends the year traveling back and forth between LA and Texas for work.",
+            "type": "state",
+            "images": ["./images/theo/location/la-1.png", "./images/theo/location/la-2.png", "./images/theo/location/la-3.png"]
+          }
+        ],
+        "2": [
+          {
+            "inside": "Texas",
+            "name": "Adventure Land Park",
+            "description": "A high concept amusement park where atendees can go on magical adventures.",
+            "type": "work",
+            "images": ["images/theo/location/adventure-land-2.png", "images/theo/location/adventure-land-1.png", "images/theo/location/adventure-land-3.png"]
+          },
+          {
+            "inside": "Texas",
+            "name": "Roosevelt Estate",
+            "description": "The estate that has been in the Roosevelt family for over five hundred years.",
+            "type": "home",
+            "images": ["./images/theo/location/roosevelt-estate-1.png", "./images/nash/location/roosevelt-estate-2.png", "./images/nash/location/roosevelt-estate-3.png"]
+          },
+          {
+            "inside": "LA",
+            "name": "Roosevelt Records HQ",
+            "description": "Where Theo can be found walking around surrunded by two to three people at all times, Be it assistants, sound engineers, singers, or excutives trying to get his attention.",
+            "type": "work",
+            "images": ["images/theo/location/roosevelt-records-2.png", "images/theo/location/roosevelt-records-1.png", "images/theo/location/roosevelt-records-3.png"]
+          },
+          {
+            "inside": "LA",
+            "name": "Theo's place",
+            "description": "Though this is Theo's registered address, his son can be found here more often than he is.  Even when in LA, Theo is more often found sleeping on a couch or in a studio in RR HQ than he ever is here.",
+            "type": "work",
+            "images": [ "images/theo/location/las-place-1.png", "images/theo/location/las-place-2.png", "images/theo/location/las-place-3.png"]
+          }
+        ],
+        "3": [
+          {
+            "inside": "Roosevelt Estate",
+            "name": "Roosevelt Mansion",
+            "description": "The Roosevelt Mansion located inside the Roosevelt estate.",
+            "type": "home",
+            "longerDescription": "Theo's childhood home. Though his registered address is in L.A., he still spends most of the year inside living here.",
+            "images": ["./images/nash/location/roosevelt-mansion-1.png", "./images/nash/location/roosevelt-mansion-6.png", "./images/theo/location/roosevelt-mansion-1.png", "./images/nash/location/roosevelt-mansion-22.png", "./images/nash/location/roosevelt-mansion-16.png", "./images/nash/location/roosevelt-mansion-15.png", "./images/nash/location/roosevelt-mansion-12.png", "./images/nash/location/roosevelt-mansion-8.png", "./images/nash/location/roosevelt-mansion-21.png", "./images/nash/location/roosevelt-mansion-9.png", "./images/nash/location/roosevelt-mansion-5.png", "./images/nash/location/roosevelt-mansion-7.png", "./images/nash/location/roosevelt-mansion-20.png", "./images/nash/location/roosevelt-mansion-23.png", "./images/theo/location/roosevelt-mansion-2.png", "./images/nash/location/roosevelt-mansion-2.png", "./images/nash/location/roosevelt-mansion-10.png"]
+          },
+          {
+            "inside": "Roosevelt Estate",
+            "name": "The lake",
+            "description": "I can't go in there, I can't go in there, I can't go in there, I can't go in there, I can't go in there, I can't go in there, I can't, I can't—.",
+            "type": "work",
+            "images": ["images/theo/location/black.png", "images/theo/location/black.png", "images/theo/location/black.png"]
+          },
+          {
+            "inside": "Adventure Land Park",
+            "name": "The Amusement Park",
+            "description": "The amusement park area of Adventure land. Entrance is cheaper and you can ride a rollercoaster. Where you can find Theo looking like a sitcom dad in a polo shirt, shorts and sneakers out walking the park, instead of in a suit in the office, like the C.E.O. should be.",
+            "type": "work",
+            "images": ["images/theo/location/amusement-park-1.png", "images/theo/location/amusement-park-2.png", "images/theo/location/amusement-park-3.png"]
+          },
+          {
+            "inside": "Adventure Land Park",
+            "name": "The enchanted forest",
+            "description": "The high concept area of the park guests can dress up and go on adventures with \"elves\", \"fairies\" and other magical creatures. Where Theo can be found if he's not answering his phone. Too often trying to get new stories and ideas to work. ",
+            "type": "work",
+            "images": ["images/theo/location/adventure-land-6.png", "images/theo/location/adventure-land-4.png", "images/theo/location/adventure-land-8.png"]
+          },
+          {
+            "inside": "Adventure Land Park",
+            "name": "Reaper's cove",
+            "description": "The high concept area of the park guests can dress up and go on adventures with \"vampires\", \"werewolves\" and other mostrous creatures. Horror themed. Though the last to be built, the biggest profit provider in the park. ",
+            "type": "work",
+            "images": ["images/theo/location/reapers-cove-1.png", "images/theo/location/reapers-cove-2.png", "images/theo/location/reapers-cove-3.png"]
+          }
+        ],
+        "4":[
+          {
+            "inside": "Roosevelt Mansion",
+            "name": "Theo's wing",
+            "description": "The wing William Roosevelt had built for Theo. its entrace is in one of the walls of a pentagon in the second floor of the mansion. Above the door is a plaque where <i>Theo's wing</i> is engraved in marble. There's a set of stairs that leads to the floor above where Noah's wing was built a few years after he was born.",
+            "type": "Special place",
+            "images": ["images/theo/location/theos-wing-1.png", "images/theo/location/theos-wing-3.png", "images/theo/location/theos-wing-2.png"]
+          },
+          {
+            "inside": "Roosevelt Mansion",
+            "name": "Theo and Emily's wing",
+            "description": "The unfinished wing one floor above Theo's. Though he moved into it with her when they got married, the changes additions planned for it were never completed. Theo moved out of it two months after Emily passed. He left it for Noah to one day decide what would be done with it. It has been left untouched since.",
+            "type": "Special place",
+            "images": ["images/theo/location/emilys-wing-1.png", "images/theo/location/emilys-wing-3.png", "images/theo/location/emilys-wing-2.png"]
+          },
+          {
+            "inside": "The lake",
+            "name": "Don't",
+            "description": "Go home. Really, jusy go home, you don't have to be here. Turn back, this isn't a good idea, go home. You can't go in there, you can't, you just—.",
+            "type": "work",
+            "images": ["images/theo/location/black.png", "images/theo/location/black.png", "images/theo/location/black.png"]
+          }
+        ],
+        "node": {
+          "inside": "Don't",
+          "background": "images/theo/location/theos-lake.png",
+          "pins": [
+            {
+              "coordinates": { "x": 46, "y": 73 },
+              "description": "a ghost."
+            }
+          ],
+          "comments": ["the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned.", "the lake where emily drowned."]
+        }
+      },
+    "phoneBackgrounds": ["images/theo/phone/theo_phone_background1.png", "images/theo/phone/theo_phone_background2.png", "images/theo/phone/theo_phone_background3.png"],
+    "lockScreens": ["images/theo/phone/theo_lock_screen1.png", "images/theo/phone/theo_lock_screen2.png", "images/theo/phone/theo_lock_screen3.png"],
+    "photos": [
+    "images/richard/phone/camera roll/photo12.png" 
+],
+    "albums": {
+      "My Albums": [
+        { "name": "Stupid galas I was dragged to", "cover": "images/richard/phone/camera roll/photo35.png",  "number": "54" },
+        { "name": "For when they get too cocky", "cover": 
+        "images/richard/phone/camera roll/photo88.png",  "number": "32" },
+        { "name": "Noah's concerts", "cover": "images/richard/phone/cover/cover1.png", "number": "56" },
+        { "name": "Pictures from another life", "cover": "images/richard/phone/camera roll/photo5.png", "number": "23" },
+        { "name": "The ranch", "cover":  "images/richard/phone/cover/cover3.png", "number": "156" },
+        { "name": "Princess", "cover": "images/richard/phone/cover/cover2.png", "number": "78" }
+      ],
+      "Family Albums": [
+        { "name": "Family Dinners", "cover": "images/richard/phone/cover/cover4.png", "number": "178" },
+        { "name": "Noah", "cover": "images/richard/phone/cover/cover6.png", "number": "187" },
+        { "name": "At Theo's park", "cover": "images/richard/phone/cover/cover5.png", "number": "59" }
       ]
     },
     "forYou": [{
@@ -813,99 +1339,267 @@
     {
       "type": "individual",
       "name": "Nate Roosevelt",
-      "participants": ["Nash Roosevelt", "Nate Roosevelt"],
+      "participants": ["Theo Roosevelt", "Nate Roosevelt"],
       "conversations": [
-        { "from": "Nate Roosevelt", "text": "Stop taking pictures of me when I'm not paying attention, foul beast." },
-        { "from": "Nash Roosevelt", "text": "Then I'll never have a picture of you, dumbass." },
-        { "from": "Nate Roosevelt", "text": "I'm trying to make it so you have no pictures of me." },
-        { "from": "Nash Roosevelt", "text": "Exactly why I keep taking them when you are not paying attention." },
-        { "from": "Nate Roosevelt", "text": "I see." },
-        { "from": "Nate Roosevelt", "text": "I guess I'll have to send the family lawyers after you." },
-        { "from": "Nash Roosevelt", "text": "You? Writing an e-mail?" },
-        { "from": "Nash Roosevelt", "text": "Sure" },
-        { "from": "Nate Roosevelt", "text": "You have won this battle, demon, but not this war." }
+        { "from": "Nate Roosevelt", "text": "Why is your park so weird?" },
+        { "from": "Theo Roosevelt", "text": "It's cursed. It can only mimick my mood and most people think I'm weird." },
+        { "from": "Nate Roosevelt", "text": "Are you aware that people think you are weird because of shit you say?" },
+        { "from": "Nate Roosevelt", "text": "Like that last message" },
+        { "from": "Theo Roosevelt", "text": "I am, yes, but it's a curse too. I can't stop myself. It was either or talk in rhymes and Nash took that one" },
+        { "from": "Nate Roosevelt", "text": "LMAO" },
+        { "from": "Theo Roosevelt", "text": "Are you at the park?" },
+        { "from": "Nate Roosevelt", "text": "No, I'm trying to book time for a date through your dumb website" },
+        { "from": "Nate Roosevelt", "text": "I don't wanna have to dress up" },
+        { "from": "Nate Roosevelt", "text": "Especially not like an elf" },
+        { "from": "Theo Roosevelt", "text": "Awwww little Nate has a girlfriend." },
+        { "from": "Theo Roosevelt", "text": "Take her to the movies, duffos, you don't have to dress up there." },
+        { "from": "Theo Roosevelt", "text": "Plus you actually like movies." },
+        { "from": "Nate Roosevelt", "text": "No, I'm trying something new." },
+        { "from": "Theo Roosevelt", "text": "That being?" },
+        { "from": "Nate Roosevelt", "text": "Fun." },
+        { "from": "Theo Roosevelt", "text": "It's a bold strategy, Cotton. Let's see if it pays off for him." },
+        { "from": "Nate Roosevelt", "text": "Have you taken an autism self assement test?" },
+        { "from": "Theo Roosevelt", "text": "Already I'm sensing it's not paying off. He's about to be banned from the park." },
+        { "from": "Nate Roosevelt", "text": "I'm not being mean. I'm just saying." },
+        { "from": "Nate Roosevelt", "text": "I look around the house and I'm starting to realize I'm the only one here who doesn't like trains." },
+        { "from": "Theo Roosevelt", "text": "I like playing pretend, it's very different actually." },
+        { "from": "Nate Roosevelt", "text": "Hmmm. When you get an official diagnosis, you remember this moment alright?" },
+        { "from": "Theo Roosevelt", "text": "Lol. Okay." },
+        { "from": "Nate Roosevelt", "text": "So can I?" },
+        { "from": "Theo Roosevelt", "text": "What?" },
+        { "from": "Nate Roosevelt", "text": "Go to the park?" },
+        { "from": "Theo Roosevelt", "text": "Of course you can, Nate, you are my brother. You don't have to book through the website. Just tell me when you wanna go and I'll get you VIP passes." },
+        { "from": "Nate Roosevelt", "text": "Too much, bro. Getting embarassing" },
+        { "from": "Theo Roosevelt", "text": "🙄" },
+        { "from": "Theo Roosevelt", "text": "I love you too, dumbass" },
+        { "from": "Nate Roosevelt", "text": "If you say so." }
       ],
-      "latestMessage": "You have won this battle, demon, but not this war",
-      "newMessageCount": 1,
+      "latestMessage": "If you say so.",
       "lastUpdated": "2023-09-12T10:05:00",
+      "isFavorite": true
+    },
+    {
+      "type": "individual",
+      "name": "Anna Roosevelt",
+      "participants": ["Anna Roosevelt", "Theo Roosevelt"],
+      "conversations": [
+        { "info": "Monday at 11:22am"},
+        { "from": "Anna Roosevelt", "text": "I have an event in Montparnasse this afternoon." },
+        { "from": "Anna Roosevelt", "text": "A lovely tea party with some friends." },
+        { "from": "Anna Roosevelt", "text": "We are thinking about having some live music along with the decor." },
+        { "info": "Monday at 11:24"},
+        { "from": "Anna Roosevelt", "text": "Are you not gonna say anything?" },
+        { "from": "Theo Roosevelt", "text": "Congrats?" },
+        { "from": "Anna Roosevelt", "text": "Theodore" },
+        { "from": "Theo Roosevelt", "text": "I don't know what you want me to say, mom. What do you want? Me to find a singer for your party?" },
+        { "from": "Theo Roosevelt", "text": "I mean, I can, but I'm sure your PA can do it too and probably faster" },
+        { "from": "Anna Roosevelt", "text": "Of course not. I want Noah to come play for us." },
+        { "from": "Theo Roosevelt", "text": "So many notes on that one. 1. He's note a prop. 2. He and I are both in texas, I'm pretty sure a flight to Paris takes 16 hours. 3. you have his number, you could have texted him, if you want him to go see you. 4. He's got class. He's probably in class right now." },
+        { "from": "Anna Roosevelt", "text": "Well, if he is in class, you come play for us instead" },
+        { "from": "Theo Roosevelt", "text": "Did you read number two?" },
+        { "from": "Anna Roosevelt", "text": "Theodore" },
+        { "from": "Theo Roosevelt", "text": "I'm not being difficult, mom, I can't break the laws of physics for your party" },
+        { "from": "Theo Roosevelt", "text": "When did you plan this?" },
+        { "from": "Anna Roosevelt", "text": "Why are you focusing on the details? You always get caught up in the little things." },
+        { "from": "Theo Roosevelt", "text": "So not today?" },
+        { "from": "Anna Roosevelt", "text": "Well sometime last week but I assumed you would be a good son and show up to see your mother" },
+        { "from": "Theo Roosevelt", "text": "You had all week to ask me!" },
+        { "from": "Anna Roosevelt", "text": "I had other things to do too, Theodore" },
+        { "from": "Theo Roosevelt", "text": "Mom, come on!" },
+        { "from": "Theo Roosevelt", "text": "If you had asked me yesterday I would have gotten on a plane!" },
+        { "from": "Anna Roosevelt", "text": "What's the point of your musical talents if you won't help me?" },
+        { "from": "Theo Roosevelt", "text": "I don't know" },
+        { "from": "Theo Roosevelt", "text": "I don't know, mom" },
+        { "from": "Theo Roosevelt", "text": "It's a real waste, I know." },
+        { "from": "Anna Roosevelt", "text": "Your brother would have come." },
+        { "from": "Theo Roosevelt", "text": "My broher would invent a time machine for you, yes, I`m aware, but it would still not be in time for this timeline's afternoon tea" },
+        { "from": "Anna Roosevelt", "text": "I will not talk to you, if you won't be rational" },
+        { "from": "Theo Roosevelt", "text": "Sure, me, I'm the one not being rational." }
+      ],
+      "latestMessage": "Sure, me, I'm the one not being rational.",
+      "lastUpdated": "2023-09-12T11:36:00",
+      "isFavorite": false
+    },
+    {
+      "type": "group",
+      "participants": ["Theo Roosevelt", "Nate Roosevelt", "Richard Roosevelt", "Nash Roosevelt"],
+      "groupName": "The Roosevelt Boys",
+      "conversations": [
+        { "from": "Theo Roosevelt", "text": "<img class=\"text-pictures\" src=\"./images/theo/phone/messages/group_text.png\">" },
+        { "from": "Theo Roosevelt", "text": "Few things in this world I love more than witnessing Nate have a meeting with a lawyer" },
+        { "from": "Richard Roosevelt", "text": "LMAOOOOO" },
+        { "from": "Nash Roosevelt", "text": "The poor man's soul has left him" },
+        { "from": "Nate Roosevelt", "text": "lmao richard? how old are you?" },
+        { "from": "Theo Roosevelt", "text": "I know! I keep telling him to stop hanging out with 20 year olds" },
+        { "from": "Richard Roosevelt", "text": "YOU say lmao, Nate asshole" },
+        { "from": "Nate Roosevelt", "text": "I'm twenty years younger than you" },
+        { "from": "Richard Roosevelt", "text": "You are SIX years younger than me" },
+        { "from": "Nate Roosevelt", "text": "You are in your 40s, I'm not" },
+        { "from": "Richard Roosevelt", "text": "You'll be forty in a year" },
+        { "from": "Nate Roosevelt", "text": "So not yet forty you mean?" },
+        { "from": "Nate Roosevelt", "text": "Exactly what I said you mean?" },
+        { "from": "Nate Roosevelt", "text": "I was right you mean?" },
+        { "from": "Richard Roosevelt", "text": "How do you guys laugh through text?" },
+        { "from": "Theo Roosevelt", "text": "No one answer him" },
+        { "from": "Richard Roosevelt", "text": "COME ON" },
+        { "from": "Nash Roosevelt", "text": "I laugh with haha" },
+        { "from": "Richard Roosevelt", "text": "Not you, you are 50" },
+        { "from": "Nash Roosevelt", "text": "You tire me, Richard" },
+        { "from": "Richard Roosevelt", "text": "You tire me, Richard" },
+        { "from": "Nate Roosevelt", "text": "I don't know if you can make fun of his accent through text, big guy" },
+        { "from": "Theo Roosevelt", "text": "I keep telling him that, he doesn't listen!" },
+        { "from": "Richard Roosevelt", "text": "You tir' me, Reechard" },
+        { "from": "Richard Roosevelt", "text": "There, happy?" },
+        { "from": "Nash Roosevelt", "text": "Honestly? No" },
+        { "from": "Theo Roosevelt", "text": "I could use a vacation" },
+        { "from": "Nate Roosevelt", "text": "Almost never, really." },
+        { "from": "Richard Roosevelt", "text": "I hate you guys" },
+        { "from": "Richard Roosevelt", "text": "Weren't we making fun of Nate? Let's go back to that" },
+        { "from": "Nash Roosevelt", "text": "Don't be mean, Richard" },
+        { "from": "Theo Roosevelt", "text": "He's sensitive" },
+        { "from": "Nate Roosevelt", "text": "Yeah, Richard, I'm sensitive." }
+      ],
+      "latestMessage": "Yeah, Richard, I'm sensitive.",
+      "lastUpdated": "2025-02-12T15:16:00",
       "isFavorite": true
     }
   ],
 "savedImages": [
       {
+        "name": "Theo Roosevelt",
+        "saved as": "Me",
+        "profilePicture": "./images/theo/phone/people/theo.png"
+      },
+      {
+        "name": "Richard Roosevelt",
+        "saved as": "Richie Rich",
+        "profilePicture": "./images/theo/phone/people/rich.png"
+      },
+      {
+        "name": "Nash Roosevelt",
+        "saved as": "Nerd",
+        "profilePicture": "./images/theo/phone/people/nash.png"
+      },
+      {
         "name": "Nate Roosevelt",
         "saved as": "Nate",
-        "profilePicture": "./images/nash/phone/people/nate.png"
+        "profilePicture": "./images/theo/phone/people/nate.png"
+      },
+      {
+        "name": "Noah Roosevelt",
+        "saved as": "Noah",
+        "profilePicture": "./images/theo/phone/people/noah.png"
+      },
+      {
+        "name": "Anna Roosevelt",
+        "saved as": "Mom",
+        "profilePicture": "./images/theo/phone/people/mom.png"
       }
     ]
 },
   "nsfw": {
         "images": [
-            "images/nash/extras/extra99.png", "images/nash/extras/extra102.png", "images/nash/extras/extra94.png", "images/nash/extras/extra97.png","images/nash/extras/extra95.png", "images/nash/extras/extra34.png", "images/nash/extras/extra91.png", "images/nash/extras/extra93.png", "images/nash/extras/extra98.png", "images/nash/extras/extra47.png", "images/nash/extras/extra90.png", "images/nash/extras/extra38.png", "images/nash/extras/extra27.png", "images/nash/extras/extra96.png", "images/nash/extras/extra92.png", "images/nash/extras/extra101.png", "images/nash/extras/extra100.png"
-        ],
+          "./images/theo/extras/extra40.png",
+          "./images/theo/extras/extra84.png",
+          "./images/theo/extras/extra1.png",
+          "./images/theo/extras/extra58.png",
+          "./images/theo/extras/extra76.png",
+          "./images/theo/extras/extra96.png",
+          "./images/theo/extras/extra87.png",
+          "./images/theo/extras/extra59.png",
+          "./images/theo/extras/extra82.png",
+          "./images/theo/extras/extra37.png",
+          "./images/theo/extras/extra85.png",
+          "./images/theo/extras/extra88.png",
+          "./images/theo/extras/extra75.png",
+          "./images/theo/extras/extra94.png",
+          "./images/theo/extras/extra48.png",
+          "./images/theo/extras/extra86.png",
+          "./images/theo/extras/extra72.png"       ],
         "leans": [
-            "dominant",
-            "top",
-            "occasionally switch",
-            "average sex drive"
+            "submissive",
+            "switch",
+            "high sex drive"
         ],
         "body": [
             "athletic",
-            "curvy",
+            "strong",
             "wears boxers",
-            "trimps body hair"
+            "shaves body hair"
         ],
         "sounds": [
-            "moans partner's name",
-            "curses",
-            "grows in volume over time"
+            "groans",
+            "moans",
+            "calls partner's name",
+            "grows in volume over time",
+            "prefers loud partner"
         ],
         "inclinations": [
             "iniates",
+            "teases",
+            "adventurous",
             "passionate",
-            "gentle",
             "likes to takes his time"
         ],
         "bulletPoints": [
-          "definetly, absolutely, 100% has pink fluffy handcuffs"
+          "very into: pinning partner’s hands and having hands pulled, receiving praise, pulling partner’s hair and having hair pulled, biting and marking & being bitten and marked, being choked, teasing and being teased until they can’t think of anything else.",
+          "sometimes into: using toys and having toys used on him, manhandling partner and being manhandled, being tied up, worshiping parter."
         ]
-    }
   },
+  "savedforlater": [
+          "./images/theo/extras/extra95.png",
+    "./images/theo/extras/extra22.png",
+    "./images/theo/extras/extra28.png",
+    "./images/theo/extras/extra23.png",
+    "./images/theo/extras/extra25.png",
+    "./images/theo/extras/extra2.png",
+    "./images/theo/extras/extra49.png",
+    "./images/theo/extras/extra74.png",
+    "./images/theo/extras/extra32.png",
+    "./images/theo/extras/extra90.png",
+    "./images/theo/extras/extra9.png",
+    "./images/theo/extras/extra18.png",
+    "./images/theo/extras/extra81.png",
+    "./images/theo/extras/extra83.png",
+    "./images/theo/extras/extra4.png",
+    "./images/theo/extras/extra14.png",
+    "./images/theo/extras/extra57.png",
+    "./images/theo/extras/extra70.png",
+    "./images/theo/extras/extra62.png",
+    "./images/theo/extras/extra64.png",
+    "./images/theo/extras/extra33.png",
+    "./images/theo/extras/extra78.png",
+    "./images/theo/extras/extra79.png",
+    "./images/theo/extras/extra7.png",
+    "./images/theo/extras/extra89.png",
+    "./images/theo/extras/extra91.png",
+    "./images/theo/extras/extra92.png",
+    "./images/theo/extras/extra93.png"       ]
+},
   {
       "group": "Roosevelt",
-      "displayName": "Theo Roosevelt",
+      "displayName": "Nate Roosevelt",  
+      "fullName": "𝐍𝐀𝐓𝐇𝐀𝐍𝐈𝐄𝐋 𝐉𝐎𝐇𝐍 𝐑𝐎𝐎𝐒𝐄𝐕𝐄𝐋𝐓",
       "type": "playable",
-      "age": 45,
-      "wealthStatus": "rich",
-      "fameStatus": "not-famous",
-      "occupation": "civilian",
-      "isCowboy": false,
-      "gender": "male",
-      "pictures": ["images/theo.png"],
-      "connections": [
-          { "type": "npc", "displayName": "William Roosevelt", "relationship": "grandfather" },
-          { "type": "family", "displayName": "Noah Roosevelt", "relationship": "son" },
-          { "type": "family", "displayName": "Richard Roosevelt", "relationship": "brother" },
-          { "type": "family", "displayName": "Nash Roosevelt", "relationship": "brother" },
-          { "type": "family", "displayName": "Nate Roosevelt", "relationship": "brother" }
-      ]
-  },
-  {
-      "group": "Roosevelt",
-      "displayName": "Nate Roosevelt",
-      "type": "playable",
-      "age": 43,
-      "wealthStatus": "rich",
-      "fameStatus": "not-famous",
-      "occupation": "civilian",
-      "isCowboy": false,
-      "gender": "male",
+      "atAGlance": {
+        "Nicknames": "nate, nathan",
+        "Age": "thirty-nine",
+        "Occupation": "trust fund baby",
+        "Gender": "cis man",
+        "Pronouns": "he/him",
+        "Orientation": "bisexual",
+        "Height": "5'10\" or 1,79cm",
+        "Face Claim": "matt lanter",
+        "Younger Face Claim": "tom blyth"
+      },
       "pictures": ["images/nate.png"],
       "connections": [
-          { "type": "npc", "displayName": "William Roosevelt", "relationship": "grandfather" },
-          { "type": "family", "displayName": "Nash Roosevelt", "relationship": "brother" },
-          { "type": "family", "displayName": "Theo Roosevelt", "relationship": "brother" },
-          { "type": "family", "displayName": "Richard Roosevelt", "relationship": "brother" }
+          { "type": "npc", "name": "William Roosevelt", "relationship": "grandfather" },
+          { "type": "npc", "name": "Anna Roosevelt", "relationship": "mother" },
+          { "type": "family", "name": "Nash Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Theo Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Richard Roosevelt", "relationship": "brother" },
+          { "type": "family", "name": "Noah Roosevelt", "relationship": "uncle" }
       ]
   },
   {
@@ -920,12 +1614,17 @@
       "gender": "male",
       "pictures": ["images/noah.png"],
       "connections": [
-          { "type": "family", "displayName": "Theo Roosevelt", "relationship": "father" }
+          { "type": "npc", "name": "William Roosevelt", "relationship": "great-grandfather" },
+          { "type": "npc", "name": "Anna Roosevelt", "relationship": "grandmother" },
+          { "type": "family", "name": "Nash Roosevelt", "relationship": "nephew" },
+          { "type": "family", "name": "Theo Roosevelt", "relationship": "son" },
+          { "type": "family", "name": "Nate Roosevelt", "relationship": "nephew" },
+          { "type": "family", "name": "Richard Roosevelt", "relationship": "nephew" }
       ]
   },
   {
         "group": "Nightingale",
-        "displayName": "Xander Nightingale",
+        "displayName": "Xander Hawke",
         "fullName": "𝐗𝐀𝐍𝐃𝐄𝐑 𝐍𝐈𝐆𝐇𝐓𝐈𝐍𝐆𝐀𝐋𝐄",
         "type": "playable",
         "age": "thirty",
@@ -944,9 +1643,8 @@
         "connections": [
             { "type": "npc", "name": "Lucas Nightingale", "relationship": "father" },
             { "type": "npc", "name": "Louise Nightingale", "relationship": "mother" },
-            { "type": "bestFriend", "name": "Nash Roosevelt", "relationship": "best friend" },
             { "type": "family", "name": "Liam Nightingale", "relationship": "brother" },
-            { "type": "family", "name": "Alice Nightingale", "relationship": "sister" }
+            { "type": "family", "name": "Alice Nightingale", "relationship": "brother" }
         ],
         "searchResults": [
             {
@@ -994,9 +1692,11 @@
       "gender": "female",
       "pictures": ["images/alice.png"],
       "connections": [
-          { "type": "npc", "displayName": "Lucas Nightingale", "relationship": "father" },
-          { "type": "npc", "displayName": "Louise Nightingale", "relationship": "mother" }
-      ]
+            { "type": "npc", "name": "Lucas Nightingale", "relationship": "father" },
+            { "type": "npc", "name": "Louise Nightingale", "relationship": "mother" },
+            { "type": "family", "name": "Xander Hawke", "relationship": "sister" },
+            { "type": "family", "name": "Liam Nightingale", "relationship": "sister" }
+        ]
   },
   {
       "group": "Nightingale",
@@ -1010,21 +1710,28 @@
       "gender": "male",
       "pictures": ["images/liam.png"],
       "connections": [
-          { "type": "npc", "displayName": "Lucas Nightingale", "relationship": "father" },
-          { "type": "npc", "displayName": "Louise Nightingale", "relationship": "mother" }
-      ]
+            { "type": "npc", "name": "Lucas Nightingale", "relationship": "father" },
+            { "type": "npc", "name": "Louise Nightingale", "relationship": "mother" },
+            { "type": "family", "name": "Xander Hawke", "relationship": "brother" },
+            { "type": "family", "name": "Alice Nightingale", "relationship": "brother" }
+        ]
   },
   {
     "group": "Hamilton",
     "displayName": "Frank Hamilton",
     "fullName": "𝐅𝐑𝐀𝐍𝐊 𝐇𝐀𝐌𝐈𝐋𝐓𝐎𝐍",
     "type": "playable",
-    "age": "fifty",
-    "gender": "cis man",
-    "pronouns": "he/him",
-    "occupation": "businessman",
-    "orientation": "gay",
-    "faceClaim": "brad pitt",
+    "atAGlance": {
+        "Nicknames": "frankie",
+        "Age": "forty-two",
+        "Occupation": "sheriff",
+        "Gender": "cis man",
+        "Pronouns": "he/him",
+        "Orientation": "bisexual",
+        "Height": "6'3\" or 1,90cm",
+        "Face Claim": "david harbour",
+        "Younger Face Claim": "luke benward"
+      },
     "pictures": ["images/frank.png", "images/frank2.png", "images/frank3.png"],
     "fullBodyPictures": ["images/frank/frank_full_body1.png", "images/frank/frank_full_body2.png", "images/frank/frank_full_body3.png", "images/frank/frank_full_body4.png", "images/frank/frank_full_body5.png", "images/frank/frank_full_body6.png"],
     "extraPictures": ["images/frank/extras/extra1.png", "images/frank/extras/extra2.png", "images/frank/extras/extra3.png", "images/frank/extras/extra4.png", "images/frank/extras/extra5.png", "images/frank/extras/extra6.png", "images/frank/extras/extra7.png", "images/frank/extras/extra8.png", "images/frank/extras/extra9.png", "images/frank/extras/extra10.png"],
@@ -1059,11 +1766,136 @@
         "parents": "Stephen Hamilton, Margarete Hamilton"
     },
     "history": {
-        "images": ["images/frank/extras/extra11.png", "images/frank/extras/extra12.png", "images/frank/extras/extra13.png", "images/frank/extras/extra14.png", "images/frank/extras/extra15.png"],
-        "details": ["History detail 1", "History detail 2", "History detail 3"],
-        "extraImages": [],
-        "extraDetails": []
-    },
+      "images": [
+      "./images/theo/extras/extra21.png",
+      "./images/theo/extras/extra15.png",
+      "./images/theo/extras/extra56.png",
+      "./images/theo/extras/extra20.png",
+      "./images/theo/extras/extra63.png",
+      "./images/theo/extras/extra47.png",
+      "./images/theo/extras/extra12.png",
+      "./images/theo/extras/extra29.png",
+      "./images/theo/extras/extra80.png",
+      "./images/theo/extras/extra31.png",
+      "./images/theo/extras/extra13.png",
+      "./images/theo/extras/extra46.png",
+      "./images/theo/extras/extra73.png",
+      "./images/theo/extras/extra19.png",
+      "./images/theo/extras/extra60.png",
+      "./images/theo/extras/extra11.png",
+      "./images/theo/extras/extra52.png"
+  ],
+  "glances": {"nationality": "american", "ethnicity": "white","religion": "atheist","star sign": "cancer sun, aquarius rising, pisces moon"},
+      "details": [
+    "Second youngest of the Roosevelt brothers. And like every one of his brothers, the product of a one-night stand.",
+    "People always talked about Theo Roosevelt as though he was a thing of wonder. They never really meant it as a compliment, no, but did that matter? Easy laugh, charming smile, bright blue eyes brimming with trust.",
+    "Theo's first wondrous feat was beating death.",
+    "It happened when he was five. Too young to form any real concrete memories beyond vague distress. Theo only ever heard the whole thing through stories. Some mythical tale of some strange bee. It always seemed bigger in it than it could have ever been in real life. Bumblebees didn’t grow past an inch. But when people talked about it, they said always said it was horrible. Scary, bloody, monstrous. Sometimes, the bee grew along with the tale, became a whole hive.",
+    "From what Theo remembered, the real event was very simple, actually. He was playing outside with his brother Richard when he stepped on a bumblebee. He hadn’t noticed much wrong until Richard did. He thought he had stepped on a rock or something, cut himself. He wanted to keep playing, he just couldn't breathe. There was a lot of yelling, running, , calling for help. He remembered Nash clutching his hand so hard it hurt. He remembered hospital lights, babysitters and staff and gossip. He remembered his grandpa showing up a few hours later in the hospital, telling him he’d have to carry around an epipen now just in case. He remembered his mom back from Europe a week later calling him resurected as a joke.",
+    "Theo wasn’t scared during it. No, really. It was later that he'd found himself clutching his throat before going to sleep, trying to breathe while coughing out noises like a clogged windpipe. His body mimicking the breathlessness of it all, without a real reason for it.",
+    "He would sneak into Richard’s bedroom then. Sleep on the couch near his bed. Sometimes Richard would sense his distress and come to him instead. Theo left to onto the certainty that if something happened without his notice, then at least Richard would be there to call for help.",
+    "Theo's second wondrous feat was being William Roosevelt’s favorite. At least that’s what people said, how they framed. Nash, the child prodigy, firstborn, best, most sensible choice. Richard, hardworking and ambitious, deserving of the spot for sheer sense urgency and need. They did not know how Theo, strange child that Theo was, with an inclination for music and too much time spent outside staring at the stars, usurped it from both boys.",
+    "How strange, how quaint, how wonderous.",
+    "Theo didn’t feel like the favorite.",
+    "Or if he did, he didn't know why it was that people always talked about it like his grandpa had made a mistake, picking him instead of any of the other better choices. Like he'd performed a tricking of some sort by making the great William Roosevelt like him, when he clearly didn't deserve it",
+    "There were a few tiny ones too, along the way. A few tiny magical feats. He skipped a grade in kindergarten, another in middle school. Which meant by the time he got to high school, he was in the same grade as his brother Richard. He'd performed alongisde orchestras packed full of adults when he was only fourteen. He manage to keep the sort of smile that convinced small children to calm down and figures of authorities even past the age where awkwardness should start to settle in. It was magic."
+],
+"themeSongLyrics": ["trying to be cool about it, feelin' like an absolute fool about it, wishin' you were kind enought<br> to be cruel about it. tellin' myself i can always do without it, knowin' that it probably isn't true"],
+        "extraImages": ["./images/theo/extras/extra39.png",
+      "./images/theo/extras/extra55.png",
+      "./images/theo/extras/extra16.png",
+      "./images/theo/extras/extra3.png",
+      "./images/theo/extras/extra34.png",
+      "./images/theo/extras/extra24.png",
+      "./images/theo/extras/extra65.png",
+      "./images/theo/extras/extra71.png",
+      "./images/theo/extras/extra77.png",
+      "./images/theo/extras/extra30.png",
+      "./images/theo/extras/extra41.png",
+      "./images/theo/extras/extra61.png",
+      "./images/theo/extras/extra36.png",
+      "./images/theo/extras/extra38.png",
+      "./images/theo/extras/extra67.png",
+      "./images/theo/extras/extra54.png",
+      "./images/theo/extras/extra68.png"
+],
+        "extraDetails": [
+    "If you asked <i>Theo</i>, the second most wondrous thing he had ever managed to do was meet Emily Lambert.",
+    "It was the summer before their senior year. He was wasting his days away at the country club, and she was working part-time.",
+    "They talked for one hour only that first day, and Theo knew it was love like he knew the skies were blue and he was breathing.",
+    "From the one, they spent every day of that summer together. Laughing, playing, partying.", 
+    "And when it ended, he had begged his grandfather to let her come with him to his private boarding school in Switzerland. Donate a new building to the school, ask a favor from the dean, pay her tuition, and promise good grades.—His grandfather agreed to it, of course, under the condition that Theo went to university after graduation.",
+    "Then it was him and her and Richard. His best friend, the love of his life. They spent every moment together, out in their own little world of adventures, starting parties, getting in trouble, making a mess out of the world around them.",
+    "The rest of the world didn’t really matter. School even less. They were living in a magic realm of their own. Theo still graduated high school as salutatorian. (Because Richard was valedictorian, of course.) Because he knew how quickly his grandfather could take this away from him if he didn’t behave as ordered. But it didn’t matter.",
+    "Richard left for college like he always meant to do, and Theo begged his grandfather to allow him a gap year or two. So he and Emily could settle, get married, so the world could fall into place.—They traded on Theo’s life like concessions required approval. A gap year for the promise that when Theo did go to college, he’d choose engineering. Another for the promise that when he and Emily got married, they would live in the Roosevelt estate. A final one for a chance at picking Theo’s first son’s name.",
+    "Emily hated every single promise made. She hated it, and she hated Theo’s grandfather, and she made it known to anyone wondering, but it didn’t matter.",
+    "He married Emily the summer after he graduated. Exactly two years after having met her. And the summer after that, she was pregnant.",
+    "Theo knew that his brother, Richard, loved Emily. He couldn’t blame him; she was easy to love. But he didn’t care, it didn’t matter. Because Emily loved him. Richard would never do anything with her, Theo knew that, and she was his. In every way that mattered. She had chosen him in every way that was important. Nash could have his genius. Richard could have the spot as CEO. Theo had Emily.",
+    "The third most wondrous thing that Theo ever did was die. Third, because, well, he thinks it should be higher on the list, but most everyone else calls his assessment theatrical, dramatic.",
+    "It was two months after Noah was born.",
+    "Richard had stayed behind with the baby that night, promised to take care of him. He had always cared about him more than he cared about anyone else in the world.",
+    "(TW: Death) Theo went out with Emily to the lake in the Roosevelt estate. She had insisted. Something about wanting to feel wild again, less motherly, more free.",
+    "The two of them jumped off the cliff into the water, but only he came out of it.",
+    "The first thing he did was call for help.",
+    "The second was go back to look for her.",
+    "He spent the entire night there, diving back into the muddy dark water. Even after the police and emergency services arrived, even after they had insisted that he stop looking so they could work. Even after his grandma and Nash showed up to look at him pitifully.",
+    "He only left when they removed him. Physically dragged away by Nash while they pulled her body out of the water.",
+    "He didn’t speak for a week after. They never really pulled him out of the water, if he was being honest. Maybe they pulled her, but whoever Theo was, he died in the lake with her that day.",
+    "It took him a week to speak, a month to manage to go outside. About three to sleep through a night. He kept dreaming that she was asleep next to him, waking up to an empty bed and finding himself unable to move for an hour, at least.",
+    "The most wondrous thing Theo ever did was Noah Roosevelt.",
+    "It was five AM, probably, he was lacking good sleep. The world a cloud of dark and grey and fear. He turned to his son in his crib, and Noah was awake, looking at him. All Theo did was ask, 'What?' and his baby burst into laughter. It was the best sound he’d ever heard. Music couldn’t compare to it.",
+    "he still went to college, majored in mechanical engineering, minored in music. there was no breaking promises in the roosevelt household.",
+    "he thought it was funny too, that his grandfather named noah, only for noah to change his name to noah when he turned ten. never to be known as whatever william roosevelt had picked. he always was ten times better than anything theo could dream of being."
+]},
+    "mapLayers": {
+        "1": [
+          {
+            "inside": "Texas",
+            "name": "Roosevelt Motors HQ",
+            "description": "The main office of Roosevelt Motors Coorporation.",
+            "type": "work",
+            "images": ["images/richard/location/roosevelt-motors-2.png", "images/richard/location/roosevelt-motors-1.png", "images/richard/location/roosevelt-motors-3.png"]
+          },
+          {
+            "inside": "Texas",
+            "name": "Roosevelt Mansion",
+            "description": "The Roosevelt Mansion located inside the Roosevelt estate.",
+            "type": "home",
+            "longerDescription": "Richard's childhood home, from which he wished he had never moved away. Sometimes, he will spend weeks living in his wing and pretend he is still just visiting.",
+            "images": ["./images/nash/location/roosevelt-mansion-1.png", "./images/nash/location/roosevelt-mansion-6.png", "./images/richard/location/roosevelt-mansion-17.png", "./images/nash/location/roosevelt-mansion-22.png", "./images/nash/location/roosevelt-mansion-16.png", "./images/nash/location/roosevelt-mansion-15.png", "./images/nash/location/roosevelt-mansion-12.png", "./images/nash/location/roosevelt-mansion-8.png", "./images/nash/location/roosevelt-mansion-21.png", "./images/nash/location/roosevelt-mansion-9.png", "./images/nash/location/roosevelt-mansion-5.png", "./images/nash/location/roosevelt-mansion-7.png", "./images/nash/location/roosevelt-mansion-20.png", "./images/nash/location/roosevelt-mansion-23.png", "./images/richard/location/roosevelt-mansion-18.png", "./images/nash/location/roosevelt-mansion-2.png", "./images/nash/location/roosevelt-mansion-10.png"]
+          }
+        ],
+        "2": [
+          {
+            "inside": "Roosevelt Motors HQ",
+            "name": "Richard's office",
+            "description": "Where Richard's suit jacket is often found, without the man that's supposed to be wearing it.",
+            "type": "work",
+            "images": ["images/richard/location/roosevelt-office-4.png", "images/richard/location/roosevelt-office-2.png", "images/richard/location/roosevelt-office-3.png"]
+          },
+          {
+            "inside": "Roosevelt Motors HQ",
+            "name": "The Engineering Floor",
+            "description": "Where assistants and interns often find Richard when asked to fetch him.",
+            "type": "work",
+            "images": ["images/richard/location/engineering-floor-1.png", "images/richard/location/engineering-floor-3.png", "images/richard/location/engineering-floor-2.png"]
+          },
+          {
+            "inside": "Roosevelt Mansion",
+            "name": "Richard's wing",
+            "description": "The wing William Roosevelt had built for Richard. its entrace is in one of the walls of a pentagon in the second floor of the mansion. Above the door is a plaque where <i>Richard's wing</i> is engraved in marble.",
+            "type": "Special place",
+            "images": ["images/richard/location/richards-wing-5.png", "images/richard/location/richards-wing-1.png", "images/richard/location/richards-wing-3.png"]
+          },
+          {
+            "inside": "Roosevelt Mansion",
+            "name": "William's office",
+            "description": "William Roosevelt's office. Inside of which there is a wall with every award, medal or public acknowledgements every one of the Roosevelt brother has ever goten all the way to the day William passed. Richard will sometimes visit it, just to look at it.",
+            "type": "Special place",
+            "images": ["images/nash/location/williams-office-1.png", "images/nash/location/williams-office-2.png", "images/nash/location/williams-office-3.png"]
+          }
+        ]
+      },
     "phoneBackgrounds": ["images/frank/phone/frank_phone_background1.png", "images/frank/phone/frank_phone_background2.png"],
     "lockScreens": ["images/frank/phone/frank_lock_screen1.png", "images/frank/phone/frank_lock_screen2.png"],
     "instagram": {
@@ -1420,18 +2252,53 @@
     },
     "nsfw": {
         "images": [
-            "path/to/nsfw_image1.jpg",
-            "path/to/nsfw_image2.jpg"
+          "./images/theo/extras/extra40.png",
+          "./images/theo/extras/extra84.png",
+          "./images/theo/extras/extra1.png",
+          "./images/theo/extras/extra58.png",
+          "./images/theo/extras/extra76.png",
+          "./images/theo/extras/extra96.png",
+          "./images/theo/extras/extra87.png",
+          "./images/theo/extras/extra59.png",
+          "./images/theo/extras/extra82.png",
+          "./images/theo/extras/extra37.png",
+          "./images/theo/extras/extra85.png",
+          "./images/theo/extras/extra88.png",
+          "./images/theo/extras/extra75.png",
+          "./images/theo/extras/extra94.png",
+          "./images/theo/extras/extra48.png",
+          "./images/theo/extras/extra86.png",
+          "./images/theo/extras/extra72.png"       ],
+        "leans": [
+            "submissive",
+            "switch",
+            "high sex drive"
         ],
-        "details": [
-            "Explicit detail 1",
-            "Explicit detail 2"
+        "body": [
+            "athletic",
+            "strong",
+            "wears boxers",
+            "shaves body hair"
+        ],
+        "sounds": [
+            "groans",
+            "moans",
+            "calls partner's name",
+            "grows in volume over time",
+            "prefers loud partner"
+        ],
+        "inclinations": [
+            "iniates",
+            "teases",
+            "adventurous",
+            "passionate",
+            "likes to takes his time"
         ],
         "bulletPoints": [
-            "NSFW bullet point 1",
-            "NSFW bullet point 2"
+          "very into: pinning partner’s hands and having hands pulled, receiving praise, pulling partner’s hair and having hair pulled, biting and marking & being bitten and marked, being choked, teasing and being teased until they can’t think of anything else.",
+          "sometimes into: using toys and having toys used on him, manhandling partner and being manhandled, being tied up, worshiping parter."
         ]
-    }
+  }
   },
 
   {
@@ -1456,8 +2323,7 @@
         { "type": "npc", "name": "Howard Thompson", "relationship": "father" },
         { "type": "npc", "name": "Evangeline Thompson", "relationship": "mother" },
         { "type": "love", "name": "Frank Hamilton", "relationship": "ex-wife" },
-        { "type": "family", "name": "Arizona Hamilton", "relationship": "mother" },
-        { "type": "bestFriend", "name": "Nash Roosevelt", "relationship": "best friend" }
+        { "type": "family", "name": "Arizona Hamilton", "relationship": "mother" }
     ],
     "searchResults": [
         {
